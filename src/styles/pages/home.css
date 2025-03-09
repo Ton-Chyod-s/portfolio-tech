@@ -1,0 +1,25 @@
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin: .2rem 1.2rem 1.2rem;
+}
+
+body {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    border: 0.5px solid #3C444C;
+}
+
+main{
+    margin: 1.2rem;
+    border-top: 2.5px solid #3C444C;
+    border-bottom: 2.5px solid #3C444C;
+
+}
+
+
+/* border-top: 1px solid #3C444C;
+border-bottom: 2.5px solid #3C444C;  */
