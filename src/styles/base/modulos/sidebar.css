@@ -42,15 +42,18 @@
   .svg-ico {
     width: 1.5rem;  
     height: 1.5rem;
-    transition: transform 0.18s ease-in-out, margin 0.3s ease-in-out;
-  }
+    transition: transform 0.3s ease, border-bottom 0.3s ease, padding-bottom 0.3s ease;
+}
   
-  .svg-ico:hover {
-    transform: translateY(-10px); 
-    margin-top: 10px;
-    border-bottom: solid 2px #fff;
-    padding-bottom: .15rem;
-  }
+  
+.svg-ico:hover {
+  transform: translateY(-5px);
+  border-bottom: solid 2px #fff;
+  padding-bottom: 0.15rem;
+  
+}
+
+
   
   /* .svg-ico:hover path {
     fill: white; 
