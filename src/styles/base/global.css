@@ -37,14 +37,14 @@
   /* Estilização da Sidebar */
 .sidebar {
   width: 1.6rem;
-  height: 100vh; /* Altura total da tela */
+  height: 100vh; 
   position: fixed;
   top: 0;
   left: 0;
-  display: flex; /* Garante que os itens sigam o modelo flex */
-  flex-direction: column; /* Mantém os itens em coluna */
-  justify-content: center; /* Centraliza os itens na vertical */
-  align-items: center; /* Centraliza os itens na horizontal */
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
 }
 
 /* Estilização da Navegação */
@@ -53,10 +53,10 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 100%; /* Ocupa toda a largura da sidebar */
+  width: 100%; 
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza os itens */
+  align-items: center; 
 }
 
 /* Links de Navegação */
