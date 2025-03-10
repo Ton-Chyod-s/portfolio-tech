@@ -1,7 +1,9 @@
 const routes = {
     "/": "src/pages/home.html",
     "/about": "src/pages/about.html",
-    "/contact": "src/pages/contact.html"
+    "/projects": "src/pages/projects.html",
+    "/contact": "src/pages/contact.html",
+    
 };
 
 function route(event) {
