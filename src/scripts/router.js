@@ -2,9 +2,9 @@ const routes = {
     "/": "src/pages/home.html",
     "/about": "src/pages/about.html",
     "/projects": "src/pages/projects.html",
+    "/statements": "src/pages/statements.html",
     "/contact": "src/pages/contact.html",
-    
-};
+};  
 
 function route(event) {
     event = event || window.event;
