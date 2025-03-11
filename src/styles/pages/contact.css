@@ -54,6 +54,15 @@
     background-color: #0056b3;
 }
 
+.text-center {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: .5rem;
+}
+
+.paragraph-center{
+    width: 33rem;
+}
+
 /* Responsividade */
 @media (max-width: 600px) {
     .form {
