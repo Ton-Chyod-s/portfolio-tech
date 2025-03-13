@@ -1,5 +1,6 @@
 @media (max-width: 720px) and (max-height: 1480px) {
-    .navbar{
+    .navbar-nav{
+      background-color:  red !important;
       text-align: center !important;
       float: none;
       display: inline-block;
