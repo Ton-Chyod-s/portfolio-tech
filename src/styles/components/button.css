@@ -52,12 +52,11 @@
 .btn-send {
   display: flex;
   justify-content: center;
-  color: #BEBFBE;
+  color: #BEBFBE !important;
   align-items: center;
   height: 2rem;
   border-radius: .6rem;
   padding: 0 15px;
-  backdrop-filter: blur(5px);
   width: auto;
   margin: 0 auto;
 }
@@ -68,7 +67,7 @@
 }
 
 .btn-send a:hover {
-  color: white;
+  color: white !important;
 }
 
 ul {

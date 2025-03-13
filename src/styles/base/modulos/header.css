@@ -10,21 +10,9 @@
   justify-content: center; 
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   background: transparent;
+  height: 2.4rem;
 }
 
-.navbar-nav {
-  list-style: none; 
-  display: flex;
-  gap: 30px; 
-  padding: 0;
-  margin: 0;
-}
-
-.navbar-nav li {
-  display: inline;
-}
-
-.navbar-nav a {
-  text-decoration: none;
-  padding: 10px 15px;
+#len1, #len2, #len3, #len4 {
+  margin: 0 1rem;
 }
