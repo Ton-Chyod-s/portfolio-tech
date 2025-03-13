@@ -1,62 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
 .contact-form {
+    /* border: solid 1px rgb(255, 0, 0); */
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    width: 100%; 
+    text-align: center; 
 }
 
 .form {
-    width: 100%;
-    max-width: 500px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* background-color: blue; */
+    padding: 1.7rem; 
+    width: 100%; 
+    max-width: 520px; 
+    box-sizing: border-box; 
 }
 
 .mb-3 {
     margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
 }
 
-.form-label {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.form-control {
-    width: 100%;
-    padding: 10px;
-    font-size: .8rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.btn {
-    display: block;
-    padding: 10px;
-    font-size: .8rem;
-    font-weight: bold;
-    text-align: center;
-    background-color: #007bff;
-    color: white;
+.form-control{
+    width: 100%; 
+    padding: 0.5rem; 
+    margin-bottom: 1rem; 
+    border-radius: 5px; 
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
+    border: solid 1px #ccc;
 }
 
-.btn:hover {
-    background-color: #0056b3;
+.btn-send {
+    width: 100%; 
+    padding: 0.5rem; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
 }
 
-/* Responsividade */
-@media (max-width: 600px) {
+.text-center {
+    margin-bottom: 1.1rem;
+}
+
+.paragraph-center {
+    text-align: left; 
+    width: 29rem;
+}
+
+@media (max-width: 720px) {
+
+    .contact-form 
+    {
+        height: 100%; 
+        padding: 1rem; 
+    }
+    
     .form {
-        padding: 15px;
+        padding: 2.5rem; 
+        
+    }
+
+    .mb-3 {
+        margin-bottom: 0.7rem;
+    }
+
+    .text-center {
+        
+        margin-bottom: 0.6rem;
+    }
+
+    .paragraph-center {
+        /* border: solid 1px red; */
+        text-align: left;
+        width: 27rem;
     }
 }

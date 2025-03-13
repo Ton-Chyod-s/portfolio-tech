@@ -1,3 +1,10 @@
 @import url("./modulos/header.css");
 @import url("./modulos/footer.css");
 @import url("./modulos/sidebar.css");
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: -15px;
+}
