@@ -1,0 +1,10 @@
+{
+    "name": "portfolio-tech",
+    "version": "1.0.0",
+    "main": "index.html",
+    "scripts": {
+      "build": "echo 'No build needed for static site'"
+    },
+    "dependencies": {}
+  }
+  
