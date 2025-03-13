@@ -1,3 +1,4 @@
+
 .bg-dark-contact {
     margin: 0;
     padding: 0;
@@ -33,7 +34,7 @@
     border: solid 1px #ccc;
 }
 
-.btn-send {
+/* .btn-send {
     width: 100%; 
     padding: 0.5rem; 
     background-color: #007bff; 
@@ -41,7 +42,7 @@
     border: none; 
     border-radius: 5px; 
     cursor: pointer; 
-}
+} */
 
 .text-center {
     margin-bottom: .1rem;
