@@ -2,6 +2,10 @@
 @import url("./modulos/footer.css");
 @import url("./modulos/sidebar.css");
 
+.bg-dark-index {
+    margin-top: 2.5rem;
+}
+
 .header-content {
     display: flex;
     justify-content: center;
