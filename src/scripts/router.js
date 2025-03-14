@@ -16,7 +16,7 @@ function route(event) {
 }
 
 async function handleLocation() {
-    for (const key of Object.keys(routes)) { // Percorre apenas uma vez
+    for (const key of Object.keys(routes)) { 
         const html = await fetch(routes[key]).then(response => response.text());
         const div = document.createElement("div");
         div.innerHTML = html;
