@@ -16,16 +16,15 @@ function route(event) {
 }
 
 async function handleLocation() {
-
-    Object.keys(routes).forEach(async (key) => {
+    for (const key of Object.keys(routes)) { // Percorre apenas uma vez
         const html = await fetch(routes[key]).then(response => response.text());
         const div = document.createElement("div");
         div.innerHTML = html;
         div.id = `div-${key}`; 
         document.body.appendChild(div);
-    });
-
+    }
 }
+
 
 window.onpopstate = handleLocation;
 
