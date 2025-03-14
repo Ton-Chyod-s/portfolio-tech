@@ -18,7 +18,7 @@
     margin-bottom: -15px; 
 }
 
-p {
+.header-p {
     line-height: 1.5rem;
     margin-bottom: 1.5rem;
     display: flex;
