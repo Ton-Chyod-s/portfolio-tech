@@ -1,22 +1,21 @@
-* {
+
+    
+.bg-dark-contact {
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
 }
 
 .contact-form {
-    /* border: solid 1px rgb(255, 0, 0); */
     display: flex;
     flex-direction: column; 
     align-items: center; 
-    justify-content: center; 
     height: 100vh; 
     width: 100%; 
     text-align: center; 
 }
 
 .form {
-    /* background-color: blue; */
     padding: 1.7rem; 
     width: 100%; 
     max-width: 520px; 
@@ -36,18 +35,9 @@
     border: solid 1px #ccc;
 }
 
-.btn-send {
-    width: 100%; 
-    padding: 0.5rem; 
-    background-color: #007bff; 
-    color: white; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
-}
-
 .text-center {
-    margin-bottom: 1.1rem;
+    margin-bottom: .1rem;
+    margin-top: 0;
 }
 
 .paragraph-center {
@@ -55,8 +45,7 @@
     width: 29rem;
 }
 
-@media (max-width: 720px) {
-
+@container banner (min-width: 720px) {
     .contact-form 
     {
         height: 100%; 
@@ -78,7 +67,6 @@
     }
 
     .paragraph-center {
-        /* border: solid 1px red; */
         text-align: left;
         width: 27rem;
     }
