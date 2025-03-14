@@ -27,8 +27,8 @@
         position: fixed; 
         top: 0; 
         left: 0; 
-        width: 1.8rem; /* Largura ajustada para os ícones caberem bem */
-        height: 100vh; /* Garante que ocupe toda a altura da tela */
+        width: 1.8rem; 
+        height: 100vh; 
         align-items: center; 
         justify-content: center; 
     }
@@ -43,17 +43,17 @@
     }
 
     .nav-list a {
-        display: flex; /* Para alinhar o ícone */
+        display: flex; 
         align-items: center;
         justify-content: center;
-        width: 100%; /* Faz com que os links ocupem toda a largura */
-        color: white; /* Ajuste da cor para melhor visibilidade */
-        padding: 0.5rem; /* Melhor espaçamento para toque */
-        text-decoration: none; /* Remove sublinhado dos links */
+        width: 100%; 
+        color: white; 
+        padding: 0.5rem; 
+        text-decoration: none; 
     }
 
-    .nav-list a i { /* Ajuste para os ícones */
-        font-size: 1.2rem; /* Ajuste o tamanho do ícone */
+    .nav-list a i { 
+        font-size: 1.2rem; 
     }
 }
 
