@@ -79,7 +79,7 @@
     }
 
     .form {
-        padding: 1rem; /* Reduzi para melhorar o espaço em telas pequenas */
+        padding: 1rem; 
     }
 
     .mb-3 {
@@ -91,9 +91,9 @@
     }
 
     .paragraph-center {
-        width: 100%; /* Garante que ocupe toda a largura disponível */
-        max-width: 90%; /* Evita que fique muito largo em telas pequenas */
-        margin: 0 auto; /* Centraliza o bloco */
+        width: 100%; 
+        max-width: 90%; 
+        margin: 0 auto; 
     }
 }
 
