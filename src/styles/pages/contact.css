@@ -41,7 +41,7 @@
 }
 
 .paragraph-center {
-    text-align: left; 
+    text-align: justify; 
     width: 29rem;
 }
 
@@ -67,7 +67,7 @@
     }
 
     .paragraph-center {
-        text-align: left;
+        text-align: justify;
         width: 27rem;
     }
 }
@@ -92,6 +92,7 @@
     }
 
     .paragraph-center {
+        text-align: justify;
         width: 100%; 
         max-width: 90%; 
         margin: 0 auto; 

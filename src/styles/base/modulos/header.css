@@ -8,6 +8,8 @@
   justify-content: center; 
   background: transparent;
   height: 2.4rem;
+  background-color: #0C1116;
+  box-shadow: #0C1116 0px 0px 10px;
 }
 
 #len1, #len2, #len3, #len4 {
