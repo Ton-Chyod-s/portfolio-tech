@@ -17,6 +17,11 @@
     margin-bottom: 1rem; 
 }
 
+.svg-ico:hover path {
+    fill: white; 
+
+}   
+
 @media (max-width: 720px) {
     .nav-list {
         display: flex; 
