@@ -16,14 +16,26 @@ function route(event) {
 }
 
 async function handleLocation() {
-    for (const key of Object.keys(routes)) { 
+    const divApp = document.getElementById("app");
+
+    const divElements = divApp.querySelectorAll("div");
+
+    if (divElements.length >= 5) {
+        console.log("Limite de elementos alcançado.");
+        return; 
+    }
+
+    for (const key of Object.keys(routes)) {
         const html = await fetch(routes[key]).then(response => response.text());
+        const keyReplace = key.replace("/", "");
+
         const div = document.createElement("div");
         div.innerHTML = html;
-        div.id = `div-${key}`; 
-        document.body.appendChild(div);
+        div.id = `div-${keyReplace}`; 
+        divApp.appendChild(div);
     }
 }
+
 
 
 window.onpopstate = handleLocation;
