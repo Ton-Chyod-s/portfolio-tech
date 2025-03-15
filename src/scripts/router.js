@@ -36,8 +36,6 @@ async function handleLocation() {
     }
 }
 
-
-
 window.onpopstate = handleLocation;
 
 document.addEventListener("DOMContentLoaded", () => {
