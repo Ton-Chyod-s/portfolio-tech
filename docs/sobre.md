@@ -18,3 +18,10 @@
 - Pós-graduação em Arquitetura de Software: Aprofundei minha compreensão em design de sistemas, Clean Architecture e padrões que tornam o código sustentável e fácil de manter.
 
 **Atualmente**: Busco evoluir em CI/CD, Azure DevOps e outras ferramentas que aumentam a qualidade e agilidade na entrega de software, além de desafios que envolvam lógica de negócio e automação.
+
+## Certificações e Cursos Complementares
+
+- Scientific Computing with Python - freeCodeCamp (300h)
+- Legacy JavaScript Algorithms and Data Structures - freeCodeCamp (300h)
+- Microsoft power BI Para Business Intelligence e Data Science - Data Science Academy (72h)
+- Git e GitHub - Curso em Vídeo (50h)
