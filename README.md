@@ -25,7 +25,7 @@ Especialista em automação de processos e desenvolvimento de APIs escaláveis.
 
 ---
 
-## 🚀 Projetos em Destaque
+## Projetos em Destaque
 
 - [**api-scraper-mailer**](https://github.com/Ton-Chyod-s/api-scraper-mailer)  
   API Node.js para scraping de dados e envio automatizado de relatórios por e-mail.
@@ -41,8 +41,5 @@ Especialista em automação de processos e desenvolvimento de APIs escaláveis.
 
 ---
 
-[➡ **Sobre mim**](docs/sobre.md)
-
----
 
 
