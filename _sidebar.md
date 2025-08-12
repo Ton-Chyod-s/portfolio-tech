@@ -1,2 +1,9 @@
-- [Projeto 1](docs/projetos/projeto1.md)
-- [Projeto 2](docs/projetos/projeto2.md)
+- [**Sobre**](docs/sobre.md)
+
+- [**Experiências**](docs/experiencias.md)
+
+- [**Tecnologias**](docs/tecnologias.md)
+
+- [**Projetos**](docs/projetos.md)
+
+- [**Contato**](docs/contato.md)

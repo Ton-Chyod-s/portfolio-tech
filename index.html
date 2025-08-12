@@ -8,6 +8,38 @@
     /* body {
       background-color: #f1efef;
     } */
+
+    .sidebar-nav {
+      padding: 15px;
+      font-size: 15px;
+    }
+
+    .sidebar-nav h2 {
+      text-align: center;
+      margin: 15px 0;
+      padding-bottom: 5px;
+      border-bottom: 2px solid #0E76A8; /* Azul LinkedIn */
+      font-weight: bold;
+      color: #0E76A8;
+    }
+
+    .sidebar-nav a {
+      display: block;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: background 0.2s, transform 0.1s;
+    }
+
+    .sidebar-nav a:hover {
+      background: #f0f8ff;
+      transform: translateX(4px);
+    }
+
+    .sidebar-nav a::before {
+      content: "• ";
+      color: #0E76A8;
+    }
+
   </style>
 </head>
 <body>
@@ -18,7 +50,7 @@
       name: 'Klayton - Portfólio',
       repo: 'https://github.com/Ton-Chyod-s/portfolio-tech',
       loadSidebar: true,
-      loadNavbar: true,
+      // loadNavbar: true,
       subMaxLevel: 2,
       themeColor: '#42b983'
     }
