@@ -40,26 +40,5 @@ Especialista em automação de processos e desenvolvimento de APIs escaláveis.
 
 ---
 
-## Estatísticas do GitHub
 
-<div style="display: inline_block">
-  <a href="https://github.com/Ton-Chyod-s"> 
-    <img height=170 align="center" src="https://github-readme-stats.vercel.app/api?username=Ton-Chyod-s&show_icons=true&theme=dark"/>
-  </a>
-</div>
-
-<div style="display: inline_block">
-  <a href="https://git.io/streak-stats"> 
-    <img height=160 align="center" src="https://streak-stats.demolab.com/?user=Ton-Chyod-s&theme=dark"/>
-  </a>
-  <a href="https://github.com/Ton-Chyod-s">
-    <img height=160 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=Ton-Chyod-s&layout=compact&langs_count=8&card_width=320&theme=dark" />
-  </a>
-</div>
-
----
-
-<p align="left"> 
-  <img src="https://komarev.com/ghpvc/?username=ton-chyod-s&label=Profile%20views&color=0e75b6&style=flat" alt="ton-chyod-s" height="20" />
-</p>
 
