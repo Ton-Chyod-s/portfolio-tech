@@ -21,3 +21,5 @@ build/
 # Configs de IDE
 .vscode/
 .idea/
+
+package-lock.json
