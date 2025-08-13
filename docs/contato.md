@@ -1,8 +1,14 @@
-🚧 Em Construção 🚧
-Estamos trabalhando para trazer algo incrível aqui!
+# Contato
 
-Volte em breve para conferir as novidades.
+**Email:**  
+klayton.dias@gmail.com
 
-Enquanto isso, confira nossos outros documentos.
+**LinkedIn:**  
+[linkedin.com/in/klaytondias](https://linkedin.com/in/ton-chyod-s)
 
-Obrigado pela paciência! 🙌
+**GitHub:**  
+[github.com/klaytondias](https://github.com/ton-chyod-s)
+
+---
+
+Sinta-se à vontade para entrar em contato para oportunidades, dúvidas ou parcerias.
