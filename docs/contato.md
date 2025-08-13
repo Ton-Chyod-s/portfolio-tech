@@ -4,10 +4,10 @@
 klayton.dias@gmail.com
 
 **LinkedIn:**  
-[linkedin.com/in/klaytondias](https://linkedin.com/in/ton-chyod-s)
+[linkedin.com/in/ton-chyod-s](https://linkedin.com/in/ton-chyod-s)
 
 **GitHub:**  
-[github.com/klaytondias](https://github.com/ton-chyod-s)
+[github.com/ton-chyod-s](https://github.com/ton-chyod-s)
 
 ---
 
