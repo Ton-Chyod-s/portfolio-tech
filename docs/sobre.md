@@ -21,6 +21,11 @@
 
 ## Certificações e Cursos
 
+- Tecnologia da Informação (Jan/2025 - Jan/2027)
+- Pós-Graduação Arquitetura de software (Jul/2025)
+- Arquitetura e Urbanismo (Ago/2018)
+
+## Cursos livre
 - Scientific Computing with Python - freeCodeCamp (300h)
 - Legacy JavaScript Algorithms and Data Structures - freeCodeCamp (300h)
 - Microsoft power BI Para Business Intelligence e Data Science - Data Science Academy (72h)
