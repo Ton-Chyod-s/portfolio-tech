@@ -1,43 +1,50 @@
+/* ===== CSS Custom Properties ===== */
+:root {
+  --theme-color: #42b983;
+  --theme-color-light: rgba(66, 185, 131, 0.15);
+}
+
 body {
-      background-color: #ffffff;
-    }
+  background-color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+}
 
-    .sidebar {
-      font-size: 16px;
-      width: 250px;
-      box-sizing: border-box;
-    }
+.sidebar {
+  font-size: 16px;
+  width: 250px;
+  box-sizing: border-box;
+}
 
-    .sidebar-nav {
-      padding: 15px;
-      font-size: 15px;
-    }
+.sidebar-nav {
+  padding: 15px;
+  font-size: 15px;
+}
 
-    .sidebar-nav h2 {
-      text-align: center;
-      margin: 15px 0;
-      padding-bottom: 5px;
-      border-bottom: 2px solid #0E76A8; /* Azul LinkedIn */
-      font-weight: bold;
-      color: #0E76A8;
-    }
+.sidebar-nav h2 {
+  text-align: center;
+  margin: 15px 0;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #0E76A8;
+  font-weight: bold;
+  color: #0E76A8;
+}
 
-    .sidebar-nav a {
-      display: block;
-      padding: 8px 12px;
-      border-radius: 8px;
-      transition: background 0.2s, transform 0.1s;
-    }
+.sidebar-nav a {
+  display: block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.2s, transform 0.1s;
+}
 
-    .sidebar-nav a:hover {
-      background: #f0f8ff;
-      transform: translateX(4px);
-    }
+.sidebar-nav a:hover {
+  background: #f0f8ff;
+  transform: translateX(4px);
+}
 
-    .sidebar-nav a::before {
-      content: "• ";
-      color: #0E76A8;
-    }
+.sidebar-nav a::before {
+  content: "• ";
+  color: #0E76A8;
+}
 
 /* ===== Página de Contato ===== */
 .contact-wrapper {
@@ -88,12 +95,12 @@ body {
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #42b983;
-  box-shadow: 0 0 0 3px rgba(66, 185, 131, 0.15);
+  border-color: var(--theme-color);
+  box-shadow: 0 0 0 3px var(--theme-color-light);
 }
 
 .btn-submit {
-  background-color: #42b983;
+  background-color: var(--theme-color);
   color: #fff;
   border: none;
   padding: 11px 28px;
@@ -101,11 +108,11 @@ body {
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.2s, transform 0.1s;
+  transition: opacity 0.2s, transform 0.1s;
 }
 
 .btn-submit:hover {
-  background-color: #369e6e;
+  opacity: 0.88;
   transform: translateY(-1px);
 }
 
@@ -113,4 +120,213 @@ body {
   .contact-wrapper {
     flex-direction: column;
   }
+}
+
+/* ===== Botão Dark Mode ===== */
+.dark-toggle-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background: #42b983;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.dark-toggle-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .dark-toggle-btn {
+  background: #3b4252;
+}
+
+/* ===== Modo Escuro ===== */
+body.dark-mode {
+  background-color: #1e1e2e !important;
+  color: #f0f0f0 !important;
+}
+
+/* Sidebar */
+body.dark-mode .sidebar {
+  background-color: #1e1e2e !important;
+  border-right: none !important;
+  box-shadow: none !important;
+}
+
+body.dark-mode .sidebar .app-name,
+body.dark-mode .sidebar .app-name-link {
+  color: #f0f0f0 !important;
+}
+
+body.dark-mode .sidebar ul li a {
+  color: #cdd6f4 !important;
+}
+
+body.dark-mode .sidebar ul li.active > a {
+  color: #42b983 !important;
+  font-weight: 600;
+}
+
+body.dark-mode .sidebar-nav h2 {
+  color: #89b4fa !important;
+  border-bottom-color: #89b4fa !important;
+}
+
+body.dark-mode .sidebar-nav a:hover {
+  background: rgba(255, 255, 255, 0.07) !important;
+  color: #f0f0f0 !important;
+}
+
+/* Botão hamburguer da sidebar */
+body.dark-mode .sidebar-toggle {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+body.dark-mode .sidebar-toggle .sidebar-toggle-button span,
+body.dark-mode .sidebar-toggle span {
+  background-color: #cdd6f4 !important;
+}
+
+body.dark-mode .sidebar-toggle .sidebar-toggle-button span {
+  background-color: #cdd6f4 !important;
+}
+
+/* Área de conteúdo */
+body.dark-mode section.content {
+  background-color: #1e1e2e !important;
+}
+
+/* Markdown */
+body.dark-mode .markdown-section {
+  color: #f0f0f0 !important;
+  background-color: #1e1e2e !important;
+}
+
+body.dark-mode .markdown-section h1,
+body.dark-mode .markdown-section h2,
+body.dark-mode .markdown-section h3,
+body.dark-mode .markdown-section h4,
+body.dark-mode .markdown-section h5,
+body.dark-mode .markdown-section h6 {
+  color: #ffffff !important;
+}
+
+body.dark-mode .markdown-section p,
+body.dark-mode .markdown-section li,
+body.dark-mode .markdown-section span,
+body.dark-mode .markdown-section td,
+body.dark-mode .markdown-section th,
+body.dark-mode .markdown-section label {
+  color: #f0f0f0 !important;
+}
+
+body.dark-mode .markdown-section strong {
+  color: #ffffff !important;
+}
+
+body.dark-mode .markdown-section a {
+  color: #89dceb !important;
+}
+
+body.dark-mode .markdown-section a:hover {
+  color: #42b983 !important;
+}
+
+body.dark-mode .markdown-section hr {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Código inline */
+body.dark-mode .markdown-section code {
+  background-color: #313244 !important;
+  color: #f5c2e7 !important;
+  border-radius: 4px !important;
+  padding: 2px 5px !important;
+}
+
+/* Bloco de código */
+body.dark-mode .markdown-section pre {
+  background-color: #181825 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 8px !important;
+}
+
+body.dark-mode .markdown-section pre code {
+  color: #cdd6f4 !important;
+  background-color: transparent !important;
+}
+
+/* Blockquote */
+body.dark-mode .markdown-section blockquote {
+  border-left: 4px solid #42b983 !important;
+  background-color: rgba(66, 185, 131, 0.08) !important;
+  color: #cdd6f4 !important;
+}
+
+body.dark-mode .markdown-section blockquote p {
+  color: #cdd6f4 !important;
+}
+
+/* Tabela */
+body.dark-mode .markdown-section table {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+body.dark-mode .markdown-section table thead tr {
+  background-color: #313244 !important;
+}
+
+body.dark-mode .markdown-section table thead th {
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+body.dark-mode .markdown-section table tbody tr {
+  background-color: #1e1e2e !important;
+}
+
+body.dark-mode .markdown-section table tbody tr:nth-child(2n) {
+  background-color: #252535 !important;
+}
+
+body.dark-mode .markdown-section table td {
+  border-color: rgba(255, 255, 255, 0.08) !important;
+  color: #f0f0f0 !important;
+}
+
+/* Formulário de contato */
+body.dark-mode .form-group label {
+  color: #f0f0f0 !important;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+  background-color: #313244 !important;
+  border-color: #45475a !important;
+  color: #f0f0f0 !important;
+}
+
+body.dark-mode .form-group input::placeholder,
+body.dark-mode .form-group textarea::placeholder {
+  color: #6c7086 !important;
+}
+
+body.dark-mode .contact-links p,
+body.dark-mode .contact-links a {
+  color: #cdd6f4 !important;
 }

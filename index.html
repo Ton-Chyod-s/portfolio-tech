@@ -6,21 +6,53 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
   <link rel="icon" type="image/x-icon" href="assets/ico/favicon.ico" />
   <link href="assets/css/style.css" rel="stylesheet" />
+  <script>
+    (function () {
+      if (localStorage.getItem('portfolioDarkMode') === 'true') {
+        document.documentElement.setAttribute('data-dark', 'true');
+      }
+    })();
+  </script>
 </head>
 <body>
   <div id="app"></div>
+
+  <!-- Botão de alternar modo escuro/claro -->
+  <button class="dark-toggle-btn" id="darkToggleBtn" title="Alternar modo escuro/claro">🌙</button>
 
   <script>
     window.$docsify = {
       name: 'Portfólio',
       repo: 'https://github.com/Ton-Chyod-s/portfolio-tech',
       loadSidebar: true,
-      // loadNavbar: true,
       subMaxLevel: 2,
       themeColor: '#42b983'
     }
   </script>
 
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+
+  <script>
+    (function () {
+      var btn = document.getElementById('darkToggleBtn');
+      var isDark = localStorage.getItem('portfolioDarkMode') === 'true';
+
+      function applyDarkMode(dark) {
+        isDark = dark;
+        document.body.classList.toggle('dark-mode', dark);
+        document.documentElement.setAttribute('data-dark', dark ? 'true' : 'false');
+        btn.textContent = dark ? '☀️' : '🌙';
+        btn.title = dark ? 'Mudar para modo claro' : 'Mudar para modo escuro';
+        localStorage.setItem('portfolioDarkMode', dark);
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        applyDarkMode(isDark);
+        btn.addEventListener('click', function () {
+          applyDarkMode(!isDark);
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
