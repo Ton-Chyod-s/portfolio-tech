@@ -1,19 +1,19 @@
 # Experiência Profissional
 
-- **Desenvolvimento de APIs RESTful**  
-  Criação, manutenção e evolução de APIs robustas, seguras e escaláveis, utilizando Node.js, TypeScript e C#.
+- **Desenvolvimento de APIs RESTful e Sistemas Multiempresa**
+  Criação, manutenção e evolução de APIs robustas com Node.js, TypeScript, AdonisJS e C#, com experiência em cenários multiempresa, controle de vínculos, RBAC e consistência de dados em produção.
 
-- **Automação de Processos**  
-  Implementação de rotinas automatizadas para otimização de fluxos internos, garantindo maior eficiência e menos retrabalho.
+- **Banco de Dados e Modelagem**
+  Experiência sólida com PostgreSQL, MySQL e SQLite para modelagem relacional, queries complexas, triggers, seeds, migrations e configuração de pool de conexões com Sequelize e Prisma ORM.
 
-- **Banco de Dados**  
-  Experiência sólida com MySQL, PostgreSQL e SQLite para modelagem, otimização e consultas complexas.
+- **Segurança e Autenticação**
+  Implementação de autenticação JWT, cookies com CSRF, controle de acesso por papéis (RBAC), rate limiting, Helmet e revisão de segurança em rotas protegidas e tokens.
 
-- **Arquitetura e Organização de Código**  
-  Aplicação dos princípios da Clean Architecture e boas práticas para manter código limpo, modular e fácil de manter.
+- **Arquitetura e Qualidade de Código**
+  Aplicação de Clean Architecture (3 camadas), SOLID, MVC e padrões de projeto. Code review via PRs, testes, documentação com Swagger/OpenAPI e onboarding de novos desenvolvedores.
 
-- **Ferramentas e Tecnologias**  
-  Docker, Prisma ORM, JWT para autenticação, além de experiência com ambientes de desenvolvimento Linux.
+- **Infraestrutura e Automação**
+  Docker para ambientes isolados, CI/CD com GitHub Actions e Azure DevOps Pipelines, automação de processos com Python e Node.js, e integração com serviços externos (WhatsApp, e-mail, scraping).
 
 ---
 
