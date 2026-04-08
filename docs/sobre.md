@@ -1,32 +1,45 @@
 ## Sobre Mim
 
-- Desenvolvedor back-end na **Mega Júnior (UFMS)**, atuando em projetos reais com foco em APIs RESTful.
+- Desenvolvedor Back-End Pleno na **Corelab**, atuando em múltiplos produtos simultâneos com foco em APIs, integrações e sistemas multiempresa.
 - Pós-graduado em **Arquitetura de Software**, com conhecimento aplicado em **Clean Architecture**, **SOLID** e padrões de projeto.
-- Experiência com **Docker** para criação de ambientes isolados e deploy de aplicações.
-- Práticas de versionamento utilizando **Git e Gitflow**, garantindo organização e colaboração em equipe.
-- Interesse e evolução em **CI/CD com Azure DevOps Pipelines**.
+- Experiência com **Node.js, TypeScript, AdonisJS, PostgreSQL, Sequelize** e ecossistema de desenvolvimento back-end moderno.
+- Experiência com **Docker**, **GitHub Actions** e práticas de CI/CD para ambientes consistentes e entregas automatizadas.
+- Versionamento com **Git e Gitflow**, garantindo organização e colaboração em equipe via code review e PRs.
+- Construção de ferramentas próprias: extensões Chrome, apps desktop com Tauri + Rust e automações diversas.
 - Foco em projetos desafiadores que exigem lógica de negócio, organização de sistemas e automação de processos.
-- Sempre buscando aplicar tecnologia de forma simples, eficiente e com propósito.
 
 ## Minha Jornada
-- Início aos 13 anos: Primeiro contato com programação ao configurar servidores de jogos online, aprendendo na prática Java e administração de sistemas — onde tudo começou com curiosidade e vontade de entender como as coisas funcionam.
 
-- Formação em Tecnoligia da informção: Aperfeiçando conhecimentos em programação, arquitetura e metodologias ágeis, consolidando bases técnicas e visão sistêmica.
+- **Início aos 13 anos:** Primeiro contato com programação ao configurar servidores de jogos online, aprendendo na prática Java e administração de sistemas — onde tudo começou com curiosidade e vontade de entender como as coisas funcionam.
 
-- Mega Júnior (UFMS): Atuo como lider técnico e desenvolvedor back-end em projetos reais, focado em APIs RESTful, aplicando conceitos de arquitetura limpa e boas práticas.
+- **Formação em Tecnologia da Informação:** Aperfeiçoando conhecimentos em programação, arquitetura e metodologias ágeis, consolidando bases técnicas e visão sistêmica.
 
-- Pós-graduação em Arquitetura de Software: Aprofundei minha compreensão em design de sistemas, Clean Architecture e padrões que tornam o código sustentável e fácil de manter.
+- **Mega Júnior (UFMS) — Jun/2025 a Jan/2026:** Atuei como Tech Lead e desenvolvedor back-end na refatoração completa da API do projeto Dipemax, aplicando Clean Architecture, Node.js, TypeScript, JWT e Swagger.
 
-**Atualmente**: Busco evoluir em CI/CD, Azure DevOps e outras ferramentas que aumentam a qualidade e agilidade na entrega de software, além de desafios que envolvam lógica de negócio e automação.
+- **Pós-Graduação em Arquitetura de Software:** Aprofundei minha compreensão em design de sistemas, Clean Architecture e padrões que tornam o código sustentável e fácil de manter.
 
-## Certificações e Cursos
+- **Corelab — Set/2025 até o momento:** Atuo como Desenvolvedor Back-End Pleno em 4 produtos simultâneos, com responsabilidade sobre APIs, integrações mobile, segurança e qualidade de entrega em ambiente de startup.
 
-- Tecnologia da Informação (Jan/2025 - Jan/2027)
-- Pós-Graduação Arquitetura de software (Jul/2025)
-- Arquitetura e Urbanismo (Ago/2018)
+**Atualmente:** Evoluo em Rust/Tauri para desenvolvimento desktop, aprofundo práticas de segurança em APIs (RBAC, CSRF, rate limit) e continuo construindo ferramentas próprias que resolvem problemas reais do dia a dia.
 
-## Cursos livre
-- Scientific Computing with Python - freeCodeCamp (300h)
-- Legacy JavaScript Algorithms and Data Structures - freeCodeCamp (300h)
-- Microsoft power BI Para Business Intelligence e Data Science - Data Science Academy (72h)
-- Git e GitHub - Curso em Vídeo (50h)
+## Formação Acadêmica
+
+- **Superior em Tecnologia da Informação** – UFMS (Jan/2025 – até o momento)
+- **Inglês Básico Nível II** – IFMS, Formação Inicial e Continuada (Mar/2026 – até o momento)
+- **Desenvolvimento de Aplicações .NET** – Educaminas EAD (Jan/2025 – Nov/2025)
+- **Pós-Graduação em Arquitetura de Software** – Educaminas EAD (Jan/2025 – Jul/2025)
+- **Pós-Graduação em Gerenciamento e Desenvolvimento de Projetos em BIM** – Faculdade de Minas (Set/2023 – Jul/2024)
+- **Bacharelado em Arquitetura e Urbanismo** – Uniderp (Jun/2013 – Jun/2018)
+
+## Cursos Livres
+
+- Relational Database – freeCodeCamp (Out/2025)
+- Scientific Computing with Python – freeCodeCamp (Mar/2024)
+- Legacy JavaScript Algorithms and Data Structures – freeCodeCamp (Fev/2024)
+- Microsoft Power BI para Business Intelligence e Data Science – Data Science Academy (Jan/2024)
+- Git e GitHub – Curso em Vídeo (Dez/2023)
+- Python 3 – Mundo 3 – Curso em Vídeo (Nov/2023)
+- Eletrônica Analógica e Eletrônica de Potência – Nubbi (Set/2020)
+- Curso Técnico de Informática – Prime Cursos do Brasil (Set/2017)
+- Operador de Micro e Computação Gráfica – Mega Center Consultoria (Jan/2011)
+- Programa Nacional de Informática – Gledições Promoções e Assessoria (Set/2005)

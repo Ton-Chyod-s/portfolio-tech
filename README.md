@@ -27,17 +27,23 @@ Especialista em automação de processos e desenvolvimento de APIs escaláveis.
 
 ## Projetos em Destaque
 
-- [**api-scraper-mailer**](https://github.com/Ton-Chyod-s/api-scraper-mailer)  
-  API Node.js para scraping de dados e envio automatizado de relatórios por e-mail.
+- [**SYT Playlist Downloader**](https://github.com/Ton-Chyod-s/syt-playlist-downloader)
+  App desktop multiplataforma para download de playlists do YouTube e Spotify, construído com Tauri + React + TypeScript + Rust.
 
-- [**GitHub Follower Manager**](https://github.com/Ton-Chyod-s/git-hub-follower-manager)  
-  Ferramenta de gerenciamento de seguidores usando a API do GitHub.
+- [**node-api-starter-typescript**](https://github.com/Ton-Chyod-s/node-api-starter-typescript)
+  Boilerplate profissional para APIs Node.js com Clean Architecture, JWT, CSRF, rate limit, Helmet, OpenAPI, Jest e Docker.
 
-- [**Análise de Dados Públicos**](https://github.com/Ton-Chyod-s/Analise-de-dados)  
-  Scripts em Python para análise e visualização de dados.
+- [**nexo-task-api**](https://github.com/Ton-Chyod-s/nexo-task-api)
+  Sistema completo de gerenciamento de tarefas (Full Stack) com Node.js, TypeScript, Prisma, JWT, Docker e CI/CD via GitHub Actions.
 
-- [**nexo-task-api**](https://github.com/Ton-Chyod-s/nexo-task-api)  
-  API para gerenciamento de tarefas com autenticação JWT, desenvolvida em Node.js e estruturada para fácil manutenção e escalabilidade.
+- [**api-scraper-mailer**](https://github.com/Ton-Chyod-s/api-scraper-mailer)
+  API de scraping em TypeScript com envio automatizado de relatórios por e-mail. Em produção com usuários ativos.
+
+- [**api-precatory-creditor**](https://github.com/Chyod-s/api-precatory-creditor)
+  Sistema de gerenciamento de precatórios e credores com Python, Flask, Clean Architecture, JWT e Docker.
+
+- [**public-records-api**](https://github.com/Ton-Chyod-s/public-records-api)
+  API RESTful em C# (.NET 9) para consulta de registros públicos e diários oficiais, com autenticação e integração com banco serverless.
 
 ---
 

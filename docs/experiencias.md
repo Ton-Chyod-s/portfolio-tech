@@ -17,6 +17,46 @@
 
 ---
 
+## Desenvolvedor Back-End Pleno – Corelab
+*Set/2025 – até o momento*
+**Startup** · Node.js · AdonisJS · React Native · MVC
+
+Atuação full-cycle em 4 produtos simultâneos. Responsável por back-end, integrações e suporte ao mobile em ambiente multiempresa.
+
+**Principais entregas:**
+- Desenvolvimento e manutenção de APIs e regras de negócio em Node.js e PostgreSQL, com foco em cenários multiempresa e consistência de dados por vínculo.
+- Correção de bugs e ajustes de comportamento entre web e mobile (ex.: troca de empresa, atualização de carrinho, cache por empresa, seleção de EPIs e validações de fluxo).
+- Validação contínua em STG, reproduzindo cenários, corrigindo regressões e refinando separação de responsabilidades a partir de review.
+- Implementação e evolução de rotina de seeds para população inicial do banco, incluindo ajustes em seeds existentes e inclusão de tabelas essenciais para execução local.
+- Melhoria de documentação e onboarding: README dos projetos e organização de docs (incluindo servidor de documentação para leitura e padronização interna).
+- Entregas frequentes via PR, com revisão, testes e ajustes até estabilização.
+
+**Projetos:**
+
+*EPCT – Epicont (Sistema de Gestão de EPIs)*
+- Arquitetura multiempresa: entregador, vínculos, roles e fluxo de seleção de EPIs por empresa.
+- Geração de fichas de entrega consolidadas em PDF, com dados de colaborador, CPF, matrícula e empresa.
+- Relatórios gerais de EPI com filtros por período e centro de custo.
+- Correção de instabilidade crítica: centralização do Sequelize, configuração de pool/timeouts e refactoring.
+- Migração de envios de SMS para WhatsApp; integração com expo-network para captura de IP do dispositivo.
+- Seeds para população inicial do banco e triggers para criação de perfil automático no AppUser.
+
+*RC – Plataforma de Crédito para Revendas*
+- Desenvolvimento do dashboard administrativo e módulo de cadastro de simuladores com herança de taxas.
+- Implementação de RBAC (controle de acesso por papéis) e revisão de segurança em protected routes e tokens.
+- Fluxo de onboarding de revendas: botão de solicitação de acesso, badge de estágio e reprovação.
+- Correções de autenticação: relogin após redefinição de senha, recuperação de senha em STG e validação de CPF/CNPJ.
+- Integração de WhatsApp para recuperação de acesso.
+
+*SAP – Plataforma de Testes Clínicos*
+- Upload e gestão de imagens de banner e plataforma com suporte a URLs assinadas.
+- Validação de duplicidade no cadastro de pacientes; cadastro direto no fluxo de criação de teste.
+- Filtragem de testes inativos na visão do profissional e correções de navegação no menu lateral.
+
+*AKGP – Plataforma Esportiva*
+- Telas de clube, modalidades e gestão de partidas.
+- Tela de carreira do jogador.
+
 ## Desenvolvedor de Sistemas I – NextMed Tecnologia  
 *Set/2024 – Jan/2025 (5 meses)*  
 - Desenvolvimento de endpoints e módulo BackOffice usando C# e .NET Core com Entity Framework para comunicação com banco de dados.  
@@ -51,8 +91,8 @@
 
 ## Trabalhos Voluntários
 
-### Líder Técnico (Tech Lead) – Mega Júnior (UFMS)  
-*Jun/2025 – até o momento (3 meses)*  
+### Líder Técnico (Tech Lead) – Mega Júnior (UFMS)
+*Jun/2025 – Jan/2026 (7 meses)*  
 - Liderança técnica e desenvolvimento back-end na refatoração completa da API do projeto Dipemax.  
 - Implementação de boas práticas de arquitetura de software (3 camadas), Node.js e TypeScript.  
 - Aplicação de padrões de projeto, JWT e Cookie para autenticação, Swagger para documentação da API.  

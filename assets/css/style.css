@@ -4,8 +4,8 @@ body {
 
     .sidebar {
       font-size: 16px;
-      width: 250px; 
-      box-sizing: border-box; 
+      width: 250px;
+      box-sizing: border-box;
     }
 
     .sidebar-nav {
@@ -39,4 +39,78 @@ body {
       color: #0E76A8;
     }
 
-   
+/* ===== Página de Contato ===== */
+.contact-wrapper {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.contact-form-container {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-links {
+  min-width: 200px;
+}
+
+.contact-links p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #42b983;
+  box-shadow: 0 0 0 3px rgba(66, 185, 131, 0.15);
+}
+
+.btn-submit {
+  background-color: #42b983;
+  color: #fff;
+  border: none;
+  padding: 11px 28px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.btn-submit:hover {
+  background-color: #369e6e;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+}

@@ -7,3 +7,5 @@
 - [**Projetos**](docs/projetos.md)
 
 - [**Contato**](docs/contato.md)
+
+- [**Ajuda**](docs/ajuda.md)
