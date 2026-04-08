@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title>Portfólio - Klayton</title>
+  <title>Portfolio - Klayton</title>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
   <link rel="icon" type="image/x-icon" href="assets/ico/favicon.ico" />
   <link href="assets/css/style.css" rel="stylesheet" />
@@ -20,11 +20,16 @@
   <!-- Botão de alternar modo escuro/claro -->
   <button class="dark-toggle-btn" id="darkToggleBtn" title="Alternar modo escuro/claro">🌙</button>
 
+  <!-- Botão de alternar idioma -->
+  <button class="lang-toggle-btn" id="langToggleBtn" title="Switch language">EN</button>
+
   <script>
+    var portfolioLang = localStorage.getItem('portfolioLang') || 'pt';
+
     window.$docsify = {
-      name: 'Portfólio',
+      name: portfolioLang === 'en' ? 'Portfolio' : 'Portfólio',
       repo: 'https://github.com/Ton-Chyod-s/portfolio-tech',
-      loadSidebar: true,
+      loadSidebar: portfolioLang === 'en' ? '_sidebar_en.md' : '_sidebar.md',
       subMaxLevel: 2,
       themeColor: '#42b983'
     }
@@ -33,6 +38,7 @@
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 
   <script>
+    // Dark mode
     (function () {
       var btn = document.getElementById('darkToggleBtn');
       var isDark = localStorage.getItem('portfolioDarkMode') === 'true';
@@ -50,6 +56,48 @@
         applyDarkMode(isDark);
         btn.addEventListener('click', function () {
           applyDarkMode(!isDark);
+        });
+      });
+    })();
+
+    // Language switch
+    (function () {
+      var langBtn = document.getElementById('langToggleBtn');
+
+      var pageMapToEn = {
+        'docs/sobre': 'docs/en/about',
+        'docs/experiencias': 'docs/en/experiences',
+        'docs/tecnologias': 'docs/en/technologies',
+        'docs/projetos': 'docs/en/projects',
+        'docs/contato': 'docs/en/contact',
+        'docs/ajuda': 'docs/en/help'
+      };
+      var pageMapToPt = {
+        'docs/en/about': 'docs/sobre',
+        'docs/en/experiences': 'docs/experiencias',
+        'docs/en/technologies': 'docs/tecnologias',
+        'docs/en/projects': 'docs/projetos',
+        'docs/en/contact': 'docs/contato',
+        'docs/en/help': 'docs/ajuda'
+      };
+
+      function updateLangBtn() {
+        langBtn.textContent = portfolioLang === 'pt' ? 'EN' : 'PT';
+        langBtn.title = portfolioLang === 'pt' ? 'Switch to English' : 'Mudar para Português';
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        updateLangBtn();
+        langBtn.addEventListener('click', function () {
+          var newLang = portfolioLang === 'pt' ? 'en' : 'pt';
+          localStorage.setItem('portfolioLang', newLang);
+
+          var hash = window.location.hash.replace(/^#\//, '').replace(/\/$/, '');
+          var map = newLang === 'en' ? pageMapToEn : pageMapToPt;
+          var targetPage = map[hash] || (newLang === 'en' ? 'docs/en/about' : 'docs/sobre');
+
+          window.location.hash = '/' + targetPage;
+          window.location.reload();
         });
       });
     })();
