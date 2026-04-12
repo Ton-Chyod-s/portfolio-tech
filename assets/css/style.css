@@ -363,3 +363,35 @@ body.dark-mode .contact-links p,
 body.dark-mode .contact-links a {
   color: #cdd6f4 !important;
 }
+
+/* ===== Contador de Visitas (hits.sh) ===== */
+.visit-counter {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  max-width: 150px;
+  height: auto;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 2px 4px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+  display: block;
+  backdrop-filter: blur(8px);
+}
+
+.visit-counter:hover {
+  transform: translateX(-50%) scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+body.dark-mode .visit-counter {
+  background: rgba(30, 30, 46, 0.7);
+}
+
+body.dark-mode .visit-counter:hover {
+  background: rgba(30, 30, 46, 0.85);
+}
