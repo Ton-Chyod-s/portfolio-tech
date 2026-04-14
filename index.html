@@ -52,7 +52,13 @@
       repo: 'https://github.com/Ton-Chyod-s/portfolio-tech',
       loadSidebar: portfolioLang === 'en' ? '_sidebar_en.md' : '_sidebar.md',
       subMaxLevel: 2,
-      themeColor: '#42b983'
+      themeColor: '#42b983',
+      alias: {
+        '/docs/.*/_sidebar.md': '/_sidebar.md',
+        '/docs/_sidebar.md': '/_sidebar.md',
+        '/docs/en/.*/_sidebar.md': '/_sidebar_en.md',
+        '/docs/en/_sidebar.md': '/_sidebar_en.md'
+      }
     }
   </script>
 
