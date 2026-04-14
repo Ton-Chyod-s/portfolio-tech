@@ -10,14 +10,14 @@
   Implementação de autenticação JWT, cookies com CSRF, controle de acesso por papéis (RBAC), rate limiting, Helmet e revisão de segurança em rotas protegidas e tokens.
 
 - **Arquitetura e Qualidade de Código**
-  Aplicação de Clean Architecture (3 camadas), SOLID, MVC e padrões de projeto. Code review via PRs, testes, documentação com Swagger/OpenAPI e onboarding de novos desenvolvedores.
+  Aplicação de Clean Architecture, SOLID, MVC e padrões de projeto. Code review via PRs, testes, documentação com Swagger/OpenAPI e onboarding de novos desenvolvedores.
 
 - **Infraestrutura e Automação**
   Docker para ambientes isolados, CI/CD com GitHub Actions e Azure DevOps Pipelines, automação de processos com Python e Node.js, e integração com serviços externos (WhatsApp, e-mail, scraping).
 
 ---
 
-## Desenvolvedor Back-End Pleno – Corelab
+## Desenvolvedor Full Stack Pleno – Corelab
 *Set/2025 – até o momento*
 **Startup** · Node.js · AdonisJS · React Native · MVC
 

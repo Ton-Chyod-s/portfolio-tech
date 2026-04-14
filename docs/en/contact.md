@@ -1,5 +1,10 @@
 # Contact
 
+<div style="background: linear-gradient(135deg, #42b98320, #0E76A820); border-radius: 12px; padding: 20px 24px; margin-bottom: 24px; border-left: 4px solid #42b983;">
+  <p style="margin: 0; font-size: 16px; font-weight: 600;">Open to new opportunities!</p>
+  <p style="margin: 8px 0 0 0; font-size: 14px;">I'm available for job offers, freelance work, or collaborations on challenging projects. Let's talk?</p>
+</div>
+
 Fill out the form below or reach out directly through the available channels.
 
 ---

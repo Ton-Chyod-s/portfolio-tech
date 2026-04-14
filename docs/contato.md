@@ -1,5 +1,10 @@
 # Contato
 
+<div style="background: linear-gradient(135deg, #42b98320, #0E76A820); border-radius: 12px; padding: 20px 24px; margin-bottom: 24px; border-left: 4px solid #42b983;">
+  <p style="margin: 0; font-size: 16px; font-weight: 600;">Aberto a novas oportunidades!</p>
+  <p style="margin: 8px 0 0 0; font-size: 14px;">Estou disponível para propostas de trabalho, freelance ou colaborações em projetos desafiadores. </p>
+</div>
+
 Preencha o formulário abaixo ou entre em contato diretamente pelos canais disponíveis.
 
 ---

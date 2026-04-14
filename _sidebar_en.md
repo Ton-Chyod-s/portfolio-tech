@@ -8,4 +8,4 @@
 
 - [**Contact**](docs/en/contact.md)
 
-- [**Help**](docs/en/help.md)
+<!-- - [**Help**](docs/en/help.md) -->

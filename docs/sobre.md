@@ -1,12 +1,37 @@
+<div style="display: flex; align-items: center; gap: 24px; flex-wrap: wrap; margin-bottom: 16px;">
+  <img src="https://github.com/Ton-Chyod-s.png" alt="Klayton Dias" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.15);" />
+  <div>
+    <h2 style="margin: 0 0 8px 0;">Klayton Dias</h2>
+    <p style="margin: 0; font-size: 16px; color: #666;">Desenvolvedor Back-End Pleno</p>
+    <p style="margin: 8px 0 0 0;">
+      <a href="https://linkedin.com/in/ton-chyod-s" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+      <a href="https://github.com/Ton-Chyod-s" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub" /></a>
+      <a href="mailto:klayton.dias@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white" alt="Email" /></a>
+    </p>
+  </div>
+</div>
+
 ## Sobre Mim
 
-- Desenvolvedor Back-End Pleno na **Corelab**, atuando em múltiplos produtos simultâneos com foco em APIs, integrações e sistemas multiempresa.
+- Desenvolvedor Full Stack Pleno na **Corelab**, atuando em múltiplos produtos simultâneos com foco em APIs, integrações e sistemas multiempresa.
 - Pós-graduado em **Arquitetura de Software**, com conhecimento aplicado em **Clean Architecture**, **SOLID** e padrões de projeto.
 - Experiência com **Node.js, TypeScript, AdonisJS, PostgreSQL, Sequelize** e ecossistema de desenvolvimento back-end moderno.
 - Experiência com **Docker**, **GitHub Actions** e práticas de CI/CD para ambientes consistentes e entregas automatizadas.
 - Versionamento com **Git e Gitflow**, garantindo organização e colaboração em equipe via code review e PRs.
 - Construção de ferramentas próprias: extensões Chrome, apps desktop com Tauri + Rust e automações diversas.
 - Foco em projetos desafiadores que exigem lógica de negócio, organização de sistemas e automação de processos.
+
+### Stack Principal
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white)
+![C%23](https://img.shields.io/badge/C%23-512BD4?logo=csharp&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
 
 ## Minha Jornada
 
@@ -18,9 +43,9 @@
 
 - **Pós-Graduação em Arquitetura de Software:** Aprofundei minha compreensão em design de sistemas, Clean Architecture e padrões que tornam o código sustentável e fácil de manter.
 
-- **Corelab — Set/2025 até o momento:** Atuo como Desenvolvedor Back-End Pleno em 4 produtos simultâneos, com responsabilidade sobre APIs, integrações mobile, segurança e qualidade de entrega em ambiente de startup.
+- **Corelab — Set/2025 até o momento:** Atuo como Desenvolvedor Full Stack Pleno em 4 produtos simultâneos, com responsabilidade sobre APIs, integrações mobile, segurança e qualidade de entrega em ambiente de startup.
 
-**Atualmente:** Evoluo em Rust/Tauri para desenvolvimento desktop, aprofundo práticas de segurança em APIs (RBAC, CSRF, rate limit) e continuo construindo ferramentas próprias que resolvem problemas reais do dia a dia.
+**Atualmente:** Evoluindo em Rust/Tauri para desenvolvimento desktop, aprofundo práticas de segurança em APIs (RBAC, CSRF, rate limit) e continuo construindo ferramentas próprias que resolvem problemas reais do dia a dia.
 
 ## Formação Acadêmica
 

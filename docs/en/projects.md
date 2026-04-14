@@ -10,7 +10,10 @@ Chrome extension that automatically captures the full page of each URL visited d
 - Local storage of captures during the session
 - Popup interface for viewing and managing captures
 
-**Technologies:** JavaScript, HTML, CSS, Chrome Extension API (Manifest V3), debugger API
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![Chrome](https://img.shields.io/badge/Chrome_Extension-4285F4?logo=googlechrome&logoColor=white)
 
 ---
 
@@ -24,7 +27,11 @@ Cross-platform desktop app for downloading YouTube and Spotify playlists, built 
 - Original Mode: best available quality (4K, VP9, AV1), for individual videos or entire playlists
 - Spotify Mode: searches tracks on YouTube Music and downloads as high-quality MP3
 
-**Technologies:** Tauri, React, TypeScript, Rust
+![Tauri](https://img.shields.io/badge/Tauri-24C8D8?logo=tauri&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white)
+
 **Repository:** [github.com/Ton-Chyod-s/syt-playlist-downloader](https://github.com/Ton-Chyod-s/syt-playlist-downloader)
 
 ---
@@ -41,7 +48,13 @@ Base codebase for new Web and Mobile/CLI projects, with all infrastructure ready
 - Documentation with Docsify and OpenAPI validation
 - Quality pipeline: ESLint, Prettier, Jest
 
-**Technologies:** Node.js, TypeScript, Express, Prisma, PostgreSQL, Docker
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+
 **Repository:** [github.com/Ton-Chyod-s/node-api-starter-typescript](https://github.com/Ton-Chyod-s/node-api-starter-typescript)
 
 ---
@@ -58,7 +71,11 @@ API with integrated frontend for managing precatories, creditors, certificates, 
 - Responsive frontend with Tailwind CSS and Jinja2
 - Schema versioning with Alembic
 
-**Technologies:** Python, Flask, SQLAlchemy, Alembic, JWT, Tailwind CSS, Docker
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+
 **Repository:** [github.com/Chyod-s/api-precatory-creditor](https://github.com/Chyod-s/api-precatory-creditor)
 
 ---
@@ -68,7 +85,10 @@ API with integrated frontend for managing precatories, creditors, certificates, 
 
 Web application for analyzing public ANAC data focused on GOL flights, with custom filters and interactive charts.
 
-**Technologies:** Python, Flask, Docker
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+
 **Repository:** [github.com/Chyod-s/flask-anac-dashboard](https://github.com/Chyod-s/flask-anac-dashboard)
 
 ---
@@ -85,6 +105,13 @@ Complete task management application, with backend in Node.js (TypeScript, Prism
 - Responsive and intuitive interface
 - Standardized environment with Docker and CI/CD via GitHub Actions
 
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+
 **Repository:** [github.com/Ton-Chyod-s/nexo-task-api](https://github.com/Ton-Chyod-s/nexo-task-api)
 
 ---
@@ -94,7 +121,10 @@ Complete task management application, with backend in Node.js (TypeScript, Prism
 
 RESTful API in C# using Entity Framework and serverless database (NEON) to simulate application backend. Features include user registration, validation and deletion, public API integration (DOE/DIOGRANDE), optimized data saving, documentation and testing with Swagger.
 
-**Technologies:** C#, Entity Framework, Swagger, Serverless Database (NEON)
+![C#](https://img.shields.io/badge/C%23-512BD4?logo=csharp&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=white)
+![Swagger](https://img.shields.io/badge/Swagger-85EA2D?logo=swagger&logoColor=black)
+
 **Repository:** [github.com/Ton-Chyod-s/public-records-api](https://github.com/Ton-Chyod-s/public-records-api)
 
 ---
@@ -110,6 +140,9 @@ Project for searching and aggregating analytical data using Python and Flask. Ar
 - Swagger (documentation)
 - Platform/request (external call adaptation)
 
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white)
+
 **Repository:** [github.com/Chyod-s/python-application-stract](https://github.com/Chyod-s/python-application-stract)
 
 ---
@@ -124,6 +157,9 @@ Web application for SQLite database control and management with a graphical inte
 - Dynamically generated SQL command execution
 - User-friendly interface for technical and non-technical users
 
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white)
+
 **Repository:** [github.com/Ton-Chyod-s/myControl](https://github.com/Ton-Chyod-s/myControl)
 **Site:** [ton-chyod-s.github.io/myControl](https://ton-chyod-s.github.io/myControl/)
 
@@ -133,6 +169,9 @@ Web application for SQLite database control and management with a graphical inte
 *Aug 2023 – Jul 2024*
 
 Python automation for processing Excel spreadsheets and generating files integrable with Power BI dashboards, including cleaning, standardization, and financial metric calculation (P&L).
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?logo=powerbi&logoColor=black)
 
 **Main scripts:**
 - tratamentov2.py (database for P&L Dashboard)
@@ -144,6 +183,9 @@ Python automation for processing Excel spreadsheets and generating files integra
 *May 2024 – Jun 2024*
 
 Web scraping API using Axios and Cheerio to capture reviews from the Elo7 website across multiple pages. Integration with HTML/CSS/JS frontend that loads reviews via fetch. Scalable architecture for adding stores and features.
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
 ---
 
@@ -158,6 +200,9 @@ Node.js web scraping application with axios, cheerio, puppeteer, and nodemailer 
 - Automatic report sending via email
 - Simple interface and configurable scripts
 
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![Puppeteer](https://img.shields.io/badge/Puppeteer-40B5A4?logo=puppeteer&logoColor=white)
+
 **Repository:** [github.com/Ton-Chyod-s/api-scraper-mailer](https://github.com/Ton-Chyod-s/api-scraper-mailer)
 **Status:** In production with 5 users
 
@@ -168,5 +213,7 @@ Node.js web scraping application with axios, cheerio, puppeteer, and nodemailer 
 
 Tool for monitoring GitHub followers and maintaining a reciprocal follower network, strengthening connections and facilitating follower maintenance.
 
-**Technologies:** Node.js, Cheerio, Axios
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+
 **Repository:** [github.com/Ton-Chyod-s/git-hub-follower-manager](https://github.com/Ton-Chyod-s/git-hub-follower-manager)

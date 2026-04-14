@@ -120,6 +120,33 @@ body {
   .contact-wrapper {
     flex-direction: column;
   }
+
+  .visit-counter {
+    bottom: 8px;
+    max-width: 120px;
+    left: 12px;
+    transform: none;
+  }
+
+  .visit-counter:hover {
+    transform: scale(1.05);
+  }
+
+  .dark-toggle-btn,
+  .lang-toggle-btn {
+    width: 42px;
+    height: 42px;
+  }
+
+  .dark-toggle-btn {
+    bottom: 16px;
+    right: 16px;
+  }
+
+  .lang-toggle-btn {
+    bottom: 68px;
+    right: 16px;
+  }
 }
 
 /* ===== Botão de Idioma ===== */
