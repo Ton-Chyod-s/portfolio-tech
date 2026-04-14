@@ -9,7 +9,7 @@ Especialista em automação de processos e desenvolvimento de APIs escaláveis.
 [![GitHub](https://img.shields.io/badge/GitHub-000?style=flat&logo=github)](https://github.com/Ton-Chyod-s)
 
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
+<!-- <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
   <img alt="Python" title="Python" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
   <img alt="NodeJS" title="NodeJS" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg">
   <img alt="C#" title="C Sharp" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg">
@@ -21,7 +21,7 @@ Especialista em automação de processos e desenvolvimento de APIs escaláveis.
   <img alt="Docker" title="Docker" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg">
   <img alt="Git" title="Git" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg">
   <img alt="Azure DevOps" title="Azure DevOps" height="30" src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/icons/file_type_azurepipelines.svg">
-</div>
+</div> -->
 
 ---
 
