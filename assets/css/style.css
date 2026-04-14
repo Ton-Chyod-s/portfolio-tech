@@ -118,10 +118,8 @@ body {
 
 /* ===== RESPONSIVIDADE MOBILE ===== */
 
-/* Imagens não transbordam */
 .markdown-section img {
   max-width: 100%;
-  height: auto;
 }
 
 /* Badges (shields.io) — travados em 20px, nunca escalam */
