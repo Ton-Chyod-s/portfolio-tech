@@ -1,12 +1,12 @@
-<div style="display: flex; align-items: center; gap: 24px; flex-wrap: wrap; margin-bottom: 16px;">
+<div class="profile-card">
   <img src="https://github.com/Ton-Chyod-s.png" alt="Klayton Dias" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.15);" />
   <div>
     <h2 style="margin: 0 0 8px 0;">Klayton Dias</h2>
     <p style="margin: 0; font-size: 16px; color: #666;">Desenvolvedor Back-End Pleno</p>
-    <p style="margin: 8px 0 0 0;">
-      <a href="https://linkedin.com/in/ton-chyod-s" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-      <a href="https://github.com/Ton-Chyod-s" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub" /></a>
-      <a href="mailto:klayton.dias@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white" alt="Email" /></a>
+    <p style="margin: 8px 0 0 0; line-height: 2;">
+      <a href="https://linkedin.com/in/ton-chyod-s" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white" alt="LinkedIn" style="height:20px;width:auto;display:inline-block;vertical-align:middle;" /></a>
+      <a href="https://github.com/Ton-Chyod-s" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub" style="height:20px;width:auto;display:inline-block;vertical-align:middle;" /></a>
+      <a href="mailto:klayton.dias@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white" alt="Email" style="height:20px;width:auto;display:inline-block;vertical-align:middle;" /></a>
     </p>
   </div>
 </div>
@@ -23,15 +23,15 @@
 
 ### Stack Principal
 
-![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
-![Rust](https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white)
-![C%23](https://img.shields.io/badge/C%23-512BD4?logo=csharp&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
+<img src="https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white" height="20" alt="Node.js" />
+<img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" height="20" alt="TypeScript" />
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" height="20" alt="JavaScript" />
+<img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" height="20" alt="Python" />
+<img src="https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white" height="20" alt="Rust" />
+<img src="https://img.shields.io/badge/C%23-512BD4?logo=csharp&logoColor=white" height="20" alt="C#" />
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white" height="20" alt="PostgreSQL" />
+<img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white" height="20" alt="Docker" />
+<img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white" height="20" alt="Git" />
 
 ## Minha Jornada
 
