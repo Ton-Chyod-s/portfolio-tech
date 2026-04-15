@@ -35,25 +35,30 @@
 
 ## Minha Jornada
 
-- **Início aos 13 anos:** Primeiro contato com programação ao configurar servidores de jogos online, aprendendo na prática Java e administração de sistemas — onde tudo começou com curiosidade e vontade de entender como as coisas funcionam.
+- **Início aos 13 anos:** Primeiro contato com programação ao configurar servidores de jogos online, aprendendo na prática Java e administração de sistemas, onde tudo começou com curiosidade e vontade de entender como as coisas funcionam.
 
-- **Formação em Tecnologia da Informação:** Aperfeiçoando conhecimentos em programação, arquitetura e metodologias ágeis, consolidando bases técnicas e visão sistêmica.
+- **Estudos contínuos e projetos pessoais:** Nunca parei de estudar programação. Ao longo dos anos fui construindo projetos, explorando linguagens e acumulando fundamentos técnicos em paralelo com outras atividades.
 
-- **Mega Júnior (UFMS) — Jun/2025 a Jan/2026:** Atuei como Tech Lead e desenvolvedor back-end na refatoração completa da API do projeto Dipemax, aplicando Clean Architecture, Node.js, TypeScript, JWT e Swagger.
+- **Telemont (2021–2023):** Contratado pelo currículo técnico que já carregava. Lá desenvolvi um programa completo com Python utilizado por diversas pessoas do setor.
 
-- **Pós-Graduação em Arquitetura de Software:** Aprofundei minha compreensão em design de sistemas, Clean Architecture e padrões que tornam o código sustentável e fácil de manter.
+- **Perin Assessoria Contábil (2023–2024):** Primeiro contato com o mundo de dados e automação de processos em ambiente corporativo, onde vi de perto o impacto real que código bem feito tem no dia a dia de uma empresa.
 
-- **Corelab — Set/2025 até o momento:** Atuo como Desenvolvedor Full Stack Pleno em 4 produtos simultâneos, com responsabilidade sobre APIs, integrações mobile, segurança e qualidade de entrega em ambiente de startup.
+- **NextMed Tecnologia (2024):** Mergulhei no ecossistema .NET e C#, expandindo o repertório técnico além do que já dominava.
+
+- **Pós-Graduação em Arquitetura de Software (Jan/2025 – Jul/2025):** Aprofundei minha compreensão em design de sistemas, Clean Architecture e padrões que tornam o código sustentável e fácil de manter.
+
+- **Mega Júnior (UFMS) - Jun/2025 a Jan/2026:** Atuei como Tech Lead e desenvolvedor back-end na refatoração completa da API do projeto Dipemax, aplicando Clean Architecture, Node.js, TypeScript, JWT e Swagger.
+
+- **Corelab - Set/2025 até o momento:** Atuo como Desenvolvedor Full Stack Pleno em 4 produtos simultâneos, com responsabilidade sobre APIs, integrações mobile, segurança e qualidade de entrega em ambiente de startup.
 
 **Atualmente:** Evoluindo em Rust/Tauri para desenvolvimento desktop, aprofundo práticas de segurança em APIs (RBAC, CSRF, rate limit) e continuo construindo ferramentas próprias que resolvem problemas reais do dia a dia.
 
 ## Formação Acadêmica
 
-- **Superior em Tecnologia da Informação** – UFMS (Jan/2025 – até o momento)
-- **Inglês Básico Nível II** – IFMS, Formação Inicial e Continuada (Mar/2026 – até o momento)
+- **Superior em Tecnologia da Informação** – UFMS (Jan/2025 – em andamento)
+- **Inglês Básico Nível II** – IFMS, Formação Inicial e Continuada (Mar/2026 – em andamento)
 - **Desenvolvimento de Aplicações .NET** – Educaminas EAD (Jan/2025 – Nov/2025)
 - **Pós-Graduação em Arquitetura de Software** – Educaminas EAD (Jan/2025 – Jul/2025)
-- **Pós-Graduação em Gerenciamento e Desenvolvimento de Projetos em BIM** – Faculdade de Minas (Set/2023 – Jul/2024)
 - **Bacharelado em Arquitetura e Urbanismo** – Uniderp (Jun/2013 – Jun/2018)
 
 ## Cursos Livres

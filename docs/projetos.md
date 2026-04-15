@@ -153,10 +153,10 @@ Projeto para busca e agregação de dados analíticos usando Python e Flask. Arq
 
 Aplicação web para controle e gerenciamento de banco de dados SQLite com interface gráfica para criação e manipulação de tabelas e colunas, gerando comandos SQL automaticamente.
 
-**Funcionalidades em desenvolvimento:**
+**Funcionalidades:**
 - Manipulação de tabelas e colunas (adicionar, atualizar, excluir)
 - Execução de comandos SQL gerados dinamicamente
-- Interface amigável para usuários técnicos e não técnicos
+- Interface acessível para usuários técnicos e não técnicos
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white)

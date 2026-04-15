@@ -57,24 +57,24 @@ Atuação full-cycle em 4 produtos simultâneos. Responsável por back-end, inte
 - Telas de clube, modalidades e gestão de partidas.
 - Tela de carreira do jogador.
 
-## Desenvolvedor de Sistemas I – NextMed Tecnologia  
-*Set/2024 – Jan/2025 (5 meses)*  
-- Desenvolvimento de endpoints e módulo BackOffice usando C# e .NET Core com Entity Framework para comunicação com banco de dados.  
-- Participação no planejamento e execução de sprints via Azure DevOps, garantindo integração eficiente entre sistemas.  
+## Desenvolvedor de Sistemas I – NextMed Tecnologia
+*Set/2024 – Jan/2025 (5 meses · contrato por projeto)*
+- Desenvolvimento de endpoints e módulo BackOffice usando C# e .NET Core com Entity Framework para comunicação com banco de dados.
+- Participação no planejamento e execução de sprints via Azure DevOps, garantindo integração eficiente entre sistemas.
 - Aplicação de boas práticas de segurança, desempenho e arquitetura, resultando em código organizado, escalável e de fácil manutenção.
 
-## Analista de Desenvolvimento de Sistemas – Perin Assessoria Contábil  
-*Jun/2023 – Jul/2024 (1 ano e 1 mês)*  
-- Automatização da análise de 43 planilhas Excel, reduzindo erros e aumentando a eficiência.  
-- Desenvolvimento de ETL com Python para coleta, transformação e carga dos dados.  
-- Criação de dashboard interativo no Power BI com DAX, fornecendo insights em tempo real para tomada de decisões ágeis.
+## Analista de Desenvolvimento de Sistemas – Perin Assessoria Contábil
+*Jun/2023 – Jul/2024 (1 ano e 1 mês)*
+- Automatização da análise de 43 planilhas Excel, eliminando processo manual de ~3h/semana e reduzindo erros de consolidação a zero.
+- Desenvolvimento de pipeline ETL com Python para coleta, transformação e carga dos dados contábeis.
+- Criação de dashboard interativo no Power BI com DAX, fornecendo indicadores financeiros (DRE) em tempo real para tomada de decisões ágeis.
 
-## Auxiliar Técnico em Projetos I e II – Telemont  
-*Jan/2021 – Jun/2023 (2 anos e 6 meses)*  
-- Atualização constante dos bancos de dados internos para projetos de fibra óptica.  
-- Desenvolvimento de scripts em Python com Selenium e pandas para automação e processamento de dados.  
-- Criação de interface com PySimpleGUI para geração de APK facilitando o controle das atualizações.  
-- Automação que acelerou processos, reduziu erros e melhorou a eficiência operacional.
+## Auxiliar Técnico em Projetos I e II – Telemont
+*Jan/2021 – Jun/2023 (2 anos e 6 meses)*
+- Contratado com base no currículo técnico — habilidades de programação já presentes antes da entrada na empresa.
+- Desenvolvimento de programa desktop completo com Python e PySimpleGUI para geração e controle de APK, utilizado por diversas pessoas do setor.
+- Scripts de automação com Selenium e pandas para processamento de dados, reduzindo tempo de tarefas repetitivas em mais de 70%.
+- Atualização e manutenção de bancos de dados internos para projetos de fibra óptica em múltiplas regiões.
 
 ## Desenvolvedor – Autônomo  
 *Fev/2022 – Abr/2023 (1 ano e 2 meses)*  
