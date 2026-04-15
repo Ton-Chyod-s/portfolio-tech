@@ -33,6 +33,7 @@ Cross-platform desktop app for downloading YouTube and Spotify playlists, built 
 ![Rust](https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white)
 
 **Repository:** [github.com/Ton-Chyod-s/syt-playlist-downloader](https://github.com/Ton-Chyod-s/syt-playlist-downloader)
+**Download:** [Latest release](https://github.com/Ton-Chyod-s/syt-playlist-downloader/releases/latest)
 
 ---
 
@@ -186,6 +187,8 @@ Web scraping API using Axios and Cheerio to capture reviews from the Elo7 websit
 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+
+**Site:** [ton-chyod-s.github.io/av-card](https://ton-chyod-s.github.io/av-card/)
 
 ---
 
