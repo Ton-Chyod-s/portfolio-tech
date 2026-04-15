@@ -46,6 +46,14 @@ body {
   color: #0E76A8;
 }
 
+.sidebar-nav ul ul li > a::before {
+  content: "• ";
+}
+
+.sidebar-nav ul ul li::before {
+  content: none;
+}
+
 /* ===== Página de Contato ===== */
 .contact-wrapper {
   display: flex;
