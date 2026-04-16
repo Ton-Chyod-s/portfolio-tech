@@ -115,7 +115,7 @@ Aplicação completa para gestão de tarefas, com backend em Node.js (TypeScript
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 
 **Repositório:** [github.com/Ton-Chyod-s/nexo-task-api](https://github.com/Ton-Chyod-s/nexo-task-api)
-**Site:** [nexo-task-jzx119rx3-ton-chyod-s-projects.vercel.app](https://nexo-task-api.vercel.app/)
+**Site:** [https://nexo-task-api.vercel.app/](https://nexo-task-api.vercel.app/)
 
 ---
 
