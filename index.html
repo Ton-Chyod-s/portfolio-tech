@@ -50,7 +50,7 @@
           async src="//gc.zgo.at/count.js"></script>
   <script>
     fetch('https://tonchyods.goatcounter.com/counter/%2F.json')
-      .then(function(r) { return r.json(); })
+      .then(function(r) { return r.status === 404 ? { count: '0' } : r.json(); })
       .then(function(data) { document.getElementById('gcCount').textContent = data.count; })
       .catch(function() { document.getElementById('gcCount').textContent = '–'; });
   </script>
