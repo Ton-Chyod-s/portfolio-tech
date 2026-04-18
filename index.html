@@ -41,8 +41,19 @@
   <!-- Botão de alternar idioma -->
   <button class="lang-toggle-btn" id="langToggleBtn" title="Switch language">EN</button>
 
-  <!-- Contador de visitas com hits.sh -->
-  <img class="visit-counter" src="https://hits.sh/github.com/Ton-Chyod-s/portfolio-tech.svg?label=Visualiza%C3%A7%C3%B5es&color=42b983&labelColor=ffffff" alt="Visualizações" />
+  <!-- Contador de visitas com GoatCounter -->
+  <div class="visit-counter" id="visitCounter">
+    <span class="visit-counter-icon">👁</span>
+    <span id="gcCount">...</span>
+  </div>
+  <script data-goatcounter="https://tonchyods.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+  <script>
+    fetch('https://tonchyods.goatcounter.com/counter/%2F.json')
+      .then(function(r) { return r.json(); })
+      .then(function(data) { document.getElementById('gcCount').textContent = data.count; })
+      .catch(function() { document.getElementById('gcCount').textContent = '–'; });
+  </script>
 
   <script>
     var portfolioLang = localStorage.getItem('portfolioLang') || 'pt';
