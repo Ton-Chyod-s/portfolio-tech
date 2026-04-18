@@ -148,23 +148,6 @@ Project for searching and aggregating analytical data using Python and Flask. Ar
 
 ---
 
-## Web Application for Database Management
-*Jun 2024 – Oct 2024*
-
-Web application for SQLite database control and management with a graphical interface for creating and manipulating tables and columns, automatically generating SQL commands.
-
-**Features in development:**
-- Table and column manipulation (add, update, delete)
-- Dynamically generated SQL command execution
-- User-friendly interface for technical and non-technical users
-
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white)
-
-**Repository:** [github.com/Ton-Chyod-s/myControl](https://github.com/Ton-Chyod-s/myControl)
-**Site:** [ton-chyod-s.github.io/myControl](https://ton-chyod-s.github.io/myControl/)
-
----
 
 ## Data Analysis – Processing Automation for Dashboards
 *Aug 2023 – Jul 2024*

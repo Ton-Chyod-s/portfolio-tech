@@ -150,23 +150,6 @@ Projeto para busca e agregação de dados analíticos usando Python e Flask. Arq
 
 ---
 
-## Aplicação Web para Gerenciamento de Bancos de Dados
-*Jun 2024 – Out 2024*
-
-Aplicação web para controle e gerenciamento de banco de dados SQLite com interface gráfica para criação e manipulação de tabelas e colunas, gerando comandos SQL automaticamente.
-
-**Funcionalidades:**
-- Manipulação de tabelas e colunas (adicionar, atualizar, excluir)
-- Execução de comandos SQL gerados dinamicamente
-- Interface acessível para usuários técnicos e não técnicos
-
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white)
-
-**Repositório:** [github.com/Ton-Chyod-s/myControl](https://github.com/Ton-Chyod-s/myControl)
-**Site:** [ton-chyod-s.github.io/myControl](https://ton-chyod-s.github.io/myControl/)
-
----
 
 ## Análise de Dados – Automação de Processamento para Dashboards
 *Ago 2023 – Jul 2024*
