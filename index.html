@@ -41,18 +41,40 @@
   <!-- Botão de alternar idioma -->
   <button class="lang-toggle-btn" id="langToggleBtn" title="Switch language">EN</button>
 
-  <!-- Contador de visitas com GoatCounter -->
+  <!-- Contador de visitas -->
   <div class="visit-counter" id="visitCounter">
     <span class="visit-counter-icon">👁</span>
     <span id="gcCount">...</span>
   </div>
+
+  <!-- GoatCounter: analytics no dashboard -->
   <script data-goatcounter="https://tonchyods.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>
+
+  <!-- Contador próprio: sessão + sem bloqueio de ad blocker -->
   <script>
-    fetch('https://tonchyods.goatcounter.com/counter/%2F.json')
-      .then(function(r) { return r.status === 404 ? { count: '0' } : r.json(); })
-      .then(function(data) { document.getElementById('gcCount').textContent = data.count; })
-      .catch(function() { document.getElementById('gcCount').textContent = '–'; });
+    (function () {
+      var API = 'https://portfolio-counter-api.vercel.app';
+
+      function updateCount(count) {
+        document.getElementById('gcCount').textContent = count;
+      }
+
+      if (!sessionStorage.getItem('pf_visited')) {
+        fetch(API + '/api/visit', { method: 'POST' })
+          .then(function (r) { return r.json(); })
+          .then(function (d) {
+            sessionStorage.setItem('pf_visited', '1');
+            updateCount(d.count);
+          })
+          .catch(function () { updateCount('–'); });
+      } else {
+        fetch(API + '/api/count')
+          .then(function (r) { return r.json(); })
+          .then(function (d) { updateCount(d.count); })
+          .catch(function () { updateCount('–'); });
+      }
+    })();
   </script>
 
   <script>
