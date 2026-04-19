@@ -124,6 +124,24 @@ body {
   transform: translateY(-1px);
 }
 
+.btn-cv-download {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 8px 18px;
+  background: var(--theme-color);
+  color: #fff !important;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.btn-cv-download:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
 /* ===== RESPONSIVIDADE MOBILE ===== */
 
 .markdown-section img {

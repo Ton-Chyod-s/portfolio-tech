@@ -48,6 +48,10 @@ Fill out the form below or reach out directly through the available channels.
       <strong>GitHub:</strong><br/>
       <a href="https://github.com/ton-chyod-s" target="_blank">github.com/ton-chyod-s</a>
     </p>
+    <p>
+      <strong>Resume:</strong><br/>
+      <a href="cv.html?print=1" target="_blank" class="btn-cv-download">↓ Download PDF</a>
+    </p>
   </div>
 
 </div>
