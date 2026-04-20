@@ -1,5 +1,47 @@
 # Projects
 
+## portfolio-tech – Personal Portfolio
+*Ago 2025 - Abr 2026*
+
+Personal portfolio website built with Docsify, showcasing projects, experiences, technologies, and an HTML/CSS printable resume. Features dark mode, visit counter, sidebar navigation, and multi-language support (PT/EN).
+
+**Main features:**
+- Dark mode with localStorage persistence
+- Visit counter with per-IP rate limiting
+- HTML/CSS resume optimized for printing
+- Sidebar navigation with PT and EN support
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![Docsify](https://img.shields.io/badge/Docsify-2ECE53?logo=docsify&logoColor=white)
+
+**Repository:** [github.com/Ton-Chyod-s/portfolio-tech](https://github.com/Ton-Chyod-s/portfolio-tech)
+**Site:** [ton-chyod-s.me](https://ton-chyod-s.me)
+
+---
+
+## portfolio-counter-api – Serverless Visit Counter API
+*Apr 2026*
+
+Serverless API for portfolio visit counting, deployed on Vercel with Upstash Redis as the database. Includes interactive Swagger UI documentation.
+
+**Main features:**
+- `POST /api/visit` — increments the counter with a rate limit of 1 req/IP every 10 min
+- `GET /api/count` — returns the total visit count without incrementing
+- Origin validation via `ALLOWED_ORIGINS` (restricted CORS)
+- Atomic per-IP rate limiting with `SET NX EX` on Redis (no race condition)
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white)
+
+**Repository:** [github.com/Ton-Chyod-s/portfolio-counter-api](https://github.com/Ton-Chyod-s/portfolio-counter-api)
+**Docs:** [api.ton-chyod-s.me](https://api.ton-chyod-s.me)
+
+---
+
 ## Full Page Capture – Chrome Extension for Page Capturing
 *Apr 2026*
 
@@ -18,7 +60,7 @@ Chrome extension that automatically captures the full page of each URL visited d
 ---
 
 ## SYT Playlist Downloader – Desktop App for Playlist Download
-*Apr 2026*
+*Maio 2025 - Apr 2026*
 
 Cross-platform desktop app for downloading YouTube and Spotify playlists, built with Tauri + React + TypeScript + Rust.
 

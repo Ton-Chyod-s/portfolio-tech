@@ -1,5 +1,47 @@
 # Projetos
 
+## portfolio-tech – Portfólio Pessoal
+*Ago 2025 - Abr 2026*
+
+Site de portfólio pessoal construído com Docsify, apresentando projetos, experiências, tecnologias e currículo em HTML/CSS para impressão. Conta com modo escuro, contador de visitas integrado, sidebar de navegação e suporte a múltiplos idiomas (PT/EN).
+
+**Funcionalidades principais:**
+- Modo escuro com persistência via localStorage
+- Contador de visitas com rate limiting por IP
+- Currículo em HTML/CSS otimizado para impressão
+- Navegação por sidebar com suporte a PT e EN
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![Docsify](https://img.shields.io/badge/Docsify-2ECE53?logo=docsify&logoColor=white)
+
+**Repositório:** [github.com/Ton-Chyod-s/portfolio-tech](https://github.com/Ton-Chyod-s/portfolio-tech)
+**Site:** [ton-chyod-s.me](https://ton-chyod-s.me)
+
+---
+
+## portfolio-counter-api – API Serverless de Contagem de Visitas
+*Abr 2026*
+
+API serverless para contagem de visitas do portfólio, deployada na Vercel com Redis (Upstash) como banco de dados. Inclui documentação interativa via Swagger UI.
+
+**Funcionalidades principais:**
+- `POST /api/visit` — incrementa o contador com rate limit de 1 req/IP a cada 10 min
+- `GET /api/count` — retorna o total de visitas sem incrementar
+- Validação de origem via `ALLOWED_ORIGINS` (CORS restrito)
+- Rate limiting atômico por IP com `SET NX EX` no Redis (sem race condition)
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white)
+
+**Repositório:** [github.com/Ton-Chyod-s/portfolio-counter-api](https://github.com/Ton-Chyod-s/portfolio-counter-api)
+**Docs:** [api.ton-chyod-s.me](https://api.ton-chyod-s.me)
+
+---
+
 ## Full Page Capture – Extensão Chrome para Captura de Páginas
 *Abr 2026*
 
@@ -19,7 +61,7 @@ Extensão para Google Chrome que captura automaticamente a página inteira de ca
 
 
 ## SYT Playlist Downloader – App Desktop para Download de Playlists
-*Abr 2026*
+*Maio 2026 - Abr 2026*
 
 App desktop multiplataforma para download de playlists do YouTube e Spotify, construído com Tauri + React + TypeScript + Rust.
 
