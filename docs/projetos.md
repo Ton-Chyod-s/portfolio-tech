@@ -134,6 +134,7 @@ Aplicação web para análise de dados públicos da ANAC com foco em voos da GOL
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 
 **Repositório:** [github.com/Chyod-s/flask-anac-dashboard](https://github.com/Chyod-s/flask-anac-dashboard)
+**Site:** [flask-anac-dashboard.herokuapp.com](https://flask-anac-dashboard-5177157fcd1d.herokuapp.com/)
 
 ---
 
@@ -157,7 +158,7 @@ Aplicação completa para gestão de tarefas, com backend em Node.js (TypeScript
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 
 **Repositório:** [github.com/Ton-Chyod-s/nexo-task-api](https://github.com/Ton-Chyod-s/nexo-task-api)
-**Site:** [https://nexo-task-api.vercel.app/](https://nexo-task-api.vercel.app/)
+**Site:** [nexo-task-api.vercel.app](https://nexo-task-api.vercel.app/)
 
 ---
 

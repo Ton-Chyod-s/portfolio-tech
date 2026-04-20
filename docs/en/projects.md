@@ -133,6 +133,7 @@ Web application for analyzing public ANAC data focused on GOL flights, with cust
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 
 **Repository:** [github.com/Chyod-s/flask-anac-dashboard](https://github.com/Chyod-s/flask-anac-dashboard)
+**Site:** [flask-anac-dashboard.herokuapp.com](https://flask-anac-dashboard-5177157fcd1d.herokuapp.com/)
 
 ---
 
@@ -156,7 +157,7 @@ Complete task management application, with backend in Node.js (TypeScript, Prism
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 
 **Repository:** [github.com/Ton-Chyod-s/nexo-task-api](https://github.com/Ton-Chyod-s/nexo-task-api)
-
+**Site:** [nexo-task-api.vercel.app](https://nexo-task-api.vercel.app/)
 ---
 
 ## Public Records API – RESTful API for Public Records Query
