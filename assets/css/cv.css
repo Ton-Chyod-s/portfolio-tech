@@ -108,13 +108,19 @@ ul li { font-size: 9pt; line-height: 1.45; margin-bottom: 2px; }
 @media print {
   body { background: #fff; }
   .print-bar { display: none; }
+
   .page {
     margin: 0;
     box-shadow: none;
     width: 100%;
-    padding: 10mm 15mm;
+    padding: 0;
   }
-  @page { size: A4; margin: 0; }
+
+  @page {
+    size: A4;
+    margin: 10mm 15mm;
+  }
+
   .exp-item      { break-inside: avoid; }
   .edu-item      { break-inside: avoid; }
   .skills-cat    { break-inside: avoid; }
