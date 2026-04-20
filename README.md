@@ -1,51 +1,69 @@
-## 👋 Olá! Eu sou **Klayton Dias** — *Desenvolvedor Back-End*
-
-Especialista em automação de processos e desenvolvimento de APIs escaláveis.
-
-[![Email](https://img.shields.io/badge/Email-000?style=flat&logo=gmail)](mailto:klayton.dias@hotmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-000?style=flat&logo=linkedin&logoColor=0E76A8)](https://www.linkedin.com/in/ton-chyod-s/)
-[![Facebook](https://img.shields.io/badge/Facebook-000?style=flat&logo=facebook)](https://www.facebook.com/ArqKdias/)
-[![Instagram](https://img.shields.io/badge/Instagram-000?style=flat&logo=instagram)](https://www.instagram.com/ton_chyod_s/)
-[![GitHub](https://img.shields.io/badge/GitHub-000?style=flat&logo=github)](https://github.com/Ton-Chyod-s)
-
-
-<!-- <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
-  <img alt="Python" title="Python" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
-  <img alt="NodeJS" title="NodeJS" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg">
-  <img alt="C#" title="C Sharp" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg">
-  <img alt=".NET" title=".NET" height="30" src="https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg">
-  <img alt="JavaScript" title="JavaScript" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg">  
-  <img alt="HTML5" title="HTML5" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-  <img alt="CSS3" title="CSS3" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-  <img alt="PostgreSQL" title="PostgreSQL" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg">
-  <img alt="Docker" title="Docker" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg">
-  <img alt="Git" title="Git" height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg">
-  <img alt="Azure DevOps" title="Azure DevOps" height="30" src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/icons/file_type_azurepipelines.svg">
-</div> -->
+<h1 align="center">Klayton Dias</h1>
+<p align="center">Desenvolvedor Back-End Pleno · Node.js · TypeScript · APIs RESTful</p>
+<p align="center">
+  <a href="https://ton-chyod-s.me"><img src="https://img.shields.io/badge/Portfólio-ton--chyod--s.me-000?style=flat&logo=googlechrome&logoColor=white" /></a>
+  <a href="mailto:klayton.dias@hotmail.com"><img src="https://img.shields.io/badge/Email-000?style=flat&logo=gmail&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/ton-chyod-s/"><img src="https://img.shields.io/badge/LinkedIn-000?style=flat&logo=linkedin&logoColor=0E76A8" /></a>
+</p>
 
 ---
 
-## Projetos em Destaque
+Desenvolvedor Back-End Pleno especializado em APIs RESTful, automação de processos e Clean Architecture. Projetos em produção com Node.js, TypeScript, Python e C#. Foco em segurança, escalabilidade e código sustentável.
 
-- [**SYT Playlist Downloader**](https://github.com/Ton-Chyod-s/syt-playlist-downloader)
-  App desktop multiplataforma para download de playlists do YouTube e Spotify, construído com Tauri + React + TypeScript + Rust.
+## Stack
 
-- [**node-api-starter-typescript**](https://github.com/Ton-Chyod-s/node-api-starter-typescript)
-  Boilerplate profissional para APIs Node.js com Clean Architecture, JWT, CSRF, rate limit, Helmet, OpenAPI, Jest e Docker.
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-512BD4?style=flat&logo=csharp&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 
-- [**nexo-task-api**](https://github.com/Ton-Chyod-s/nexo-task-api)
-  Sistema completo de gerenciamento de tarefas (Full Stack) com Node.js, TypeScript, Prisma, JWT, Docker e CI/CD via GitHub Actions.
+## Projetos
 
-- [**api-scraper-mailer**](https://github.com/Ton-Chyod-s/api-scraper-mailer)
-  API de scraping em TypeScript com envio automatizado de relatórios por e-mail. Em produção com usuários ativos.
-
-- [**api-precatory-creditor**](https://github.com/Chyod-s/api-precatory-creditor)
-  Sistema de gerenciamento de precatórios e credores com Python, Flask, Clean Architecture, JWT e Docker.
-
-- [**public-records-api**](https://github.com/Ton-Chyod-s/public-records-api)
-  API RESTful em C# (.NET 9) para consulta de registros públicos e diários oficiais, com autenticação e integração com banco serverless.
+| Projeto | Descrição |
+|---|---|
+| [**api-scraper-mailer**](https://github.com/Ton-Chyod-s/api-scraper-mailer) | Scraping de páginas estáticas e dinâmicas com envio automatizado de relatórios por e-mail. **Em produção com usuários ativos.** |
+| [**nexo-task-api**](https://github.com/Ton-Chyod-s/nexo-task-api) | Sistema full stack de gerenciamento de tarefas — autenticação JWT, envio de e-mails, CI/CD via GitHub Actions e deploy containerizado. [Ver site →](https://nexo-task-api.vercel.app/) |
+| [**node-api-starter-typescript**](https://github.com/Ton-Chyod-s/node-api-starter-typescript) | Boilerplate de produção para APIs Node.js com Clean Architecture, JWT + CSRF, rate limit, Helmet, OpenAPI e cobertura de testes com Jest. |
+| [**api-precatory-creditor**](https://github.com/Chyod-s/api-precatory-creditor) | API + frontend integrado para gestão de precatórios e credores, com JWT, Alembic para migrações e deploy em produção. [Ver sistema →](https://api-precatory-creditor.up.railway.app/) |
+| [**syt-playlist-downloader**](https://github.com/Ton-Chyod-s/syt-playlist-downloader) | App desktop multiplataforma (Tauri + Rust + React) para download de playlists do YouTube e Spotify em MP4/MP3, com suporte a 4K. |
+| [**public-records-api**](https://github.com/Ton-Chyod-s/public-records-api) | API RESTful em C# (.NET 9) para consulta de registros públicos e diários oficiais, com autenticação e banco serverless. |
+| [**portfolio-counter-api**](https://github.com/Ton-Chyod-s/portfolio-counter-api) | API serverless de contagem de visitas com rate limiting atômico por IP via Redis e CORS restrito. Deploy na Vercel. [Docs →](https://api.ton-chyod-s.me) |
+| [**portfolio-tech**](https://github.com/Ton-Chyod-s/portfolio-tech) | Este portfólio — site estático com Docsify, modo escuro, alternância PT/EN e currículo para impressão. [Ver site →](https://ton-chyod-s.me) |
 
 ---
 
+<details>
+<summary>Sobre este repositório</summary>
 
+Código-fonte do portfólio pessoal — site estático construído com [Docsify](https://docsify.js.org), sem processo de build. O conteúdo é escrito em Markdown e renderizado diretamente no browser.
 
+**Funcionalidades**
+- Modo escuro com persistência via `localStorage`
+- Alternância de idioma PT ↔ EN em tempo real
+- Contador de visitas integrado à [`portfolio-counter-api`](https://github.com/Ton-Chyod-s/portfolio-counter-api)
+- Currículo em HTML/CSS otimizado para impressão (`/cv.html`)
+- Deploy via GitHub Pages com domínio customizado
+
+**Estrutura**
+```
+docs/           → conteúdo em português (Markdown)
+docs/en/        → conteúdo em inglês (Markdown)
+assets/css/     → estilos customizados e tema do CV
+cv.html         → currículo para impressão
+index.html      → entry point do Docsify
+_sidebar.md     → navegação PT / _sidebar_en.md → navegação EN
+```
+
+**Rodando localmente**
+```bash
+npm install
+npx docsify-cli serve .
+# acesse http://localhost:3000
+```
+
+</details>
