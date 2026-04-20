@@ -104,21 +104,45 @@ ul li { font-size: 9pt; line-height: 1.45; margin-bottom: 2px; }
 }
 .cert-list li { font-size: 9pt; line-height: 1.45; margin-bottom: 3px; break-inside: avoid; }
 
+.cv-footer-keywords {
+  display: none;
+}
+
 /* ── Print ── */
 @media print {
   body { background: #fff; }
   .print-bar { display: none; }
+  
+  .cv-footer-keywords {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 15mm;
+    right: 15mm;
+    font-size: 7pt;
+    color: #bbb;
+    text-align: center;
+    line-height: 1.8;
+    border-top: 1px solid #e8e8e8;
+    padding-top: 3px;
+  }
 
   .page {
     margin: 0;
     box-shadow: none;
     width: 100%;
-    padding: 0;
+    padding: 0 0 14mm;
   }
 
   @page {
     size: A4;
     margin: 10mm 15mm;
+  }
+
+  @page :first {
+    @bottom-center {
+      content: none;
+    }
   }
 
   .exp-item      { break-inside: avoid; }
