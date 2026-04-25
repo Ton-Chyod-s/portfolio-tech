@@ -104,7 +104,14 @@
   </script>
 
   <script>
-    var portfolioLang = localStorage.getItem('portfolioLang') || 'pt';
+    var portfolioLang = (function () {
+      var saved = localStorage.getItem('portfolioLang');
+      if (saved) return saved;
+      var browser = (navigator.language || navigator.userLanguage || 'pt').toLowerCase();
+      var lang = browser.startsWith('pt') ? 'pt' : 'en';
+      localStorage.setItem('portfolioLang', lang);
+      return lang;
+    }());
 
     window.$docsify = {
       name: portfolioLang === 'en' ? 'Portfolio' : 'Portfólio',
