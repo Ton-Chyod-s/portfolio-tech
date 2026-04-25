@@ -198,7 +198,15 @@
   <script>
     if (new URLSearchParams(window.location.search).get('print') === '1') {
       window.addEventListener('load', function () {
+        var d = new Date();
+        var pad = function (n) { return String(n).padStart(2, '0'); };
+        var dateStr = d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
+        var originalTitle = document.title;
+        document.title = 'Curriculo_Klayton_Chrysthian_Oliveira_Dias_' + dateStr;
         setTimeout(function () { window.print(); }, 600);
+        window.addEventListener('afterprint', function () {
+          document.title = originalTitle;
+        });
       });
     }
   </script>
