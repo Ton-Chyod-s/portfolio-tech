@@ -50,7 +50,7 @@ Preencha o formulário abaixo ou entre em contato diretamente pelos canais dispo
     </p>
     <p>
       <strong>Currículo:</strong><br/>
-      <a href="cv.html?print=1" target="_blank" class="btn-cv-download">↓ Baixar PDF</a>
+      <a href="cv.html?print=1" target="_blank" class="btn-cv-download" onclick="if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:'cv-download',title:'CV Download',event:true})">↓ Baixar PDF</a>
     </p>
   </div>
 

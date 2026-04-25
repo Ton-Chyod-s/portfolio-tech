@@ -50,7 +50,7 @@ Fill out the form below or reach out directly through the available channels.
     </p>
     <p>
       <strong>Resume:</strong><br/>
-      <a href="cv.html?print=1" target="_blank" class="btn-cv-download">↓ Download PDF</a>
+      <a href="cv.html?print=1" target="_blank" class="btn-cv-download" onclick="if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:'cv-download',title:'CV Download',event:true})">↓ Download PDF</a>
     </p>
   </div>
 
