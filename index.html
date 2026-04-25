@@ -86,6 +86,7 @@
       name: portfolioLang === 'en' ? 'Portfolio' : 'Portfólio',
       repo: 'https://github.com/Ton-Chyod-s/portfolio-tech',
       loadSidebar: portfolioLang === 'en' ? '_sidebar_en.md' : '_sidebar.md',
+      homepage: portfolioLang === 'en' ? 'docs/en/home.md' : 'README.md',
       subMaxLevel: 2,
       themeColor: '#42b983',
       alias: {
@@ -127,6 +128,7 @@
       var langBtn = document.getElementById('langToggleBtn');
 
       var pageMapToEn = {
+        '': '',
         'docs/sobre': 'docs/en/about',
         'docs/experiencias': 'docs/en/experiences',
         'docs/tecnologias': 'docs/en/technologies',
@@ -135,6 +137,8 @@
         'docs/ajuda': 'docs/en/help'
       };
       var pageMapToPt = {
+        '': '',
+        'docs/en/home': '',
         'docs/en/about': 'docs/sobre',
         'docs/en/experiences': 'docs/experiencias',
         'docs/en/technologies': 'docs/tecnologias',
@@ -154,9 +158,9 @@
           var newLang = portfolioLang === 'pt' ? 'en' : 'pt';
           localStorage.setItem('portfolioLang', newLang);
 
-          var hash = window.location.hash.replace(/^#\//, '').replace(/\/$/, '');
+          var hash = window.location.hash.replace(/^#\//, '').replace(/\/$/, '').replace(/\.md$/, '');
           var map = newLang === 'en' ? pageMapToEn : pageMapToPt;
-          var targetPage = map[hash] || (newLang === 'en' ? 'docs/en/about' : 'docs/sobre');
+          var targetPage = (hash in map) ? map[hash] : (newLang === 'en' ? 'docs/en/about' : 'docs/sobre');
 
           window.location.hash = '/' + targetPage;
           window.location.reload();
