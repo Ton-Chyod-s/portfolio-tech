@@ -42,20 +42,47 @@ API serverless para contagem de visitas do portfólio, deployada na Vercel com R
 
 ---
 
-## Full Page Capture – Extensão Chrome para Captura de Páginas
+## Full Page Capture – Extensão Chrome com Heatmap e Gravação de Sessão
 *Abr 2026*
 
-Extensão para Google Chrome que captura automaticamente a página inteira de cada URL visitada durante a sessão, permitindo registrar e revisar o histórico visual de navegação.
+Extensão para Google Chrome que rastreia e registra sessões completas de navegação, capturando screenshots por URL, heatmap de cliques e movimentos do mouse, e gravação de vídeo da sessão. Os dados são persistidos no Neon (PostgreSQL serverless) e visualizados via dashboard externo.
 
 **Funcionalidades principais:**
-- Captura automática de página completa por URL visitada
-- Armazenamento local das capturas durante a sessão
-- Interface popup para visualização e gerenciamento das capturas
+- Heatmap de cliques e movimentos do mouse por URL (throttle de 40ms, limite de 12.000 pontos)
+- Gravação de sessão em vídeo (base64, armazenada no Neon)
+- Captura de página completa por URL visitada durante a sessão
+- Rastreamento de SPAs via interceptação de `pushState`, `replaceState` e `popstate`
+- Persistência no Neon com tabelas: `sessions`, `captures`, `heatmap_data`, `videos`
+- Interface popup para controle e visualização das capturas
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 ![Chrome](https://img.shields.io/badge/Chrome_Extension-4285F4?logo=googlechrome&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/Neon-00E5CC?logo=postgresql&logoColor=white)
+
+---
+
+## Heatmap Dashboard – Visualizador de Sessões de Navegação (Full Stack)
+*Abr 2026*
+
+Aplicação full stack para visualização das sessões coletadas pela extensão Full Page Capture. O backend expõe uma API REST que consulta o Neon via Prisma, e o frontend em React renderiza o histórico de capturas, heatmaps e vídeos de cada sessão.
+
+**Funcionalidades principais:**
+- Listagem de sessões com contagem de capturas, heatmaps e vídeos
+- Visualização detalhada por sessão: screenshots ordenadas, heatmap por URL e replay de vídeo
+- Serialização segura de `BigInt` para JSON
+- Backend com Express, Helmet, CORS e Prisma sobre Neon (PostgreSQL serverless)
+- Frontend em React 18 com React Router, Tailwind CSS e Vite
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/Neon-00E5CC?logo=postgresql&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
+
+**Site:** [heatmap-dashboard-front.vercel.app](https://heatmap-dashboard-front.vercel.app/)
 
 ---
 

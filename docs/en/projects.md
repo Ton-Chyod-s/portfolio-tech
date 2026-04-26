@@ -42,20 +42,47 @@ Serverless API for portfolio visit counting, deployed on Vercel with Upstash Red
 
 ---
 
-## Full Page Capture – Chrome Extension for Page Capturing
+## Full Page Capture – Chrome Extension with Heatmap and Session Recording
 *Apr 2026*
 
-Chrome extension that automatically captures the full page of each URL visited during the session, allowing users to record and review the visual browsing history.
+Chrome extension that tracks and records complete browsing sessions, capturing screenshots per URL, click and mouse movement heatmaps, and session video recording. Data is persisted in Neon (serverless PostgreSQL) and visualized via an external dashboard.
 
 **Main features:**
-- Automatic full-page capture per visited URL
-- Local storage of captures during the session
-- Popup interface for viewing and managing captures
+- Click and mouse movement heatmap per URL (40ms throttle, 12,000 point limit)
+- Session video recording (base64, stored in Neon)
+- Full-page capture per URL visited during the session
+- SPA tracking via `pushState`, `replaceState` and `popstate` interception
+- Persistence in Neon with tables: `sessions`, `captures`, `heatmap_data`, `videos`
+- Popup interface for session control and capture visualization
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 ![Chrome](https://img.shields.io/badge/Chrome_Extension-4285F4?logo=googlechrome&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/Neon-00E5CC?logo=postgresql&logoColor=white)
+
+---
+
+## Heatmap Dashboard – Browsing Session Viewer (Full Stack)
+*Apr 2026*
+
+Full stack application for visualizing sessions collected by the Full Page Capture extension. The backend exposes a REST API querying Neon via Prisma, and the React frontend renders the capture history, heatmaps, and videos for each session.
+
+**Main features:**
+- Session listing with capture, heatmap, and video counts
+- Detailed session view: ordered screenshots, per-URL heatmap, and video replay
+- Safe `BigInt` serialization to JSON
+- Backend with Express, Helmet, CORS, and Prisma over Neon (serverless PostgreSQL)
+- Frontend in React 18 with React Router, Tailwind CSS, and Vite
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/Neon-00E5CC?logo=postgresql&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
+
+**Site:** [heatmap-dashboard-front.vercel.app](https://heatmap-dashboard-front.vercel.app/)
 
 ---
 
