@@ -10,6 +10,10 @@
   }
 })();
 
+if (window.goatcounter && window.goatcounter.count) {
+  window.goatcounter.count({ path: '/links', title: 'Klayton Dias · Links' });
+}
+
 const btn = document.getElementById('darkToggle');
 if (localStorage.getItem('darkMode') === 'true') {
     document.body.classList.add('dark-mode');
