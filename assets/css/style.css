@@ -586,7 +586,7 @@ body.dark-mode .visit-counter:hover {
 /* ===== Card de Estatísticas ===== */
 .pstats-card {
   margin: 24px 0;
-  padding: 16px 20px;
+  padding: 10px 20px 14px;
   border-radius: 12px;
   background: rgba(66, 185, 131, 0.07);
   border: 1px solid rgba(66, 185, 131, 0.25);
@@ -598,8 +598,8 @@ body.dark-mode .visit-counter:hover {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 12px;
+  gap: 4px;
+  margin-bottom: 1px;
 }
 
 .pstats-title {

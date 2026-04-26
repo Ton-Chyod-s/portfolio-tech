@@ -162,8 +162,9 @@
         if (!hasData) { el.innerHTML = ''; return; }
         el.innerHTML =
           '<div class="pstats-card">' +
-            (countryTags ? '<div style="font-size:11px;color:#888;margin-bottom:4px;">' + lblCountries + '</div><div class="pstats-row">' + countryTags + '</div>' : '') +
-            (langTags ? '<div style="font-size:11px;color:#888;margin:8px 0 4px;">' + lblLangs + '</div><div class="pstats-row">' + langTags + '</div>' : '') +
+            '<div class="pstats-header" style="justify-content:center;"><span class="pstats-title">' + lblVisits + '</span></div>' +
+            (countryTags ? '<div style="font-size:11px;color:#888;margin-bottom:2px;">' + lblCountries + '</div><div class="pstats-row" style="margin-bottom:4px;">' + countryTags + '</div>' : '') +
+            (langTags ? '<div style="font-size:11px;color:#888;margin:4px 0 2px;">' + lblLangs + '</div><div class="pstats-row">' + langTags + '</div>' : '') +
           '</div>';
       }
 
