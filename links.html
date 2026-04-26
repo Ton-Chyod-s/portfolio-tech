@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Klayton COD.ias · Links</title>
+  <meta name="description" content="Músico · Pai · Dev — Links de Klay Dias" />
+  <link rel="icon" href="assets/ico/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --green:        #42b983;
+      --green-light:  rgba(66, 185, 131, 0.10);
+      --green-border: rgba(66, 185, 131, 0.28);
+      --blue:         #0E76A8;
+      --bg:           #f0f2f5;
+      --card:         #ffffff;
+      --border:       #e3e6ea;
+      --text:         #2c3e50;
+      --muted:        #8a95a3;
+      --radius:       16px;
+    }
+    body.dark-mode {
+      --bg:     #181825;
+      --card:   #1e1e2e;
+      --border: rgba(255,255,255,0.07);
+      --text:   #e8eaf0;
+      --muted:  #585b70;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.25rem 5rem;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+      animation: fadeUp 0.5s ease both;
+    }
+
+    /* Banner */
+    .card-banner {
+      height: 76px;
+      background: url('assets/img/banner.png') center 75%/cover no-repeat;
+    }
+
+    /* Perfil */
+    .profile {
+      padding: 0 1.5rem 1.25rem;
+      position: relative;
+    }
+
+    .avatar-wrap {
+      position: absolute;
+      top: -38px;
+      left: 1.5rem;
+    }
+
+    .avatar {
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      border: 3px solid var(--card);
+      overflow: hidden;
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.14);
+      transition: border-color 0.3s;
+    }
+
+    .avatar img { width: 100%; height: 100%; object-fit: cover; }
+
+    .avatar-fallback {
+      font-family: 'Fira Code', monospace;
+      font-size: 1.15rem;
+      color: var(--green);
+    }
+
+    .profile-top { height: 46px; }
+
+    .name {
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--text);
+    }
+
+    .handle {
+      font-family: 'Fira Code', monospace;
+      font-size: 0.7rem;
+      color: var(--muted);
+      margin-top: 0.15rem;
+      margin-bottom: 0.55rem;
+    }
+
+    .bio {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.55;
+      margin-bottom: 0.85rem;
+      font-style: italic;
+      min-height: 1.3rem;
+    }
+
+    .tags {
+      display: flex;
+      gap: 0.35rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.1rem;
+    }
+
+    .tag {
+      font-family: 'Fira Code', monospace;
+      font-size: 0.67rem;
+      color: var(--green);
+      background: var(--green-light);
+      border: 1px solid var(--green-border);
+      border-radius: 20px;
+      padding: 0.18rem 0.6rem;
+    }
+
+    /* Stats */
+    .stats {
+      display: flex;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin: 0 -1.5rem 1.35rem;
+    }
+
+    .stat {
+      flex: 1;
+      text-align: center;
+      padding: 0.7rem 0.5rem;
+      position: relative;
+    }
+
+    .stat + .stat::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 20%; height: 60%;
+      width: 1px;
+      background: var(--border);
+    }
+
+    .stat-value {
+      display: block;
+      font-family: 'Fira Code', monospace;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text);
+      line-height: 1.2;
+    }
+
+    .stat-label {
+      display: block;
+      font-size: 0.62rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-top: 0.1rem;
+    }
+
+    /* Links */
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 0 1.5rem 1.5rem;
+    }
+
+    .link-item {
+      opacity: 0;
+      animation: fadeUp 0.4s ease both;
+    }
+    .link-item:nth-child(1) { animation-delay: 0.12s; }
+    .link-item:nth-child(2) { animation-delay: 0.20s; }
+    .link-item:nth-child(3) { animation-delay: 0.28s; }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      width: 100%;
+      padding: 0.72rem 0.9rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      text-decoration: none;
+      color: var(--text);
+      transition: border-color 0.2s, background 0.2s, transform 0.15s, box-shadow 0.2s;
+    }
+
+    .link-btn:hover {
+      border-color: var(--green-border);
+      background: var(--green-light);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(66, 185, 131, 0.12);
+    }
+
+    .link-btn:active { transform: translateY(0); }
+
+    .link-icon {
+      width: 36px; height: 36px;
+      border-radius: 8px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .link-btn:hover .link-icon {
+      border-color: var(--green-border);
+      background: rgba(66,185,131,0.08);
+    }
+
+    .link-icon svg {
+      width: 16px; height: 16px;
+      fill: var(--muted);
+      transition: fill 0.2s;
+    }
+
+    .link-btn:hover .link-icon svg { fill: var(--green); }
+
+    .link-text { flex: 1; }
+
+    .link-label {
+      font-size: 0.875rem;
+      font-weight: 600;
+      display: block;
+      color: var(--text);
+    }
+
+    .link-sub {
+      font-family: 'Fira Code', monospace;
+      font-size: 0.64rem;
+      color: var(--muted);
+      display: block;
+      margin-top: 0.1rem;
+    }
+
+    .link-arrow {
+      font-size: 0.8rem;
+      color: var(--muted);
+      transition: color 0.2s, transform 0.2s;
+    }
+
+    .link-btn:hover .link-arrow {
+      color: var(--green);
+      transform: translateX(3px);
+    }
+
+    /* Dark toggle */
+    .dark-toggle-btn {
+      position: fixed;
+      bottom: 24px; right: 24px;
+      z-index: 9999;
+      width: 50px; height: 50px;
+      border-radius: 50%;
+      border: none;
+      background: var(--green);
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+      transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+      display: flex; align-items: center; justify-content: center;
+    }
+
+    .dark-toggle-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+
+    body.dark-mode .dark-toggle-btn { background: #3b4252; }
+
+    /* Skeleton */
+    .skeleton {
+      display: inline-block;
+      background: linear-gradient(90deg, var(--border) 25%, var(--bg) 50%, var(--border) 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.4s infinite;
+      border-radius: 4px;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes shimmer {
+      0%   { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+
+    <div class="card-banner"></div>
+
+    <div class="profile">
+
+      <div class="avatar-wrap">
+        <div class="avatar">
+          <img id="githubAvatar" src="" alt="Klayton" style="display:none;"
+               onerror="this.style.display='none'; document.getElementById('avatarFallback').style.display='flex';" />
+          <span class="avatar-fallback" id="avatarFallback">KD</span>
+        </div>
+      </div>
+
+      <div class="profile-top"></div>
+
+      <h1 class="name">Klayton</h1>
+      <p class="handle">@ton_chyod_s</p>
+
+      <p class="bio" id="githubBio">
+        <span class="skeleton" style="width:68%;height:0.78rem;"></span>
+      </p>
+
+      <div class="tags">
+        <span class="tag">_Músico</span>
+        <span class="tag">_Pai</span>
+        <span class="tag">_Dev</span>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-value" id="statRepos">·</span>
+          <span class="stat-label">Repos</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" id="statFollowers">·</span>
+          <span class="stat-label">Seguidores</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" id="statFollowing">·</span>
+          <span class="stat-label">Seguindo</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="links">
+
+      <div class="link-item">
+        <a class="link-btn" href="https://ton-chyod-s.me/" target="_blank" rel="noopener">
+          <div class="link-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1 17.93V18a1 1 0 0 0-1-1H8a2 2 0 0 1-2-2v-1l-2.93-2.93A8.003 8.003 0 0 1 11 4.07V6a1 1 0 0 0 1 1h2a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-1v3a1 1 0 0 0 1 1h.93A8.013 8.013 0 0 1 11 19.93z"/></svg>
+          </div>
+          <div class="link-text">
+            <span class="link-label">Portfólio</span>
+            <span class="link-sub">ton-chyod-s.me</span>
+          </div>
+          <span class="link-arrow">→</span>
+        </a>
+      </div>
+
+      <div class="link-item">
+        <a class="link-btn" href="https://github.com/Ton-Chyod-s" target="_blank" rel="noopener">
+          <div class="link-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </div>
+          <div class="link-text">
+            <span class="link-label">GitHub</span>
+            <span class="link-sub">Ton-Chyod-s</span>
+          </div>
+          <span class="link-arrow">→</span>
+        </a>
+      </div>
+
+      <div class="link-item">
+        <a class="link-btn" href="https://www.linkedin.com/in/ton-chyod-s/" target="_blank" rel="noopener">
+          <div class="link-icon">
+            <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <div class="link-text">
+            <span class="link-label">LinkedIn</span>
+            <span class="link-sub">ton-chyod-s</span>
+          </div>
+          <span class="link-arrow">→</span>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <button class="dark-toggle-btn" id="darkToggle" title="Alternar tema">🌙</button>
+
+  <script>
+    // Dark mode
+    const btn = document.getElementById('darkToggle');
+    if (localStorage.getItem('darkMode') === 'true') {
+      document.body.classList.add('dark-mode');
+      btn.textContent = '☀️';
+    }
+    btn.addEventListener('click', () => {
+      const dark = document.body.classList.toggle('dark-mode');
+      btn.textContent = dark ? '☀️' : '🌙';
+      localStorage.setItem('darkMode', dark);
+    });
+
+    // GitHub API
+    fetch('https://api.github.com/users/Ton-Chyod-s')
+      .then(r => r.json())
+      .then(d => {
+        // Avatar
+        const img = document.getElementById('githubAvatar');
+        img.src = d.avatar_url;
+        img.style.display = 'block';
+        document.getElementById('avatarFallback').style.display = 'none';
+
+        // Bio
+        const bioEl = document.getElementById('githubBio');
+        bioEl.innerHTML = d.bio || '<span style="opacity:0.4">Desenvolvedor de software</span>';
+
+        // Stats
+        document.getElementById('statRepos').textContent     = d.public_repos ?? '—';
+        document.getElementById('statFollowers').textContent = d.followers     ?? '—';
+        document.getElementById('statFollowing').textContent = d.following     ?? '—';
+      })
+      .catch(() => {
+        document.getElementById('avatarFallback').style.display = 'flex';
+        document.getElementById('githubBio').innerHTML = '';
+      });
+  </script>
+
+</body>
+</html>
