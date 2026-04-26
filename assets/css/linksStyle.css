@@ -47,7 +47,7 @@ body {
 /* Banner */
 .card-banner {
     height: 76px;
-    background: url('../assets/img/banner.png') center 75%/cover no-repeat;
+    background: url('../img/banner.png') center 75%/cover no-repeat;
 }
 
 /* Perfil */
