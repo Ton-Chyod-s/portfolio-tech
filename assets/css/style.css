@@ -582,3 +582,86 @@ body.dark-mode .visit-counter {
 body.dark-mode .visit-counter:hover {
   background: rgba(30, 30, 46, 0.85);
 }
+
+/* ===== Card de Estatísticas ===== */
+.pstats-card {
+  margin: 24px 0;
+  padding: 16px 20px;
+  border-radius: 12px;
+  background: rgba(66, 185, 131, 0.07);
+  border: 1px solid rgba(66, 185, 131, 0.25);
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.pstats-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.pstats-title {
+  font-weight: 700;
+  font-size: 14px;
+  color: #42b983;
+  letter-spacing: 0.3px;
+}
+
+.pstats-total {
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  background: rgba(0,0,0,0.05);
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.pstats-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.pstats-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.05);
+  color: #444;
+  white-space: nowrap;
+}
+
+.pstats-tag b {
+  color: #42b983;
+  font-weight: 700;
+}
+
+.pstats-loading {
+  font-size: 13px;
+  color: #999;
+}
+
+body.dark-mode .pstats-card {
+  background: rgba(66, 185, 131, 0.06);
+  border-color: rgba(66, 185, 131, 0.2);
+}
+
+body.dark-mode .pstats-total {
+  color: #cdd6f4;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+body.dark-mode .pstats-tag {
+  background: rgba(255, 255, 255, 0.07);
+  color: #cdd6f4;
+}
+
+body.dark-mode .pstats-loading {
+  color: #6c7086;
+}

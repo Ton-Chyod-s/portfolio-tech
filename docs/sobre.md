@@ -11,6 +11,8 @@
   </div>
 </div>
 
+<div id="pstats-card"></div>
+
 ## Sobre Mim
 
 - Desenvolvedor Full Stack Pleno na **Corelab**, atuando em múltiplos produtos simultâneos com foco em APIs, integrações e sistemas multiempresa.

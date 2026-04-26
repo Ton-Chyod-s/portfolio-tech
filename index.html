@@ -131,6 +131,64 @@
 
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 
+  <!-- Plugin: Portfolio Stats Card -->
+  <script>
+    (function () {
+      var STATS_API = 'https://api.ton-chyod-s.me/api/stats';
+      var PAGES_PT = ['docs/sobre', ''];
+      var PAGES_EN = ['docs/en/about', 'docs/en/home'];
+      var _statsCache = null;
+
+      function renderCard(el, data, isEn) {
+        var total = data.total || 0;
+        var countries = (data.countries || []).slice(0, 4);
+        var languages = (data.languages || []).slice(0, 4);
+
+        var countryTags = countries.map(function (c) {
+          return '<span class="pstats-tag">🌍 ' + c.name + ' <b>' + c.count + '</b></span>';
+        }).join('');
+
+        var langTags = languages.map(function (l) {
+          var flag = l.name.startsWith('pt') ? '🇧🇷' : l.name.startsWith('en') ? '🇺🇸' : '🌐';
+          return '<span class="pstats-tag">' + flag + ' ' + l.name + ' <b>' + l.count + '</b></span>';
+        }).join('');
+
+        var lblVisits = isEn ? 'Portfolio visits' : 'Visitas ao portfólio';
+        var lblCountries = isEn ? 'Countries' : 'Países';
+        var lblLangs = isEn ? 'Languages' : 'Idiomas';
+        var totalLabel = isEn ? total + ' visits' : total + ' visitas';
+
+        var hasData = countryTags || langTags;
+        if (!hasData) { el.innerHTML = ''; return; }
+        el.innerHTML =
+          '<div class="pstats-card">' +
+            (countryTags ? '<div style="font-size:11px;color:#888;margin-bottom:4px;">' + lblCountries + '</div><div class="pstats-row">' + countryTags + '</div>' : '') +
+            (langTags ? '<div style="font-size:11px;color:#888;margin:8px 0 4px;">' + lblLangs + '</div><div class="pstats-row">' + langTags + '</div>' : '') +
+          '</div>';
+      }
+
+      function loadStats(el, isEn) {
+        el.innerHTML = '<p class="pstats-loading">⏳ Loading stats…</p>';
+        if (_statsCache) { renderCard(el, _statsCache, isEn); return; }
+        fetch(STATS_API)
+          .then(function (r) { return r.json(); })
+          .then(function (d) { _statsCache = d; renderCard(el, d, isEn); })
+          .catch(function () { el.innerHTML = ''; });
+      }
+
+      window.$docsify = window.$docsify || {};
+      window.$docsify.plugins = (window.$docsify.plugins || []).concat(function (hook) {
+        hook.doneEach(function () {
+          var el = document.getElementById('pstats-card');
+          if (!el) return;
+          var hash = (window.location.hash || '').replace(/^#\//, '').replace(/\.md$/, '');
+          var isEn = PAGES_EN.some(function (p) { return hash === p || hash === '' && p === 'docs/en/home'; });
+          loadStats(el, isEn);
+        });
+      });
+    })();
+  </script>
+
   <script>
     // Dark mode
     (function () {

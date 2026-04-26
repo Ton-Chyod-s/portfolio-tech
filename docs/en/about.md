@@ -11,6 +11,8 @@
   </div>
 </div>
 
+<div id="pstats-card"></div>
+
 ## About Me
 
 - Mid-Level Back-End Developer at **Corelab**, working across multiple products simultaneously with a focus on APIs, integrations, and multi-tenant systems.
