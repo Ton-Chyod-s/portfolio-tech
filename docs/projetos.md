@@ -38,7 +38,6 @@ API serverless para contagem de visitas do portfólio, deployada na Vercel com R
 ![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white)
 
 **Repositório:** [github.com/Ton-Chyod-s/portfolio-counter-api](https://github.com/Ton-Chyod-s/portfolio-counter-api)
-**Docs:** [api.ton-chyod-s.me](https://api.ton-chyod-s.me)
 
 ---
 

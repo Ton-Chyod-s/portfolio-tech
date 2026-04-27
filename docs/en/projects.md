@@ -38,7 +38,6 @@ Serverless API for portfolio visit counting, deployed on Vercel with Upstash Red
 ![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white)
 
 **Repository:** [github.com/Ton-Chyod-s/portfolio-counter-api](https://github.com/Ton-Chyod-s/portfolio-counter-api)
-**Docs:** [api.ton-chyod-s.me](https://api.ton-chyod-s.me)
 
 ---
 
