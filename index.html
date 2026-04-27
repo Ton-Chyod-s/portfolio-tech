@@ -145,7 +145,15 @@
     tracesSampleRate: 0.0,
     ignoreErrors: [
       'ResizeObserver loop limit exceeded',
+      'ResizeObserver loop completed with undelivered notifications',
       'Non-Error promise rejection captured',
+      'Script error.',
+    ],
+    denyUrls: [
+      /extensions\//i,
+      /^chrome:\/\//i,
+      /^chrome-extension:\/\//i,
+      /^moz-extension:\/\//i,
     ],
   });
   </script>
