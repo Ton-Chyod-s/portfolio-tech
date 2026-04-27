@@ -132,6 +132,24 @@
 
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 
+  <!-- Sentry error monitoring -->
+  <script
+    src="https://browser.sentry-cdn.com/8.54.0/bundle.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    Sentry.init({
+    dsn: 'https://cc814bd73a21443183c0f866fc491e19@glitchtip.ton-chyod-s.me/1',
+    environment: location.hostname === 'localhost' ? 'development' : 'production',
+    sampleRate: 1.0,
+    tracesSampleRate: 0.0,
+    ignoreErrors: [
+      'ResizeObserver loop limit exceeded',
+      'Non-Error promise rejection captured',
+    ],
+  });
+  </script>
+
   <!-- Plugin: Portfolio Stats Card -->
   <script>
     (function () {
