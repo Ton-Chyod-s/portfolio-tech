@@ -147,7 +147,7 @@ API com frontend integrado para gerenciamento de precatórios, credores, certid�
 ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 
-**Repositório:** [github.com/Chyod-s/api-precatory-creditor](https://github.com/Chyod-s/api-precatory-creditor) | **Site:** [api-precatory-creditor.up.railway.app](https://api-precatory-creditor.up.railway.app/)
+**Repositório:** [github.com/Chyod-s/api-precatory-creditor](https://github.com/Chyod-s/api-precatory-creditor) | **Site:** [api-precatory-creditor.up.railway.app](https://api-precatory-creditor.up.railway.app/home)
 
 ---
 
