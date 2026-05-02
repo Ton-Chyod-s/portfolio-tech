@@ -2,12 +2,6 @@
   const API = 'https://api.ton-chyod-s.me';
   const isLocal = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
 
-  if (!isLocal && !sessionStorage.getItem('links_visited')) {
-    fetch(API + '/api/visit', { method: 'POST' })
-      .then(r => r.json())
-      .then(() => sessionStorage.setItem('links_visited', '1'))
-      .catch(() => {});
-  }
 })();
 
 const btn = document.getElementById('darkToggle');
