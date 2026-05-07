@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l /c/Users/NovoAdmin/Documents/GitHub/portfolio-tech/docs/*.md)",
+      "Bash(du -sh /c/Users/NovoAdmin/Documents/GitHub/portfolio-tech/*)",
+      "Bash(find /c/Users/NovoAdmin/Documents/GitHub/portfolio-tech -type f \\\\\\( -name \"*.html\" -o -name \"*.css\" -o -name \"*.js\" -o -name \"*.md\" \\\\\\) ! -path \"*/node_modules/*\" -exec wc -l {} +)"
+    ]
+  }
+}

@@ -78,19 +78,20 @@
     })();
   </script>
   <script src="assets/js/clarity.js"></script>
+  <script src="assets/js/config.js"></script>
 </head>
 <body>
   <div id="app"></div>
 
   <!-- Botão de alternar modo escuro/claro -->
-  <button class="dark-toggle-btn" id="darkToggleBtn" title="Alternar modo escuro/claro">🌙</button>
+  <button class="dark-toggle-btn" id="darkToggleBtn" title="Alternar modo escuro/claro" aria-label="Alternar modo escuro/claro" aria-pressed="false">🌙</button>
 
   <!-- Botão de alternar idioma -->
-  <button class="lang-toggle-btn" id="langToggleBtn" title="Switch language">EN</button>
+  <button class="lang-toggle-btn" id="langToggleBtn" title="Switch language" aria-label="Mudar idioma para inglês">EN</button>
 
   <!-- Contador de visitas -->
-  <div class="visit-counter" id="visitCounter">
-    <span class="visit-counter-icon">👁</span>
+  <div class="visit-counter" id="visitCounter" role="status" aria-label="Contador de visitas">
+    <span class="visit-counter-icon" aria-hidden="true">👁</span>
     <span id="gcCount">...</span>
   </div>
 
@@ -101,7 +102,7 @@
   <!-- Contador próprio: sessão + sem bloqueio de ad blocker -->
   <script>
     (function () {
-      var API = 'https://api.ton-chyod-s.me';
+      var API = PORTFOLIO_API;
 
       function updateCount(count) {
         document.getElementById('gcCount').textContent = count;
@@ -183,7 +184,7 @@
   <!-- Plugin: Portfolio Stats Card -->
   <script>
     (function () {
-      var STATS_API = 'https://api.ton-chyod-s.me/api/stats';
+      var STATS_API = PORTFOLIO_API + '/api/stats';
       var PAGES_PT = ['docs/sobre', ''];
       var PAGES_EN = ['docs/en/about', 'docs/en/home'];
       var _statsCache = null;
@@ -251,6 +252,8 @@
         document.documentElement.setAttribute('data-dark', dark ? 'true' : 'false');
         btn.textContent = dark ? '☀️' : '🌙';
         btn.title = dark ? 'Mudar para modo claro' : 'Mudar para modo escuro';
+        btn.setAttribute('aria-pressed', dark ? 'true' : 'false');
+        btn.setAttribute('aria-label', dark ? 'Mudar para modo claro' : 'Mudar para modo escuro');
         localStorage.setItem('portfolioDarkMode', dark);
       }
 
@@ -289,6 +292,7 @@
       function updateLangBtn() {
         langBtn.textContent = portfolioLang === 'pt' ? 'EN' : 'PT';
         langBtn.title = portfolioLang === 'pt' ? 'Switch to English' : 'Mudar para Português';
+        langBtn.setAttribute('aria-label', portfolioLang === 'pt' ? 'Switch to English' : 'Mudar para Português');
       }
 
       document.addEventListener('DOMContentLoaded', function () {
