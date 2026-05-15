@@ -15,6 +15,9 @@
 - **Infrastructure and Automation**
   Docker for isolated environments, CI/CD with GitHub Actions and Azure DevOps Pipelines, process automation with Python and Node.js, and integration with external services (WhatsApp, email, scraping).
 
+- **Quality and Monitoring Tools**
+  Agile task and sprint management with Jira integrated to GitHub (GitHub for Jira), production error monitoring with Sentry, and mobile app distribution with Expo and EAS Build.
+
 ---
 
 ## Mid-Level Back-End Developer – Corelab

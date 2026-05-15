@@ -15,6 +15,9 @@
 - **Infraestrutura e Automação**
   Docker para ambientes isolados, CI/CD com GitHub Actions e Azure DevOps Pipelines, automação de processos com Python e Node.js, e integração com serviços externos (WhatsApp, e-mail, scraping).
 
+- **Ferramentas de Qualidade e Monitoramento**
+  Gestão de tarefas e sprints com Jira integrado ao GitHub (GitHub for Jira), monitoramento de erros em produção com Sentry, e distribuição de apps mobile com Expo e EAS Build.
+
 ---
 
 ## Desenvolvedor Full Stack Pleno – Corelab

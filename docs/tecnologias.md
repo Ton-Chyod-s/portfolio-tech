@@ -13,6 +13,7 @@
 - **Express.js**: Framework minimalista para APIs RESTful em Node.js.
 - **React / Vite / Tailwind CSS**: Frontend SPA com build otimizado e estilização utilitária.
 - **React Native**: Desenvolvimento mobile multiplataforma com suporte a fluxos multiempresa.
+- **Expo / EAS Build**: Build e distribuição de apps React Native para Android e iOS com perfis de desenvolvimento, preview e produção.
 - **Flask**: Backend leve em Python para APIs e dashboards analíticos.
 - **Entity Framework Core**: ORM para .NET Core com mapeamento objeto-relacional.
 - **Prisma ORM**: ORM moderno e tipado para Node.js/TypeScript, com migrations e query builder.
@@ -32,6 +33,8 @@
 - **Docker**: Containerização para ambientes isolados e deploy consistente.
 - **GitHub Actions / CI/CD**: Pipelines de integração e entrega contínua automatizados.
 - **Azure DevOps**: Planejamento ágil com boards, pipelines e controle de sprints.
+- **Jira**: Gestão ágil de tarefas e sprints com integração GitHub via GitHub for Jira (rastreabilidade commit ↔ issue).
+- **Sentry**: Monitoramento de erros e rastreamento de performance em apps React Native/Expo com integração ao EAS Build.
 - **Git / Gitflow**: Versionamento com branching estratégico para organização e colaboração em equipe.
 - **Swagger / OpenAPI**: Documentação automática e interativa de APIs RESTful.
 - **JWT / Cookie**: Autenticação e autorização baseada em tokens para APIs REST.
