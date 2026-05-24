@@ -1,5 +1,5 @@
 <h1 align="center">Klayton Dias</h1>
-<p align="center">Full Back-End Developer · Node.js · TypeScript · RESTful APIs</p>
+<p align="center">Full Software Developer · Node.js · TypeScript · RESTful APIs</p>
 <p align="center">
   <a href="https://ton-chyod-s.me"><img src="https://img.shields.io/badge/Portfolio-ton--chyod--s.me-000?style=flat&logo=googlechrome&logoColor=white" /></a>
   <a href="mailto:klayton.dias@hotmail.com"><img src="https://img.shields.io/badge/Email-000?style=flat&logo=gmail&logoColor=white" /></a>
@@ -8,7 +8,7 @@
 
 ---
 
-Full Back-End Developer specialized in RESTful APIs, process automation, and Clean Architecture. Production projects with Node.js, TypeScript, Python, and C#. Focus on security, scalability, and sustainable code.
+Full Software Developer specialized in RESTful APIs, process automation, and Clean Architecture. Production projects with Node.js, TypeScript, Python, and C#. Focus on security, scalability, and sustainable code.
 
 ## Stack
 

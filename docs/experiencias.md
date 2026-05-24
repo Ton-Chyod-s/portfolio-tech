@@ -24,7 +24,7 @@
 *Set/2025 – até o momento*
 **Startup** · Node.js · AdonisJS · React Native · MVC
 
-Atuação full-cycle em 4 produtos simultâneos. Responsável por back-end, integrações e suporte ao mobile em ambiente multiempresa.
+Atuação full-cycle em 4 produtos simultâneos. Responsável por Software, integrações e suporte ao mobile em ambiente multiempresa.
 
 **Principais entregas:**
 - Desenvolvimento e manutenção de APIs e regras de negócio em Node.js e PostgreSQL, com foco em cenários multiempresa e consistência de dados por vínculo.
@@ -81,7 +81,7 @@ Atuação full-cycle em 4 produtos simultâneos. Responsável por back-end, inte
 
 ## Desenvolvedor – Autônomo  
 *Fev/2022 – Abr/2023 (1 ano e 2 meses)*  
-- Desenvolvimento back-end com Python, JavaScript e Node.js.  
+- Desenvolvimento Software com Python, JavaScript e Node.js.  
 - Análise de dados com Power BI, M, DAX e SQL para soluções escaláveis.
 
 ## Operador de Telemarketing Ativo – BT Call Center  
@@ -96,7 +96,7 @@ Atuação full-cycle em 4 produtos simultâneos. Responsável por back-end, inte
 
 ### Líder Técnico (Tech Lead) – Mega Júnior (UFMS)
 *Jun/2025 – Jan/2026 (7 meses)*  
-- Liderança técnica e desenvolvimento back-end na refatoração completa da API do projeto Dipemax.  
+- Liderança técnica e desenvolvimento Software na refatoração completa da API do projeto Dipemax.  
 - Implementação de boas práticas de arquitetura de software (3 camadas), Node.js e TypeScript.  
 - Aplicação de padrões de projeto, JWT e Cookie para autenticação, Swagger para documentação da API.  
 - Estruturação da documentação da API para facilitar integração e entendimento de novos desenvolvedores.  

@@ -20,11 +20,11 @@
 
 ---
 
-## Mid-Level Back-End Developer – Corelab
+## Mid-Level Software Developer – Corelab
 *Sep/2025 – present*
 **Startup** · Node.js · AdonisJS · React Native · MVC
 
-Full-cycle involvement across 4 simultaneous products. Responsible for back-end, integrations, and mobile support in a multi-tenant environment.
+Full-cycle involvement across 4 simultaneous products. Responsible for Software, integrations, and mobile support in a multi-tenant environment.
 
 **Key deliveries:**
 - Development and maintenance of APIs and business logic in Node.js and PostgreSQL, focused on multi-tenant scenarios and data consistency by relationship.
@@ -81,7 +81,7 @@ Full-cycle involvement across 4 simultaneous products. Responsible for back-end,
 
 ## Developer – Freelance
 *Feb/2022 – Apr/2023 (1 year and 2 months)*
-- Back-end development with Python, JavaScript, and Node.js.
+- Software development with Python, JavaScript, and Node.js.
 - Data analysis with Power BI, M, DAX, and SQL for scalable solutions.
 
 ## Outbound Telemarketing Operator – BT Call Center
@@ -96,7 +96,7 @@ Full-cycle involvement across 4 simultaneous products. Responsible for back-end,
 
 ### Technical Lead (Tech Lead) – Mega Júnior (UFMS)
 *Jun/2025 – Jan/2026 (7 months)*
-- Technical leadership and back-end development in the complete refactoring of the Dipemax project API.
+- Technical leadership and Software development in the complete refactoring of the Dipemax project API.
 - Implementation of software architecture best practices (3 layers), Node.js, and TypeScript.
 - Application of design patterns, JWT and Cookie for authentication, Swagger for API documentation.
 - API documentation structuring to facilitate integration and understanding for new developers.

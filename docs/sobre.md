@@ -2,7 +2,7 @@
   <img src="https://github.com/Ton-Chyod-s.png" alt="Klayton Dias" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.15);" />
   <div>
     <h2 style="margin: 0 0 8px 0;">Klayton Dias</h2>
-    <p style="margin: 0; font-size: 16px; color: #666;">Desenvolvedor Back-End Pleno</p>
+    <p style="margin: 0; font-size: 16px; color: #666;">Desenvolvedor Software Pleno</p>
     <p style="margin: 8px 0 0 0; line-height: 2;">
       <a href="https://linkedin.com/in/ton-chyod-s" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white" alt="LinkedIn" style="height:20px;width:auto;display:inline-block;vertical-align:middle;" /></a>
       <a href="https://github.com/Ton-Chyod-s" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub" style="height:20px;width:auto;display:inline-block;vertical-align:middle;" /></a>
@@ -18,7 +18,7 @@
 
 - Desenvolvedor Full Stack Pleno na **Corelab**, atuando em múltiplos produtos simultâneos com foco em APIs, integrações e sistemas multiempresa.
 - Pós-graduado em **Arquitetura de Software**, com conhecimento aplicado em **Clean Architecture**, **SOLID** e padrões de projeto.
-- Experiência com **Node.js, TypeScript, AdonisJS, PostgreSQL, Sequelize** e ecossistema de desenvolvimento back-end moderno.
+- Experiência com **Node.js, TypeScript, AdonisJS, PostgreSQL, Sequelize** e ecossistema de desenvolvimento Software moderno.
 - Experiência com **Docker**, **GitHub Actions** e práticas de CI/CD para ambientes consistentes e entregas automatizadas.
 - Versionamento com **Git e Gitflow**, garantindo organização e colaboração em equipe via code review e PRs.
 - Construção de ferramentas próprias: extensões Chrome, apps desktop com Tauri + Rust e automações diversas.
@@ -50,7 +50,7 @@
 
 - **Pós-Graduação em Arquitetura de Software (Jan/2025 – Jul/2025):** Aprofundei minha compreensão em design de sistemas, Clean Architecture e padrões que tornam o código sustentável e fácil de manter.
 
-- **Mega Júnior (UFMS) - Jun/2025 a Jan/2026:** Atuei como Tech Lead e desenvolvedor back-end na refatoração completa da API do projeto Dipemax, aplicando Clean Architecture, Node.js, TypeScript, JWT e Swagger.
+- **Mega Júnior (UFMS) - Jun/2025 a Jan/2026:** Atuei como Tech Lead e desenvolvedor Software na refatoração completa da API do projeto Dipemax, aplicando Clean Architecture, Node.js, TypeScript, JWT e Swagger.
 
 - **Corelab - Set/2025 até o momento:** Atuo como Desenvolvedor Full Stack Pleno em 4 produtos simultâneos, com responsabilidade sobre APIs, integrações mobile, segurança e qualidade de entrega em ambiente de startup.
 

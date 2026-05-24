@@ -2,7 +2,7 @@
   <img src="https://github.com/Ton-Chyod-s.png" alt="Klayton Dias" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.15);" />
   <div>
     <h2 style="margin: 0 0 8px 0;">Klayton Dias</h2>
-    <p style="margin: 0; font-size: 16px; color: #666;">Mid-Level Back-End Developer</p>
+    <p style="margin: 0; font-size: 16px; color: #666;">Mid-Level Software Developer</p>
     <p style="margin: 8px 0 0 0; line-height: 2;">
       <a href="https://linkedin.com/in/ton-chyod-s" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white" alt="LinkedIn" style="height:20px;width:auto;display:inline-block;vertical-align:middle;" /></a>
       <a href="https://github.com/Ton-Chyod-s" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub" style="height:20px;width:auto;display:inline-block;vertical-align:middle;" /></a>
@@ -16,9 +16,9 @@
 
 ## About Me
 
-- Mid-Level Back-End Developer at **Corelab**, working across multiple products simultaneously with a focus on APIs, integrations, and multi-tenant systems.
+- Mid-Level Software Developer at **Corelab**, working across multiple products simultaneously with a focus on APIs, integrations, and multi-tenant systems.
 - Post-graduate in **Software Architecture**, with applied knowledge in **Clean Architecture**, **SOLID**, and design patterns.
-- Experience with **Node.js, TypeScript, AdonisJS, PostgreSQL, Sequelize** and the modern back-end development ecosystem.
+- Experience with **Node.js, TypeScript, AdonisJS, PostgreSQL, Sequelize** and the modern Software development ecosystem.
 - Experience with **Docker**, **GitHub Actions**, and CI/CD practices for consistent environments and automated deliveries.
 - Version control with **Git and Gitflow**, ensuring team organization and collaboration through code reviews and PRs.
 - Building personal tools: Chrome extensions, desktop apps with Tauri + Rust, and various automations.
@@ -42,11 +42,11 @@
 
 - **Information Technology Degree:** Deepening knowledge in programming, architecture, and agile methodologies, building technical foundations and a systemic view.
 
-- **Mega Júnior (UFMS) — Jun/2025 to Jan/2026:** Served as Tech Lead and back-end developer in the complete refactoring of the Dipemax project API, applying Clean Architecture, Node.js, TypeScript, JWT, and Swagger.
+- **Mega Júnior (UFMS) — Jun/2025 to Jan/2026:** Served as Tech Lead and Software developer in the complete refactoring of the Dipemax project API, applying Clean Architecture, Node.js, TypeScript, JWT, and Swagger.
 
 - **Post-Graduation in Software Architecture:** Deepened understanding of system design, Clean Architecture, and patterns that make code sustainable and maintainable.
 
-- **Corelab — Sep/2025 to present:** Working as a Mid-Level Back-End Developer across 4 simultaneous products, with responsibility for APIs, mobile integrations, security, and delivery quality in a startup environment.
+- **Corelab — Sep/2025 to present:** Working as a Mid-Level Software Developer across 4 simultaneous products, with responsibility for APIs, mobile integrations, security, and delivery quality in a startup environment.
 
 **Currently:** Evolving in Rust/Tauri for desktop development, deepening API security practices (RBAC, CSRF, rate limiting), and continuing to build personal tools that solve real day-to-day problems.
 
