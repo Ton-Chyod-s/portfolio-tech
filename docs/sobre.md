@@ -63,6 +63,7 @@
 - **Desenvolvimento de Aplicações .NET** – Educaminas EAD (Jan/2025 – Nov/2025)
 - **Pós-Graduação em Arquitetura de Software** – Educaminas EAD (Jan/2025 – Jul/2025)
 - **Bacharelado em Arquitetura e Urbanismo** – Uniderp (Jun/2013 – Jun/2018)
+- **Pós-Graduação em Gerenciamento, Implantação e Desenvolvimento de Projetos em BIM** – FacuMinas (Concluído, 2024)
 
 ## Cursos Livres
 
