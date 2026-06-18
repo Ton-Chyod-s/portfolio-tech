@@ -24,7 +24,7 @@
 *Set/2025 – até o momento*
 **Startup** · Node.js · AdonisJS · React Native · MVC
 
-Atuação full-cycle em 4 produtos simultâneos. Responsável por Software, integrações e suporte ao mobile em ambiente multiempresa.
+Atuação full-cycle em 5 produtos simultâneos. Responsável por Software, integrações e suporte ao mobile em ambiente multiempresa.
 
 **Principais entregas:**
 - Desenvolvimento e manutenção de APIs e regras de negócio em Node.js e PostgreSQL, com foco em cenários multiempresa e consistência de dados por vínculo.
@@ -59,6 +59,12 @@ Atuação full-cycle em 4 produtos simultâneos. Responsável por Software, inte
 *AKGP – Plataforma Esportiva*
 - Telas de clube, modalidades e gestão de partidas.
 - Tela de carreira do jogador.
+
+*ZP – Plataforma Financeira/Contábil*
+- Reforço de segurança no acesso a arquivos: migração do armazenamento na nuvem (AWS S3) de público para privado, com geração de links de acesso temporários sob demanda.
+- Centralização do acesso a arquivos em um serviço único, aplicado a avatares, documentos fiscais, certificado digital e exportações.
+- Proteção de dados sensíveis nas respostas da API e ajuste do envio de e-mails para não depender de links públicos.
+- Cobertura por testes automatizados e documentação técnica do novo fluxo.
 
 ## Desenvolvedor de Sistemas I – NextMed Tecnologia
 *Set/2024 – Jan/2025 (5 meses · contrato por projeto)*

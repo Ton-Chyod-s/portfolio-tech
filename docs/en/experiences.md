@@ -24,7 +24,7 @@
 *Sep/2025 – present*
 **Startup** · Node.js · AdonisJS · React Native · MVC
 
-Full-cycle involvement across 4 simultaneous products. Responsible for Software, integrations, and mobile support in a multi-tenant environment.
+Full-cycle involvement across 5 simultaneous products. Responsible for Software, integrations, and mobile support in a multi-tenant environment.
 
 **Key deliveries:**
 - Development and maintenance of APIs and business logic in Node.js and PostgreSQL, focused on multi-tenant scenarios and data consistency by relationship.
@@ -59,6 +59,12 @@ Full-cycle involvement across 4 simultaneous products. Responsible for Software,
 *AKGP – Sports Platform*
 - Club, modalities, and match management screens.
 - Player career screen.
+
+*ZP – Financial/Accounting Platform*
+- Security improvement on file access: migration of cloud storage (AWS S3) from public to private, with on-demand generation of temporary access links.
+- Centralization of file access in a single service, applied to avatars, fiscal documents, digital certificate, and exports.
+- Protection of sensitive data in API responses and adjustment of email delivery to avoid relying on public links.
+- Automated test coverage and technical documentation of the new flow.
 
 ## Systems Developer I – NextMed Tecnologia
 *Sep/2024 – Jan/2025 (5 months)*
