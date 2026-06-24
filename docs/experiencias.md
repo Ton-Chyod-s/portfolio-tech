@@ -64,6 +64,11 @@ Atuação full-cycle em 5 produtos simultâneos. Responsável por Software, inte
 - Reforço de segurança no acesso a arquivos: migração do armazenamento na nuvem (AWS S3) de público para privado, com geração de links de acesso temporários sob demanda.
 - Centralização do acesso a arquivos em um serviço único, aplicado a avatares, documentos fiscais, certificado digital e exportações.
 - Proteção de dados sensíveis nas respostas da API e ajuste do envio de e-mails para não depender de links públicos.
+- Correção de consistência no dashboard e KPIs: eliminação de saldos residuais exibidos após a exclusão de todos os lançamentos e contas bancárias.
+- Novo card comparativo por categoria (gráfico de barras) na página inicial, apoiando a análise financeira do cliente.
+- Inclusão de novos campos no cadastro de empresa e de origem no endpoint de registro; código de serviço editável para atender clientes que operam com codificações distintas.
+- Verificação de validade de certificado digital com alerta ao usuário e sincronização da lógica de bloqueio entre front-end e back-end.
+- Correção dos modais de exclusão de lançamentos, ajuste de layout responsivo nas telas de cadastro e forma de pagamento e redirecionamento automático pós-cadastro com i18n (pt-BR/en-US).
 - Cobertura por testes automatizados e documentação técnica do novo fluxo.
 
 ## Desenvolvedor de Sistemas I – NextMed Tecnologia

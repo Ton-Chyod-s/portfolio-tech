@@ -64,6 +64,11 @@ Full-cycle involvement across 5 simultaneous products. Responsible for Software,
 - Security improvement on file access: migration of cloud storage (AWS S3) from public to private, with on-demand generation of temporary access links.
 - Centralization of file access in a single service, applied to avatars, fiscal documents, digital certificate, and exports.
 - Protection of sensitive data in API responses and adjustment of email delivery to avoid relying on public links.
+- Data consistency fix on the dashboard and KPIs: removal of residual balances displayed after deleting all transactions and bank accounts.
+- New category-comparison card (bar chart) on the home page, supporting the client's financial analysis.
+- New fields in company registration and an origin field on the register endpoint; editable service code to support clients that work with different codings.
+- Digital certificate validity check with user alerts and synchronization of the blocking logic between front-end and back-end.
+- Fixes to transaction deletion modals, responsive layout adjustments on registration and payment screens, and automatic post-registration redirect with i18n (pt-BR/en-US).
 - Automated test coverage and technical documentation of the new flow.
 
 ## Systems Developer I – NextMed Tecnologia
