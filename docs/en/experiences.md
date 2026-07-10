@@ -21,7 +21,7 @@
 ---
 
 ## Mid-Level Software Developer – Corelab
-*Sep/2025 – present*
+*Sep/2025 – Aug/2026 (1 year)*
 **Startup** · Node.js · AdonisJS · React Native · MVC
 
 Full-cycle involvement across 5 simultaneous products. Responsible for Software, integrations, and mobile support in a multi-tenant environment.
@@ -69,6 +69,12 @@ Full-cycle involvement across 5 simultaneous products. Responsible for Software,
 - New fields in company registration and an origin field on the register endpoint; editable service code to support clients that work with different codings.
 - Digital certificate validity check with user alerts and synchronization of the blocking logic between front-end and back-end.
 - Fixes to transaction deletion modals, responsive layout adjustments on registration and payment screens, and automatic post-registration redirect with i18n (pt-BR/en-US).
+- Full spreadsheet (Excel/XLSX) transaction import module: a staging pipeline with import sessions, promotion into real transactions, and cancellation, keeping data isolated until user confirmation.
+- Spreadsheet parser with per-source column profiles, normalizing monetary values and dates from multiple sources; a row validation engine (errors and warnings) and duplicate detection by amount, due date, description, and account.
+- Entity resolution engine (contact, category, and account) to map or create pending records before importing, with automatic revalidation once the last pending item is resolved.
+- Review screen with pagination, bulk editing with revalidation, and an importability summary (canImport); session history and detail, cancellation, and default template download (migration from ExcelJS to XLSX).
+- XLSX export with new filters and by date type; front-end with upload, import, and entity resolution (EntityResolution) components and validation messages.
+- Worker for standardizing phone numbers registered via the website and unit test coverage across all services in the flow.
 - Automated test coverage and technical documentation of the new flow.
 
 ## Systems Developer I – NextMed Tecnologia

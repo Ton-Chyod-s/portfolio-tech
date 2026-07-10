@@ -16,7 +16,7 @@
 
 ## About Me
 
-- Mid-Level Software Developer at **Corelab**, working across multiple products simultaneously with a focus on APIs, integrations, and multi-tenant systems.
+- Mid-Level Software Developer with experience at **Corelab**, where I worked across multiple products simultaneously with a focus on APIs, integrations, and multi-tenant systems.
 - Post-graduate in **Software Architecture**, with applied knowledge in **Clean Architecture**, **SOLID**, and design patterns.
 - Experience with **Node.js, TypeScript, AdonisJS, PostgreSQL, Sequelize** and the modern Software development ecosystem.
 - Experience with **Docker**, **GitHub Actions**, and CI/CD practices for consistent environments and automated deliveries.
@@ -46,7 +46,7 @@
 
 - **Post-Graduation in Software Architecture:** Deepened understanding of system design, Clean Architecture, and patterns that make code sustainable and maintainable.
 
-- **Corelab — Sep/2025 to present:** Working as a Mid-Level Software Developer across 4 simultaneous products, with responsibility for APIs, mobile integrations, security, and delivery quality in a startup environment.
+- **Corelab — Sep/2025 to Aug/2026:** Worked as a Mid-Level Software Developer across 5 simultaneous products, with responsibility for APIs, mobile integrations, security, and delivery quality in a startup environment.
 
 **Currently:** Evolving in Rust/Tauri for desktop development, deepening API security practices (RBAC, CSRF, rate limiting), and continuing to build personal tools that solve real day-to-day problems.
 

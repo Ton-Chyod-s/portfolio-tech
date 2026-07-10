@@ -16,7 +16,7 @@
 
 ## Sobre Mim
 
-- Desenvolvedor Full Stack Pleno na **Corelab**, atuando em múltiplos produtos simultâneos com foco em APIs, integrações e sistemas multiempresa.
+- Desenvolvedor Full Stack Pleno com passagem pela **Corelab**, onde atuei em múltiplos produtos simultâneos com foco em APIs, integrações e sistemas multiempresa.
 - Pós-graduado em **Arquitetura de Software**, com conhecimento aplicado em **Clean Architecture**, **SOLID** e padrões de projeto.
 - Experiência com **Node.js, TypeScript, AdonisJS, PostgreSQL, Sequelize** e ecossistema de desenvolvimento Software moderno.
 - Experiência com **Docker**, **GitHub Actions** e práticas de CI/CD para ambientes consistentes e entregas automatizadas.
@@ -52,7 +52,7 @@
 
 - **Mega Júnior (UFMS) - Jun/2025 a Jan/2026:** Atuei como Tech Lead e desenvolvedor Software na refatoração completa da API do projeto Dipemax, aplicando Clean Architecture, Node.js, TypeScript, JWT e Swagger.
 
-- **Corelab - Set/2025 até o momento:** Atuo como Desenvolvedor Full Stack Pleno em 4 produtos simultâneos, com responsabilidade sobre APIs, integrações mobile, segurança e qualidade de entrega em ambiente de startup.
+- **Corelab - Set/2025 a Ago/2026:** Atuei como Desenvolvedor Full Stack Pleno em 5 produtos simultâneos, com responsabilidade sobre APIs, integrações mobile, segurança e qualidade de entrega em ambiente de startup.
 
 **Atualmente:** Evoluindo em Rust/Tauri para desenvolvimento desktop, aprofundo práticas de segurança em APIs (RBAC, CSRF, rate limit) e continuo construindo ferramentas próprias que resolvem problemas reais do dia a dia.
 

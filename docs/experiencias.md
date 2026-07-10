@@ -21,7 +21,7 @@
 ---
 
 ## Desenvolvedor Full Stack Pleno – Corelab
-*Set/2025 – até o momento*
+*Set/2025 – Ago/2026 (1 ano)*
 **Startup** · Node.js · AdonisJS · React Native · MVC
 
 Atuação full-cycle em 5 produtos simultâneos. Responsável por Software, integrações e suporte ao mobile em ambiente multiempresa.
@@ -69,6 +69,12 @@ Atuação full-cycle em 5 produtos simultâneos. Responsável por Software, inte
 - Inclusão de novos campos no cadastro de empresa e de origem no endpoint de registro; código de serviço editável para atender clientes que operam com codificações distintas.
 - Verificação de validade de certificado digital com alerta ao usuário e sincronização da lógica de bloqueio entre front-end e back-end.
 - Correção dos modais de exclusão de lançamentos, ajuste de layout responsivo nas telas de cadastro e forma de pagamento e redirecionamento automático pós-cadastro com i18n (pt-BR/en-US).
+- Módulo completo de importação de lançamentos por planilha (Excel/XLSX): pipeline de staging com sessões de importação, promoção para transações reais e cancelamento, isolando os dados até a confirmação do usuário.
+- Parser de planilha com perfis de coluna por sistema de origem, normalizando valores monetários e datas de múltiplas fontes; motor de validação de linhas (erros e warnings) e detecção de duplicidade por valor, vencimento, descrição e conta.
+- Motor de resolução de entidades (contato, categoria e conta) para mapear ou criar cadastros pendentes antes da importação, com revalidação automática ao resolver a última pendência.
+- Tela de conferência com paginação, edição em lote com revalidação e resumo de importabilidade (canImport); histórico e detalhe de sessões e download de modelo padrão (migração de ExcelJS para XLSX).
+- Exportação para XLSX com novos filtros e por tipo de data; front-end com componentes de upload, importação e resolução de entidades (EntityResolution) e mensagens de validação.
+- Worker para padronização de números de telefone cadastrados via site e cobertura por testes unitários em todos os serviços do fluxo.
 - Cobertura por testes automatizados e documentação técnica do novo fluxo.
 
 ## Desenvolvedor de Sistemas I – NextMed Tecnologia
