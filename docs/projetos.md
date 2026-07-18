@@ -1,5 +1,60 @@
 # Projetos
 
+## SyncLar – Divisão de Despesas Compartilhadas (Full Stack)
+*Fev 2026 – Presente*
+
+Produto full stack para divisão de despesas entre pessoas que dividem a mesma residência (repúblicas, casais e apartamentos), composto por API REST (Node/TypeScript) e app mobile (React Native + Expo). Permite criar "casas", convidar membros, registrar contas com divisão flexível, ler NFC-e pela câmera, acompanhar pagamentos e visualizar um dashboard financeiro. API com deploy na Digital Ocean (fallback na Vercel), banco na Neon (PostgreSQL) e Cloudinary para fotos e comprovantes; app distribuído via Expo (preview e produção) e publicado na Play Store (fase de teste).
+
+**Funcionalidades principais:**
+- Autenticação com JWT + refresh token e login via Google OAuth (senhas com Argon2)
+- Gestão de casas e membros com papéis (admin/membro) e convite por código
+- Divisão de contas em três modos: igual, percentual e personalizada
+- Leitura e parsing de NFC-e pela câmera para extrair itens e evitar duplicidade
+- Dashboard financeiro com saldos por membro e cálculo de acertos (quem deve a quem)
+- Envio de comprovantes, notificações push e assinatura premium (mensal/anual) via PIX
+- Segurança com Helmet, CORS, rate limit e CSRF; validação com Zod e monitoramento via Sentry
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/Neon-00E5CC?logo=postgresql&logoColor=white)
+![Expo](https://img.shields.io/badge/Expo-000020?logo=expo&logoColor=white)
+![React Native](https://img.shields.io/badge/React_Native-61DAFB?logo=react&logoColor=black)
+![React Query](https://img.shields.io/badge/React_Query-FF4154?logo=reactquery&logoColor=white)
+![Zustand](https://img.shields.io/badge/Zustand-433E38?logo=react&logoColor=white)
+
+**App:** [Play Store (fase de teste)](https://play.google.com/apps/testing/com.synclar.myapp)
+
+---
+
+## MyFrame CG – E-commerce de Quadros Personalizados (Full Stack)
+*Abr 2026 – Presente*
+
+Plataforma full stack de e-commerce para quadros e artes personalizadas, composta por API REST (Node/TypeScript), painel administrativo (React) e site público (React). A API centraliza autenticação, catálogo, pagamentos, afiliados e analytics; o painel oferece a gestão do negócio e um editor de design em canvas; e o site apresenta a loja ao cliente final com galeria e integração multicanal. Deploy serverless na Vercel com Neon (PostgreSQL), AbacatePay para pagamentos e Cloudinary para imagens.
+
+**Funcionalidades principais:**
+- Autenticação com JWT + rotação de refresh token, Google OAuth e RBAC (usuário/admin)
+- Pagamentos via AbacatePay com webhooks e controle de status; afiliados com comissões, cupons e saque via PIX
+- Catálogo de quadros com variações e agrupamento de modelos
+- Painel admin com dashboard de vendas, gestão de clientes/faturamento/afiliados e editor de design em canvas (recorte, rotação, atalhos)
+- Site com landing de temas dinâmicos, galeria Cloudinary com lightbox, avaliações e integração multicanal (Shopee, WhatsApp, Instagram)
+- Analytics de vendas mensais e clientes por região; segurança (Helmet, CORS, rate limit, CSRF) e monitoramento com Sentry
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/Neon-00E5CC?logo=postgresql&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)
+
+**Site Público:** [myframecg.me](https://www.myframecg.me/)
+
+
+---
+
 ## portfolio-tech – Portfólio Pessoal
 *Ago 2025 - Abr 2026*
 

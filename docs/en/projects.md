@@ -1,7 +1,61 @@
 # Projects
 
+## SyncLar – Shared Expense Splitting (Full Stack)
+*Feb 2026 – Present*
+
+Full-stack product for splitting expenses among people who share the same home (shared houses, couples, and apartments), composed of a REST API (Node/TypeScript) and a mobile app (React Native + Expo). It lets users create "houses", invite members, register bills with flexible splitting, scan NFC-e receipts with the camera, track payments, and view a financial dashboard. API deployed on Digital Ocean (Vercel fallback), database on Neon (PostgreSQL), and Cloudinary for photos and receipts; app distributed via Expo (preview and production) and published on the Play Store (testing phase).
+
+**Main features:**
+- Authentication with JWT + refresh token and Google OAuth login (passwords with Argon2)
+- House and member management with roles (admin/member) and invite by code
+- Bill splitting in three modes: equal, percentage, and custom
+- NFC-e receipt scanning and parsing via camera to extract items and avoid duplicates
+- Financial dashboard with per-member balances and settlement calculation (who owes whom)
+- Receipt uploads, push notifications, and premium subscription (monthly/annual) via PIX
+- Security with Helmet, CORS, rate limit, and CSRF; validation with Zod and monitoring via Sentry
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/Neon-00E5CC?logo=postgresql&logoColor=white)
+![Expo](https://img.shields.io/badge/Expo-000020?logo=expo&logoColor=white)
+![React Native](https://img.shields.io/badge/React_Native-61DAFB?logo=react&logoColor=black)
+![React Query](https://img.shields.io/badge/React_Query-FF4154?logo=reactquery&logoColor=white)
+![Zustand](https://img.shields.io/badge/Zustand-433E38?logo=react&logoColor=white)
+
+**App:** [Play Store (testing phase)](https://play.google.com/apps/testing/com.synclar.myapp)
+
+---
+
+## MyFrame CG – Custom Framing E-commerce (Full Stack)
+*Apr 2026 – Present*
+
+Full-stack e-commerce platform for custom frames and personalized art, composed of a REST API (Node/TypeScript), an admin panel (React), and a public website (React). The API centralizes authentication, catalog, payments, affiliates, and analytics; the panel provides business management and a canvas-based design editor; and the website presents the store to end customers with a gallery and multi-channel integration. Serverless deployment on Vercel with Neon (PostgreSQL), AbacatePay for payments, and Cloudinary for images.
+
+**Main features:**
+- Authentication with JWT + refresh token rotation, Google OAuth, and RBAC (user/admin)
+- Payments via AbacatePay with webhooks and status control; affiliates with commissions, coupons, and PIX withdrawals
+- Frame catalog with variants and model grouping
+- Admin panel with sales dashboard, client/billing/affiliate management, and a canvas-based design editor (crop, rotate, shortcuts)
+- Website with dynamic-theme landing, Cloudinary gallery with lightbox, reviews, and multi-channel integration (Shopee, WhatsApp, Instagram)
+- Monthly sales and per-region client analytics; security (Helmet, CORS, rate limit, CSRF) and monitoring via Sentry
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/Neon-00E5CC?logo=postgresql&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)
+
+**Website:** [myframecg.me](https://www.myframecg.me/)
+
+---
+
 ## portfolio-tech – Personal Portfolio
-*Ago 2025 - Abr 2026*
+*Aug 2025 - Apr 2026*
 
 Personal portfolio website built with Docsify, showcasing projects, experiences, technologies, and an HTML/CSS printable resume. Features dark mode, visit counter, sidebar navigation, and multi-language support (PT/EN).
 
@@ -86,7 +140,7 @@ Full stack application for visualizing sessions collected by the Full Page Captu
 ---
 
 ## SYT Playlist Downloader – Desktop App for Playlist Download
-*Maio 2025 - Apr 2026*
+*May 2025 - Apr 2026*
 
 Cross-platform desktop app for downloading YouTube and Spotify playlists, built with Tauri + React + TypeScript + Rust.
 
