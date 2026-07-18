@@ -119,19 +119,19 @@ ul li { font-size: 9pt; line-height: 1.45; margin-bottom: 2px; }
     bottom: 0;
     left: 15mm;
     right: 15mm;
-    font-size: 7pt;
+    font-size: 6.5pt;
     color: #bbb;
     text-align: center;
-    line-height: 1.8;
+    line-height: 1.35;
     border-top: 1px solid #e8e8e8;
-    padding-top: 3px;
+    padding-top: 2px;
   }
 
   .page {
     margin: 0;
     box-shadow: none;
     width: 100%;
-    padding: 0 0 14mm;
+    padding: 0 0 10mm;
   }
 
   @page {
@@ -145,9 +145,13 @@ ul li { font-size: 9pt; line-height: 1.45; margin-bottom: 2px; }
     }
   }
 
-  .exp-item      { break-inside: avoid; }
+  .exp-item      { break-inside: avoid; margin-bottom: 7px; }
   .edu-item      { break-inside: avoid; }
   .skills-cat    { break-inside: avoid; }
-  .section-title { break-after: avoid; }
+  .section-title { break-after: avoid; margin: 9px 0 5px; }
   .page-break    { break-before: page; }
+
+  /* Evita que a última seção seja empurrada para uma nova página */
+  .cv-body > ul:last-child { margin-bottom: 0; }
+  .cv-body > ul:last-child li:last-child { margin-bottom: 0; }
 }
