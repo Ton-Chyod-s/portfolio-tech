@@ -29,7 +29,7 @@ Full-stack product for splitting expenses among people who share the same home (
 ---
 
 ## MyFrame CG – Custom Framing E-commerce (Full Stack)
-*Apr 2026 – Present*
+*Apr 2025 – Present*
 
 Full-stack e-commerce platform for custom frames and personalized art, composed of a REST API (Node/TypeScript), an admin panel (React), and a public website (React). The API centralizes authentication, catalog, payments, affiliates, and analytics; the panel provides business management and a canvas-based design editor; and the website presents the store to end customers with a gallery and multi-channel integration. Serverless deployment on Vercel with Neon (PostgreSQL), AbacatePay for payments, and Cloudinary for images.
 

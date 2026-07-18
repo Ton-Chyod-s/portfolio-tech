@@ -29,7 +29,7 @@ Produto full stack para divisão de despesas entre pessoas que dividem a mesma r
 ---
 
 ## MyFrame CG – E-commerce de Quadros Personalizados (Full Stack)
-*Abr 2026 – Presente*
+*Abr 2025 – Presente*
 
 Plataforma full stack de e-commerce para quadros e artes personalizadas, composta por API REST (Node/TypeScript), painel administrativo (React) e site público (React). A API centraliza autenticação, catálogo, pagamentos, afiliados e analytics; o painel oferece a gestão do negócio e um editor de design em canvas; e o site apresenta a loja ao cliente final com galeria e integração multicanal. Deploy serverless na Vercel com Neon (PostgreSQL), AbacatePay para pagamentos e Cloudinary para imagens.
 
