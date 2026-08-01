@@ -21,7 +21,7 @@
 ---
 
 ## Desenvolvedor Full Stack Pleno – Corelab
-*Set/2025 – Ago/2026 (1 ano)*
+*Set/2025 – Ago/2026 (11 meses)*
 **Startup** · Node.js · AdonisJS · React Native · MVC
 
 Atuação full-cycle em 5 produtos simultâneos. Responsável por Software, integrações e suporte ao mobile em ambiente multiempresa.
