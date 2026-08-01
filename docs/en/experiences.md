@@ -21,7 +21,7 @@
 ---
 
 ## Mid-Level Software Developer – Corelab
-*Sep/2025 – Aug/2026 (1 year)*
+*Sep/2025 – Aug/2026 (11 months)*
 **Startup** · Node.js · AdonisJS · React Native · MVC
 
 Full-cycle involvement across 5 simultaneous products. Responsible for Software, integrations, and mobile support in a multi-tenant environment.
