@@ -1,9 +1,9 @@
 # Projetos
 
 ## SyncLar – Divisão de Despesas Compartilhadas (Full Stack)
-*Fev 2026 – Presente*
+*Fev 2026 – Jul 2026*
 
-Produto full stack para divisão de despesas entre pessoas que dividem a mesma residência (repúblicas, casais e apartamentos), composto por API REST (Node/TypeScript) e app mobile (React Native + Expo). Permite criar "casas", convidar membros, registrar contas com divisão flexível, ler NFC-e pela câmera, acompanhar pagamentos e visualizar um dashboard financeiro. API com deploy na Digital Ocean (fallback na Vercel), banco na Neon (PostgreSQL) e Cloudinary para fotos e comprovantes; app distribuído via Expo (preview e produção) e publicado na Play Store (fase de teste).
+Produto full stack para divisão de despesas entre pessoas que dividem a mesma residência (repúblicas, casais e apartamentos), composto por API REST (Node/TypeScript) e app mobile (React Native + Expo). Permite criar "casas", convidar membros, registrar contas com divisão flexível, ler NFC-e pela câmera, acompanhar pagamentos e visualizar um dashboard financeiro. API com deploy na Digital Ocean (fallback na Vercel), banco na Neon (PostgreSQL) e Cloudinary para fotos e comprovantes; app distribuído via Expo (preview e produção) e publicado na Play Store.
 
 **Funcionalidades principais:**
 - Autenticação com JWT + refresh token e login via Google OAuth (senhas com Argon2)
@@ -24,7 +24,7 @@ Produto full stack para divisão de despesas entre pessoas que dividem a mesma r
 ![React Query](https://img.shields.io/badge/React_Query-FF4154?logo=reactquery&logoColor=white)
 ![Zustand](https://img.shields.io/badge/Zustand-433E38?logo=react&logoColor=white)
 
-**App:** [Play Store (fase de teste)](https://play.google.com/apps/testing/com.synclar.myapp)
+**App:** [Play Store](https://play.google.com/store/apps/details?id=com.synclar.myapp)
 
 ---
 

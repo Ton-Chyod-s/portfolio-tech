@@ -1,9 +1,9 @@
 # Projects
 
 ## SyncLar – Shared Expense Splitting (Full Stack)
-*Feb 2026 – Present*
+*Feb 2026 – Jul 2026*
 
-Full-stack product for splitting expenses among people who share the same home (shared houses, couples, and apartments), composed of a REST API (Node/TypeScript) and a mobile app (React Native + Expo). It lets users create "houses", invite members, register bills with flexible splitting, scan NFC-e receipts with the camera, track payments, and view a financial dashboard. API deployed on Digital Ocean (Vercel fallback), database on Neon (PostgreSQL), and Cloudinary for photos and receipts; app distributed via Expo (preview and production) and published on the Play Store (testing phase).
+Full-stack product for splitting expenses among people who share the same home (shared houses, couples, and apartments), composed of a REST API (Node/TypeScript) and a mobile app (React Native + Expo). It lets users create "houses", invite members, register bills with flexible splitting, scan NFC-e receipts with the camera, track payments, and view a financial dashboard. API deployed on Digital Ocean (Vercel fallback), database on Neon (PostgreSQL), and Cloudinary for photos and receipts; app distributed via Expo (preview and production) and published on the Play Store.
 
 **Main features:**
 - Authentication with JWT + refresh token and Google OAuth login (passwords with Argon2)
@@ -24,7 +24,7 @@ Full-stack product for splitting expenses among people who share the same home (
 ![React Query](https://img.shields.io/badge/React_Query-FF4154?logo=reactquery&logoColor=white)
 ![Zustand](https://img.shields.io/badge/Zustand-433E38?logo=react&logoColor=white)
 
-**App:** [Play Store (testing phase)](https://play.google.com/apps/testing/com.synclar.myapp)
+**App:** [Play Store](https://play.google.com/store/apps/details?id=com.synclar.myapp)
 
 ---
 
