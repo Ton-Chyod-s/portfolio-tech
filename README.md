@@ -1,14 +1,14 @@
 <h1 align="center">Klayton Dias</h1>
-<p align="center">Desenvolvedor Software Pleno · Node.js · TypeScript · APIs RESTful</p>
+<p align="center">Desenvolvedor de Software Pleno · Node.js · TypeScript · APIs RESTful</p>
 <p align="center">
   <a href="https://ton-chyod-s.me"><img src="https://img.shields.io/badge/Portfólio-ton--chyod--s.me-000?style=flat&logo=googlechrome&logoColor=white" /></a>
-  <a href="mailto:klayton.dias@hotmail.com"><img src="https://img.shields.io/badge/Email-000?style=flat&logo=gmail&logoColor=white" /></a>
+  <a href="mailto:klayton.dias@gmail.com"><img src="https://img.shields.io/badge/Email-000?style=flat&logo=gmail&logoColor=white" /></a>
   <a href="https://www.linkedin.com/in/ton-chyod-s/"><img src="https://img.shields.io/badge/LinkedIn-000?style=flat&logo=linkedin&logoColor=0E76A8" /></a>
 </p>
 
 ---
 
-Desenvolvedor Software Pleno especializado em APIs RESTful, automação de processos e Clean Architecture. Projetos em produção com Node.js, TypeScript, Python e C#. Foco em segurança, escalabilidade e código sustentável.
+Desenvolvedor de Software Pleno especializado em APIs RESTful, automação de processos e Clean Architecture. Projetos em produção com Node.js, TypeScript, Python e C#. Foco em segurança, escalabilidade e código sustentável.
 
 ## Stack
 

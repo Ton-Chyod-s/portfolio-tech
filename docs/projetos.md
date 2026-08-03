@@ -142,7 +142,7 @@ Aplicação full stack para visualização das sessões coletadas pela extensão
 
 
 ## SYT Playlist Downloader – App Desktop para Download de Playlists
-*Maio 2026 - Abr 2026*
+*Abr 2026 - Mai 2026*
 
 App desktop multiplataforma para download de playlists do YouTube e Spotify, construído com Tauri + React + TypeScript + Rust.
 

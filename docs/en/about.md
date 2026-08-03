@@ -18,7 +18,7 @@
 
 - Mid-Level Software Developer with experience at **Corelab**, where I worked across multiple products simultaneously with a focus on APIs, integrations, and multi-tenant systems.
 - Post-graduate in **Software Architecture**, with applied knowledge in **Clean Architecture**, **SOLID**, and design patterns.
-- Experience with **Node.js, TypeScript, AdonisJS, PostgreSQL, Sequelize** and the modern Software development ecosystem.
+- Experience with **Node.js, TypeScript, AdonisJS, PostgreSQL, Sequelize** and the modern software development ecosystem.
 - Experience with **Docker**, **GitHub Actions**, and CI/CD practices for consistent environments and automated deliveries.
 - Version control with **Git and Gitflow**, ensuring team organization and collaboration through code reviews and PRs.
 - Building personal tools: Chrome extensions, desktop apps with Tauri + Rust, and various automations.
@@ -42,7 +42,7 @@
 
 - **Information Technology Degree:** Deepening knowledge in programming, architecture, and agile methodologies, building technical foundations and a systemic view.
 
-- **Mega Júnior (UFMS) — Jun/2025 to Jan/2026:** Served as Tech Lead and Software developer in the complete refactoring of the Dipemax project API, applying Clean Architecture, Node.js, TypeScript, JWT, and Swagger.
+- **Mega Júnior (UFMS) — Jun/2025 to Jan/2026:** Served as Tech Lead and software developer in the complete refactoring of the Dipemax project API, applying Clean Architecture, Node.js, TypeScript, JWT, and Swagger.
 
 - **Post-Graduation in Software Architecture:** Deepened understanding of system design, Clean Architecture, and patterns that make code sustainable and maintainable.
 

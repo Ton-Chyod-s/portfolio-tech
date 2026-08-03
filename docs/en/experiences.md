@@ -24,7 +24,7 @@
 *Sep/2025 – Aug/2026 (11 months)*
 **Startup** · Node.js · AdonisJS · React Native · MVC
 
-Full-cycle involvement across 5 simultaneous products. Responsible for Software, integrations, and mobile support in a multi-tenant environment.
+Full-cycle involvement across 5 simultaneous products. Responsible for back-end, integrations, and mobile support in a multi-tenant environment.
 
 **Key deliveries:**
 - Development and maintenance of APIs and business logic in Node.js and PostgreSQL, focused on multi-tenant scenarios and data consistency by relationship.
@@ -113,7 +113,7 @@ Full-cycle involvement across 5 simultaneous products. Responsible for Software,
 
 ### Technical Lead (Tech Lead) – Mega Júnior (UFMS)
 *Jun/2025 – Jan/2026 (7 months)*
-- Technical leadership and Software development in the complete refactoring of the Dipemax project API.
+- Technical leadership and software development in the complete refactoring of the Dipemax project API.
 - Implementation of software architecture best practices (3 layers), Node.js, and TypeScript.
 - Application of design patterns, JWT and Cookie for authentication, Swagger for API documentation.
 - API documentation structuring to facilitate integration and understanding for new developers.
