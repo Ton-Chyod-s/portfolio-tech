@@ -141,6 +141,8 @@
 
     var appEl = document.getElementById('app');
     if (appEl) appEl.innerHTML = '';
+    document.body.className = ''; 
+    document.body.removeAttribute('data-page');
 
     window.$docsify = {
       name: portfolioLang === 'en' ? 'Portfolio' : 'Portfólio',
