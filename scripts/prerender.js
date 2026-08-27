@@ -55,14 +55,23 @@ function startServer() {
     const server = spawn('npx', ['http-server', DIST, '-p', String(PORT), '-s'], {
       shell: true,
       stdio: 'pipe',
+      detached: true,
     });
     server.stdout.on('data', (data) => {
       if (data.toString().includes('Available on')) resolve(server);
     });
     server.stderr.on('data', (data) => console.error(data.toString()));
-    setTimeout(() => resolve(server), 4000); // fallback se não detectar o log
+    setTimeout(() => resolve(server), 4000);
     server.on('error', reject);
   });
+}
+
+function killServer(server) {
+  try {
+    process.kill(-server.pid, 'SIGKILL');
+  } catch (e) {
+    server.kill('SIGKILL');
+  }
 }
 
 async function renderRoute(browser, route) {
@@ -110,8 +119,9 @@ async function main() {
   }
 
   await browser.close();
-  server.kill();
+  killServer(server);
   console.log('Pré-renderização concluída em /dist');
+  process.exit(0);
 }
 
 main().catch((err) => {
