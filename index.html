@@ -206,6 +206,9 @@ npx docsify-cli serve .
       return lang;
     }());
 
+    var appEl = document.getElementById('app');
+    if (appEl) appEl.innerHTML = '';
+
     window.$docsify = {
       name: portfolioLang === 'en' ? 'Portfolio' : 'Portfólio',
       repo: 'https://github.com/Ton-Chyod-s/portfolio-tech',

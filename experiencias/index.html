@@ -147,6 +147,9 @@ Gestão de tarefas e sprints com Jira integrado ao GitHub (GitHub for Jira), mon
       return lang;
     }());
 
+    var appEl = document.getElementById('app');
+    if (appEl) appEl.innerHTML = '';
+
     window.$docsify = {
       name: portfolioLang === 'en' ? 'Portfolio' : 'Portfólio',
       repo: 'https://github.com/Ton-Chyod-s/portfolio-tech',

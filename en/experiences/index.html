@@ -147,6 +147,9 @@ Agile task and sprint management with Jira integrated to GitHub (GitHub for Jira
       return lang;
     }());
 
+    var appEl = document.getElementById('app');
+    if (appEl) appEl.innerHTML = '';
+
     window.$docsify = {
       name: portfolioLang === 'en' ? 'Portfolio' : 'Portfólio',
       repo: 'https://github.com/Ton-Chyod-s/portfolio-tech',
