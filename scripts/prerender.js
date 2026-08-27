@@ -76,6 +76,12 @@ function killServer(server) {
 
 async function renderRoute(browser, route) {
   const page = await browser.newPage();
+
+  const lang = route.hash.startsWith('docs/en') ? 'en' : 'pt';
+  await page.evaluateOnNewDocument((l) => {
+    localStorage.setItem('portfolioLang', l);
+  }, lang);
+
   const url = `http://localhost:${PORT}/#/${route.hash}`;
   await page.goto(url, { waitUntil: 'networkidle0', timeout: 30000 });
 
