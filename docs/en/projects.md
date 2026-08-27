@@ -1,0 +1,329 @@
+# Projects
+
+## SyncLar – Shared Expense Splitting (Full Stack)
+*Feb 2026 – Jul 2026*
+
+Full-stack product for splitting expenses among people who share the same home (shared houses, couples, and apartments), composed of a REST API (Node/TypeScript) and a mobile app (React Native + Expo). It lets users create "houses", invite members, register bills with flexible splitting, scan NFC-e receipts with the camera, track payments, and view a financial dashboard. API deployed on Digital Ocean (Vercel fallback), database on Neon (PostgreSQL), and Cloudinary for photos and receipts; app distributed via Expo (preview and production) and published on the Play Store.
+
+**Main features:**
+- Authentication with JWT + refresh token and Google OAuth login (passwords with Argon2)
+- House and member management with roles (admin/member) and invite by code
+- Bill splitting in three modes: equal, percentage, and custom
+- NFC-e receipt scanning and parsing via camera to extract items and avoid duplicates
+- Financial dashboard with per-member balances and settlement calculation (who owes whom)
+- Receipt uploads, push notifications, and premium subscription (monthly/annual) via PIX
+- Security with Helmet, CORS, rate limit, and CSRF; validation with Zod and monitoring via Sentry
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/Neon-00E5CC?logo=postgresql&logoColor=white)
+![Expo](https://img.shields.io/badge/Expo-000020?logo=expo&logoColor=white)
+![React Native](https://img.shields.io/badge/React_Native-61DAFB?logo=react&logoColor=black)
+![React Query](https://img.shields.io/badge/React_Query-FF4154?logo=reactquery&logoColor=white)
+![Zustand](https://img.shields.io/badge/Zustand-433E38?logo=react&logoColor=white)
+
+**App:** [Play Store](https://play.google.com/store/apps/details?id=com.synclar.myapp)
+
+---
+
+## MyFrame CG – Custom Framing E-commerce (Full Stack)
+*Apr 2025 – Present*
+
+Full-stack e-commerce platform for custom frames and personalized art, composed of a REST API (Node/TypeScript), an admin panel (React), and a public website (React). The API centralizes authentication, catalog, payments, affiliates, and analytics; the panel provides business management and a canvas-based design editor; and the website presents the store to end customers with a gallery and multi-channel integration. Serverless deployment on Vercel with Neon (PostgreSQL), AbacatePay for payments, and Cloudinary for images.
+
+**Main features:**
+- Authentication with JWT + refresh token rotation, Google OAuth, and RBAC (user/admin)
+- Payments via AbacatePay with webhooks and status control; affiliates with commissions, coupons, and PIX withdrawals
+- Frame catalog with variants and model grouping
+- Admin panel with sales dashboard, client/billing/affiliate management, and a canvas-based design editor (crop, rotate, shortcuts)
+- Website with dynamic-theme landing, Cloudinary gallery with lightbox, reviews, and multi-channel integration (Shopee, WhatsApp, Instagram)
+- Monthly sales and per-region client analytics; security (Helmet, CORS, rate limit, CSRF) and monitoring via Sentry
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/Neon-00E5CC?logo=postgresql&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)
+
+**Website:** [myframecg.me](https://www.myframecg.me/)
+
+---
+
+## portfolio-tech – Personal Portfolio
+*Aug 2025 - Apr 2026*
+
+Personal portfolio website built with Docsify, showcasing projects, experiences, technologies, and an HTML/CSS printable resume. Features dark mode, visit counter, sidebar navigation, and multi-language support (PT/EN).
+
+**Main features:**
+- Dark mode with localStorage persistence
+- Visit counter with per-IP rate limiting
+- HTML/CSS resume optimized for printing
+- Sidebar navigation with PT and EN support
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![Docsify](https://img.shields.io/badge/Docsify-2ECE53?logo=docsify&logoColor=white)
+
+**Repository:** [github.com/Ton-Chyod-s/portfolio-tech](https://github.com/Ton-Chyod-s/portfolio-tech)
+**Site:** [ton-chyod-s.me](https://ton-chyod-s.me)
+
+---
+
+## portfolio-counter-api – Serverless Visit Counter API
+*Apr 2026*
+
+Serverless API for portfolio visit counting, deployed on Vercel with Upstash Redis as the database. Includes interactive Swagger UI documentation.
+
+**Main features:**
+- `POST /api/visit` — increments the counter with a rate limit of 1 req/IP every 10 min
+- `GET /api/count` — returns the total visit count without incrementing
+- Origin validation via `ALLOWED_ORIGINS` (restricted CORS)
+- Atomic per-IP rate limiting with `SET NX EX` on Redis (no race condition)
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white)
+
+**Repository:** [github.com/Ton-Chyod-s/portfolio-counter-api](https://github.com/Ton-Chyod-s/portfolio-counter-api)
+
+---
+
+## Full Page Capture – Chrome Extension with Heatmap and Session Recording
+*Apr 2026*
+
+Chrome extension that tracks and records complete browsing sessions, capturing screenshots per URL, click and mouse movement heatmaps, and session video recording. Data is persisted in Neon (serverless PostgreSQL) and visualized via an external dashboard.
+
+**Main features:**
+- Click and mouse movement heatmap per URL (40ms throttle, 12,000 point limit)
+- Session video recording (base64, stored in Neon)
+- Full-page capture per URL visited during the session
+- SPA tracking via `pushState`, `replaceState` and `popstate` interception
+- Persistence in Neon with tables: `sessions`, `captures`, `heatmap_data`, `videos`
+- Popup interface for session control and capture visualization
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![Chrome](https://img.shields.io/badge/Chrome_Extension-4285F4?logo=googlechrome&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/Neon-00E5CC?logo=postgresql&logoColor=white)
+
+---
+
+## Heatmap Dashboard – Browsing Session Viewer (Full Stack)
+*Apr 2026*
+
+Full stack application for visualizing sessions collected by the Full Page Capture extension. The backend exposes a REST API querying Neon via Prisma, and the React frontend renders the capture history, heatmaps, and videos for each session.
+
+**Main features:**
+- Session listing with capture, heatmap, and video counts
+- Detailed session view: ordered screenshots, per-URL heatmap, and video replay
+- Safe `BigInt` serialization to JSON
+- Backend with Express, Helmet, CORS, and Prisma over Neon (serverless PostgreSQL)
+- Frontend in React 18 with React Router, Tailwind CSS, and Vite
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/Neon-00E5CC?logo=postgresql&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
+
+**Site:** [heatmap-dashboard-front.vercel.app](https://heatmap-dashboard-front.vercel.app/)
+
+---
+
+## SYT Playlist Downloader – Desktop App for Playlist Download
+*May 2025 - Apr 2026*
+
+Cross-platform desktop app for downloading YouTube and Spotify playlists, built with Tauri + React + TypeScript + Rust.
+
+**Main features:**
+- Playlist Mode: downloads in MP4 1080p (H.264 + MP3), compatible with any device
+- Original Mode: best available quality (4K, VP9, AV1), for individual videos or entire playlists
+- Spotify Mode: searches tracks on YouTube Music and downloads as high-quality MP3
+
+![Tauri](https://img.shields.io/badge/Tauri-24C8D8?logo=tauri&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white)
+
+**Repository:** [github.com/Ton-Chyod-s/syt-playlist-downloader](https://github.com/Ton-Chyod-s/syt-playlist-downloader)
+**Download:** [Latest release](https://github.com/Ton-Chyod-s/syt-playlist-downloader/releases/latest)
+
+---
+
+## node-api-starter-typescript – Professional Boilerplate for Node.js APIs
+*Dec 2025*
+
+Base codebase for new Web and Mobile/CLI projects, with all infrastructure ready: authentication, security, documentation, and quality pipeline.
+
+**Main features:**
+- JWT authentication with cookie + CSRF (Web) and Bearer token (Mobile/CLI) support
+- Security middlewares: CORS, rate limiting, Helmet
+- Clean Architecture (domain, usecases, interfaces, infrastructure, main)
+- Documentation with Docsify and OpenAPI validation
+- Quality pipeline: ESLint, Prettier, Jest
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+
+**Repository:** [github.com/Ton-Chyod-s/node-api-starter-typescript](https://github.com/Ton-Chyod-s/node-api-starter-typescript)
+
+---
+
+## api-precatory-creditor – Precatory Management System
+*May 2025*
+
+API with integrated frontend for managing precatories, creditors, certificates, and personal documents, developed with Python, Flask, and Clean Architecture.
+
+**Main features:**
+- Full CRUD for precatories and creditors
+- JWT authentication
+- Custom task scheduler
+- Responsive frontend with Tailwind CSS and Jinja2
+- Schema versioning with Alembic
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+
+**Repository:** [github.com/Chyod-s/api-precatory-creditor](https://github.com/Chyod-s/api-precatory-creditor) | **Site:** [api-precatory-creditor.vercel.app](https://api-precatory-creditor.vercel.app/home)
+
+---
+
+## Flask ANAC Dashboard – Aviation Data Analysis
+*Mar 2025*
+
+Web application for analyzing public ANAC data focused on GOL flights, with custom filters and interactive charts.
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+
+**Repository:** [github.com/Chyod-s/flask-anac-dashboard](https://github.com/Chyod-s/flask-anac-dashboard)
+**Site:** [flask-anac-dashboard.herokuapp.com](https://flask-anac-dashboard-5177157fcd1d.herokuapp.com/)
+
+---
+
+## NexoTask – Task Management System (Full Stack)
+*Mar 2025 – Apr 2025*
+
+Complete task management application, with backend in Node.js (TypeScript, Prisma, JWT, PostgreSQL) and frontend in React (Vite, Tailwind CSS). Structured with Clean Architecture on the backend and SPA on the frontend, ensuring organization, scalability, and best practices.
+
+**Main features:**
+- JWT authentication
+- Task CRUD
+- Automated email sending
+- Responsive and intuitive interface
+- Standardized environment with Docker and CI/CD via GitHub Actions
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+
+**Repository:** [github.com/Ton-Chyod-s/nexo-task-api](https://github.com/Ton-Chyod-s/nexo-task-api)
+**Site:** [nexo-task-api.vercel.app](https://nexo-task-api.vercel.app/)
+---
+
+## Public Records API – RESTful API for Public Records Query
+*Dec 2024 – Jan 2025*
+
+RESTful API in C# using Entity Framework and serverless database (NEON) to simulate application backend. Features include user registration, validation and deletion, public API integration (DOE/DIOGRANDE), optimized data saving, documentation and testing with Swagger.
+
+![C#](https://img.shields.io/badge/C%23-512BD4?logo=csharp&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=white)
+![Swagger](https://img.shields.io/badge/Swagger-85EA2D?logo=swagger&logoColor=black)
+
+**Repository:** [github.com/Ton-Chyod-s/public-records-api](https://github.com/Ton-Chyod-s/public-records-api)
+
+---
+
+## Python Application Stract
+*Jan 2025*
+
+Project for searching and aggregating analytical data using Python and Flask. Architecture based on Clean Architecture with Hexagonal and Layered Architecture elements.
+
+**Structure:**
+- Controllers (API routes)
+- Usecases (business rules)
+- Swagger (documentation)
+- Platform/request (external call adaptation)
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white)
+
+**Repository:** [github.com/Chyod-s/python-application-stract](https://github.com/Chyod-s/python-application-stract)
+
+---
+
+
+## Data Analysis – Processing Automation for Dashboards
+*Aug 2023 – Jul 2024*
+
+Python automation for processing Excel spreadsheets and generating files integrable with Power BI dashboards, including cleaning, standardization, and financial metric calculation (P&L).
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?logo=powerbi&logoColor=black)
+
+**Main scripts:**
+- tratamentov2.py (database for P&L Dashboard)
+- limpando_planilha.py (preparation for results analysis)
+
+---
+
+## Elo7 Review Scraper API
+*May 2024 – Jun 2024*
+
+Web scraping API using Axios and Cheerio to capture reviews from the Elo7 website across multiple pages. Integration with HTML/CSS/JS frontend that loads reviews via fetch. Scalable architecture for adding stores and features.
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+
+**Site:** [ton-chyod-s.github.io/av-card](https://ton-chyod-s.github.io/av-card/)
+
+---
+
+## api-scraper-mailer
+*Jun 2024*
+
+Node.js web scraping application with axios, cheerio, puppeteer, and nodemailer for web data extraction and automated email sending.
+
+**Features:**
+- Data extraction from static and dynamic pages
+- Automated navigation for complex interactions
+- Automatic report sending via email
+- Simple interface and configurable scripts
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![Puppeteer](https://img.shields.io/badge/Puppeteer-40B5A4?logo=puppeteer&logoColor=white)
+
+**Repository:** [github.com/Ton-Chyod-s/api-scraper-mailer](https://github.com/Ton-Chyod-s/api-scraper-mailer)
+**Status:** In production with 5 users
+
+---
+
+## git-hub-follower-manager
+*May 2024*
+
+Tool for monitoring GitHub followers and maintaining a reciprocal follower network, strengthening connections and facilitating follower maintenance.
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+
+**Repository:** [github.com/Ton-Chyod-s/git-hub-follower-manager](https://github.com/Ton-Chyod-s/git-hub-follower-manager)
+**Site:** [git-hub-follower-manager-front.vercel.app/](https://git-hub-follower-manager-front.vercel.app/)

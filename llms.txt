@@ -1,0 +1,52 @@
+# Klayton Dias (ton-chyod-s)
+
+> Desenvolvedor de Software Pleno (Full Stack) especializado em Node.js, TypeScript, Clean Architecture e APIs RESTful. Também atua com Python, C#/.NET e React Native/Expo. Baseado no Brasil, disponível para propostas de trabalho, freelance ou colaborações.
+
+Site: https://ton-chyod-s.me
+GitHub: https://github.com/Ton-Chyod-s
+LinkedIn: https://linkedin.com/in/ton-chyod-s
+E-mail: klayton.dias@gmail.com
+Currículo (PDF): https://ton-chyod-s.me/cv.html?print=1
+
+## Sobre
+
+Desenvolvedor Full Stack Pleno com passagem pela Corelab, onde atuou em 5 produtos simultâneos com foco em APIs, integrações mobile e sistemas multiempresa. Pós-graduado em Arquitetura de Software (Clean Architecture, SOLID, padrões de projeto). Experiência com Node.js, TypeScript, AdonisJS, PostgreSQL, Sequelize, Prisma, Docker, GitHub Actions e CI/CD. Construção de ferramentas próprias: extensões Chrome, apps desktop com Tauri + Rust, automações e scrapers.
+
+Formação: cursando Tecnólogo em TI (UFMS), Bacharel em Arquitetura e Urbanismo (Uniderp), pós-graduações em Arquitetura de Software e em Gerenciamento de Projetos BIM.
+
+## Stack Principal
+
+Node.js, TypeScript, JavaScript, Python, C#, Rust, PostgreSQL, MySQL, SQLite, Docker, Git, AdonisJS, Express, React, React Native/Expo, Prisma, Sequelize, Entity Framework, Flask, JWT/RBAC, Swagger/OpenAPI, Clean Architecture, SOLID, MVC.
+
+## Experiência Profissional
+
+- **Desenvolvedor Full Stack Pleno — Corelab** (Set/2025 – Ago/2026): atuação full-cycle em 5 produtos simultâneos (EPCT/Epicont, RC, SAP, AKGP, ZP) — APIs multiempresa, RBAC, importação de planilhas, segurança de arquivos (AWS S3), integrações WhatsApp, dashboards financeiros.
+- **Desenvolvedor de Sistemas I — NextMed Tecnologia** (Set/2024 – Jan/2025): endpoints e módulo BackOffice em C#/.NET Core com Entity Framework.
+- **Analista de Desenvolvimento de Sistemas — Perin Assessoria Contábil** (Jun/2023 – Jul/2024): automação de 43 planilhas Excel com Python, pipeline ETL, dashboard Power BI/DAX.
+- **Auxiliar Técnico em Projetos — Telemont** (Jan/2021 – Jun/2023): programa desktop em Python/PySimpleGUI, automação com Selenium e pandas.
+- **Tech Lead voluntário — Mega Júnior (UFMS)** (Jun/2025 – Jan/2026): refatoração completa da API do projeto Dipemax com Clean Architecture, Node.js, TypeScript, JWT.
+
+Detalhes completos: https://ton-chyod-s.me/#/docs/experiencias
+
+## Projetos
+
+- **SyncLar** (Fev–Jul 2026) — App full stack de divisão de despesas compartilhadas (Node/TypeScript + React Native/Expo), leitura de NFC-e por câmera, PIX, deploy Digital Ocean + Neon. Play Store: https://play.google.com/store/apps/details?id=com.synclar.myapp
+- **MyFrame CG** (Abr 2025 – presente) — E-commerce full stack de quadros personalizados, painel admin com editor de design em canvas, pagamentos via AbacatePay. Site: https://www.myframecg.me/
+- **portfolio-tech** — Este portfólio, Docsify + GitHub Pages, PT/EN, modo escuro. Repo: https://github.com/Ton-Chyod-s/portfolio-tech
+- **portfolio-counter-api** — API serverless de contagem de visitas, Redis (Upstash), rate limiting atômico. Repo: https://github.com/Ton-Chyod-s/portfolio-counter-api
+- **Full Page Capture + Heatmap Dashboard** — Extensão Chrome de heatmap/gravação de sessão + dashboard full stack de visualização (React + Prisma + Neon).
+- **SYT Playlist Downloader** — App desktop (Tauri + React + Rust) pra baixar playlists do YouTube/Spotify. Repo: https://github.com/Ton-Chyod-s/syt-playlist-downloader
+- **api-scraper-mailer** — Scraper Node.js (axios, cheerio, puppeteer) com envio automatizado por e-mail. Em produção com usuários ativos. Repo: https://github.com/Ton-Chyod-s/api-scraper-mailer
+- **api-precatory-creditor** — Sistema de gestão de precatórios em Python/Flask + Clean Architecture. Site: https://api-precatory-creditor.vercel.app/home
+- **NexoTask** — Gerenciador de tarefas full stack (Node/TypeScript + React). Site: https://nexo-task-api.vercel.app/
+- **Public Records API** — API RESTful em C#/.NET para consulta de registros públicos. Repo: https://github.com/Ton-Chyod-s/public-records-api
+
+Lista completa de projetos: https://ton-chyod-s.me/#/docs/projetos
+
+## Tecnologias (detalhado)
+
+https://ton-chyod-s.me/#/docs/tecnologias
+
+## Contato
+
+https://ton-chyod-s.me/#/docs/contato
