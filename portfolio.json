@@ -1,0 +1,123 @@
+{
+  "name": "Klayton Dias",
+  "alias": "ton-chyod-s",
+  "title": "Desenvolvedor Full Stack Pleno",
+  "location": "Brasil",
+  "site": "https://ton-chyod-s.me",
+  "resume": "https://ton-chyod-s.me/cv.html?print=1",
+  "summary": "Desenvolvedor de Software Pleno (Full Stack) especializado em Node.js, TypeScript, Clean Architecture e APIs RESTful. Também atua com Python, C#/.NET e React Native/Expo. Disponível para propostas de trabalho, freelance ou colaborações.",
+  "contact": {
+    "email": "klayton.dias@gmail.com",
+    "github": "https://github.com/Ton-Chyod-s",
+    "linkedin": "https://linkedin.com/in/ton-chyod-s"
+  },
+  "education": [
+    { "degree": "Tecnólogo em Tecnologia da Informação", "institution": "UFMS", "status": "cursando", "expected": "2027" },
+    { "degree": "Bacharel em Arquitetura e Urbanismo", "institution": "Uniderp", "status": "concluído" },
+    { "degree": "Pós-graduação em Arquitetura de Software", "institution": "Educaminas EAD", "period": "Jan/2025 – Jul/2025", "status": "concluído" },
+    { "degree": "Pós-graduação em Gerenciamento de Projetos BIM", "status": "concluído" }
+  ],
+  "stack": {
+    "primary": ["Node.js", "TypeScript", "JavaScript", "AdonisJS", "Express", "React", "React Native", "Expo", "Prisma", "Sequelize"],
+    "also": ["Python", "Flask", "C#", ".NET Core", "Entity Framework", "Rust"],
+    "databases": ["PostgreSQL", "MySQL", "SQLite"],
+    "tools": ["Docker", "Git", "GitHub Actions", "CI/CD", "Swagger/OpenAPI", "JWT/RBAC"],
+    "architecture": ["Clean Architecture", "SOLID", "MVC", "DDD"]
+  },
+  "experience": [
+    {
+      "company": "Corelab",
+      "role": "Desenvolvedor Full Stack Pleno",
+      "period": "Set/2025 – Ago/2026",
+      "description": "Atuação full-cycle em 5 produtos simultâneos (EPCT/Epicont, RC, SAP, AKGP, ZP) — APIs multiempresa, RBAC, importação de planilhas, segurança de arquivos (AWS S3), integrações WhatsApp, dashboards financeiros."
+    },
+    {
+      "company": "NextMed Tecnologia",
+      "role": "Desenvolvedor de Sistemas I",
+      "period": "Set/2024 – Jan/2025",
+      "description": "Endpoints e módulo BackOffice em C#/.NET Core com Entity Framework."
+    },
+    {
+      "company": "Perin Assessoria Contábil",
+      "role": "Analista de Desenvolvimento de Sistemas",
+      "period": "Jun/2023 – Jul/2024",
+      "description": "Automação de 43 planilhas Excel com Python, pipeline ETL, dashboard Power BI/DAX."
+    },
+    {
+      "company": "Telemont",
+      "role": "Auxiliar Técnico em Projetos",
+      "period": "Jan/2021 – Jun/2023",
+      "description": "Programa desktop em Python/PySimpleGUI, automação com Selenium e pandas."
+    },
+    {
+      "company": "Mega Júnior (UFMS)",
+      "role": "Tech Lead voluntário",
+      "period": "Jun/2025 – Jan/2026",
+      "description": "Refatoração completa da API do projeto Dipemax com Clean Architecture, Node.js, TypeScript, JWT."
+    }
+  ],
+  "projects": [
+    {
+      "name": "SyncLar",
+      "period": "Fev–Jul 2026",
+      "description": "App full stack de divisão de despesas compartilhadas, leitura de NFC-e por câmera, PIX, deploy Digital Ocean + Neon.",
+      "stack": ["Node.js", "TypeScript", "React Native", "Expo"],
+      "url": "https://play.google.com/store/apps/details?id=com.synclar.myapp"
+    },
+    {
+      "name": "MyFrame CG",
+      "period": "Abr 2025 – presente",
+      "description": "E-commerce full stack de quadros personalizados, painel admin com editor de design em canvas, pagamentos via AbacatePay.",
+      "url": "https://www.myframecg.me/"
+    },
+    {
+      "name": "portfolio-tech",
+      "description": "Este portfólio, Docsify + GitHub Pages, PT/EN, modo escuro.",
+      "repo": "https://github.com/Ton-Chyod-s/portfolio-tech"
+    },
+    {
+      "name": "portfolio-counter-api",
+      "description": "API serverless de contagem de visitas, Redis (Upstash), rate limiting atômico.",
+      "repo": "https://github.com/Ton-Chyod-s/portfolio-counter-api"
+    },
+    {
+      "name": "Full Page Capture + Heatmap Dashboard",
+      "description": "Extensão Chrome de heatmap/gravação de sessão + dashboard full stack de visualização.",
+      "stack": ["React", "Prisma", "Neon"]
+    },
+    {
+      "name": "SYT Playlist Downloader",
+      "description": "App desktop pra baixar playlists do YouTube/Spotify.",
+      "stack": ["Tauri", "React", "Rust"],
+      "repo": "https://github.com/Ton-Chyod-s/syt-playlist-downloader"
+    },
+    {
+      "name": "node-api-starter-typescript",
+      "description": "Boilerplate de API Node.js com Clean Architecture, JWT+CSRF, rate limit, Helmet, OpenAPI.",
+      "repo": "https://github.com/Ton-Chyod-s/node-api-starter-typescript"
+    },
+    {
+      "name": "api-scraper-mailer",
+      "description": "Scraper Node.js (axios, cheerio, puppeteer) com envio automatizado por e-mail. Em produção com usuários ativos.",
+      "repo": "https://github.com/Ton-Chyod-s/api-scraper-mailer"
+    },
+    {
+      "name": "api-precatory-creditor",
+      "description": "Sistema de gestão de precatórios em Python/Flask + Clean Architecture.",
+      "stack": ["Python", "Flask"],
+      "url": "https://api-precatory-creditor.vercel.app/home"
+    },
+    {
+      "name": "NexoTask",
+      "description": "Gerenciador de tarefas full stack.",
+      "stack": ["Node.js", "TypeScript", "React"],
+      "url": "https://nexo-task-api.vercel.app/"
+    },
+    {
+      "name": "Public Records API",
+      "description": "API RESTful em C#/.NET para consulta de registros públicos.",
+      "stack": ["C#", ".NET"],
+      "repo": "https://github.com/Ton-Chyod-s/public-records-api"
+    }
+  ]
+}
