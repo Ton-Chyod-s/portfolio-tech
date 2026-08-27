@@ -139,6 +139,12 @@ Gestão de tarefas e sprints com Jira integrado ao GitHub (GitHub for Jira), mon
 
   <script>
     var portfolioLang = (function () {
+      var hash = (window.location.hash || '').replace(/^#\/?/, '');
+      if (hash) {
+        var lang = hash.indexOf('docs/en/') === 0 ? 'en' : 'pt';
+        localStorage.setItem('portfolioLang', lang);
+        return lang;
+      }
       var saved = localStorage.getItem('portfolioLang');
       if (saved) return saved;
       var browser = (navigator.language || navigator.userLanguage || 'pt').toLowerCase();
