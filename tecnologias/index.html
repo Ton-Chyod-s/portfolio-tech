@@ -329,7 +329,7 @@
       var langBtn = document.getElementById('langToggleBtn');
 
       var pageMapToEn = {
-        '': '',
+        '': 'docs/en/home',
         'docs/sobre': 'docs/en/about',
         'docs/experiencias': 'docs/en/experiences',
         'docs/tecnologias': 'docs/en/technologies',
@@ -364,7 +364,8 @@
           var map = newLang === 'en' ? pageMapToEn : pageMapToPt;
           var targetPage = (hash in map) ? map[hash] : (newLang === 'en' ? 'docs/en/about' : 'docs/sobre');
 
-          window.location.assign('/#/' + targetPage);
+          window.location.hash = '/' + targetPage;
+          window.location.reload();
         });
       });
     })();
