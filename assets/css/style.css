@@ -1,12 +1,32 @@
 /* ===== CSS Custom Properties ===== */
 :root {
-  --theme-color: #42b983;
+  --theme-color: #19875d;
   --theme-color-light: rgba(66, 185, 131, 0.15);
 }
 
 body {
   background-color: #ffffff;
   transition: background-color 0.3s, color 0.3s;
+}
+
+/* Foco de teclado visível e consistente (WCAG 2.4.7) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid #0b63ce !important;
+  outline-offset: 3px;
+}
+
+body.dark-mode a:focus-visible,
+body.dark-mode button:focus-visible,
+body.dark-mode input:focus-visible,
+body.dark-mode textarea:focus-visible,
+body.dark-mode select:focus-visible,
+body.dark-mode [tabindex]:focus-visible {
+  outline-color: #8fc7ff !important;
 }
 
 .sidebar {
@@ -30,7 +50,9 @@ body {
 }
 
 .sidebar-nav a {
-  display: block;
+  display: flex;
+  align-items: center;
+  min-height: 44px;
   padding: 8px 12px;
   border-radius: 8px;
   transition: background 0.2s, transform 0.1s;
@@ -92,7 +114,7 @@ body {
 .form-group input,
 .form-group textarea {
   padding: 10px 12px;
-  border: 1px solid #ddd;
+  border: 1px solid #767676;
   border-radius: 6px;
   font-size: 14px;
   font-family: inherit;
@@ -108,7 +130,8 @@ body {
 }
 
 .btn-submit {
-  background-color: var(--theme-color);
+  min-height: 44px;
+  background-color: #19875d;
   color: #fff;
   border: none;
   padding: 11px 28px;
@@ -120,15 +143,18 @@ body {
 }
 
 .btn-submit:hover {
-  opacity: 0.88;
+  opacity: 1;
+  background-color: #126f4b;
   transform: translateY(-1px);
 }
 
 .btn-cv-download {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   margin-top: 4px;
   padding: 8px 18px;
-  background: var(--theme-color);
+  background: #19875d;
   color: #fff !important;
   border-radius: 6px;
   font-size: 14px;
@@ -138,8 +164,24 @@ body {
 }
 
 .btn-cv-download:hover {
-  opacity: 0.88;
+  opacity: 1;
+  background: #126f4b;
   transform: translateY(-1px);
+}
+
+.profile-badge-link {
+  display: inline-flex;
+  align-items: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 10px 3px;
+  vertical-align: middle;
+}
+
+.contact-links a:not(.btn-cv-download) {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
 }
 
 /* ===== RESPONSIVIDADE MOBILE ===== */
@@ -312,7 +354,7 @@ body .markdown-section img[src*="shields.io"] {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: none;
+  border: 2px solid transparent;
   background: #0E76A8;
   color: white;
   font-size: 13px;
@@ -334,6 +376,7 @@ body .markdown-section img[src*="shields.io"] {
 
 body.dark-mode .lang-toggle-btn {
   background: #1a5276;
+  border-color: #89b4fa;
 }
 
 /* ===== Botão Dark Mode ===== */
@@ -345,8 +388,8 @@ body.dark-mode .lang-toggle-btn {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: none;
-  background: #42b983;
+  border: 2px solid transparent;
+  background: #19875d;
   color: white;
   font-size: 22px;
   cursor: pointer;
@@ -365,6 +408,7 @@ body.dark-mode .lang-toggle-btn {
 
 body.dark-mode .dark-toggle-btn {
   background: #3b4252;
+  border-color: #a6adc8;
 }
 
 /* ===== Modo Escuro ===== */
@@ -531,13 +575,13 @@ body.dark-mode .form-group label {
 body.dark-mode .form-group input,
 body.dark-mode .form-group textarea {
   background-color: #313244 !important;
-  border-color: #45475a !important;
+  border-color: #8b8fa7 !important;
   color: #f0f0f0 !important;
 }
 
 body.dark-mode .form-group input::placeholder,
 body.dark-mode .form-group textarea::placeholder {
-  color: #6c7086 !important;
+  color: #b7bad0 !important;
 }
 
 body.dark-mode .contact-links p,
@@ -820,6 +864,9 @@ body.dark-mode .pstats-loading {
 }
 
 .markdown-section .home-social-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   color: #4c685d;
   font-size: 13px;
   font-weight: 700;
@@ -949,6 +996,9 @@ body.dark-mode .pstats-loading {
 }
 
 .markdown-section .home-text-link {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
   flex: 0 0 auto;
   color: #19875d;
   font-size: 13px;
@@ -1051,8 +1101,11 @@ body.dark-mode .pstats-loading {
 }
 
 .markdown-section .home-project-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   color: #19875d;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 800;
   text-decoration: none;
 }

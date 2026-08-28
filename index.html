@@ -199,11 +199,14 @@
       loadSidebar: portfolioLang === 'en' ? '_sidebar_en.md' : '_sidebar.md',
       homepage: portfolioLang === 'en' ? 'docs/en/home.md' : 'README.md',
       subMaxLevel: 2,
-      themeColor: '#42b983',
+      themeColor: '#19875d',
       plugins: [
         function (hook) {
           hook.doneEach(function () {
             if (window.applyPortfolioSeo) window.applyPortfolioSeo();
+            document.querySelectorAll('a[target="_blank"]').forEach(function (link) {
+              link.setAttribute('rel', 'noopener noreferrer');
+            });
           });
         }
       ],

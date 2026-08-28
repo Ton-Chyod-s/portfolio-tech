@@ -4,10 +4,10 @@
     <h2 style="margin: 0 0 8px 0;">Klayton Dias</h2>
     <p style="margin: 0; font-size: 16px; color: #666;">Mid-Level Software Developer</p>
     <p style="margin: 8px 0 0 0; line-height: 2;">
-      <a href="https://linkedin.com/in/ton-chyod-s" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white" alt="LinkedIn" style="height:20px;width:auto;display:inline-block;vertical-align:middle;" /></a>
-      <a href="https://github.com/Ton-Chyod-s" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub" style="height:20px;width:auto;display:inline-block;vertical-align:middle;" /></a>
-      <a href="mailto:klayton.dias@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white" alt="Email" style="height:20px;width:auto;display:inline-block;vertical-align:middle;" /></a>
-      <a href="https://lattes.cnpq.br/7758613953311230" target="_blank"><img src="https://img.shields.io/badge/Lattes-316FBE?logoColor=white" alt="Lattes CNPq" style="height:20px;width:auto;display:inline-block;vertical-align:middle;" /></a>
+      <a class="profile-badge-link" href="https://linkedin.com/in/ton-chyod-s" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white" alt="LinkedIn" style="height:20px;width:auto;display:inline-block;vertical-align:middle;" /></a>
+      <a class="profile-badge-link" href="https://github.com/Ton-Chyod-s" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub" style="height:20px;width:auto;display:inline-block;vertical-align:middle;" /></a>
+      <a class="profile-badge-link" href="mailto:klayton.dias@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white" alt="Email" style="height:20px;width:auto;display:inline-block;vertical-align:middle;" /></a>
+      <a class="profile-badge-link" href="https://lattes.cnpq.br/7758613953311230" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Lattes-316FBE?logoColor=white" alt="Lattes CNPq" style="height:20px;width:auto;display:inline-block;vertical-align:middle;" /></a>
     </p>
   </div>
 </div>
