@@ -6,18 +6,18 @@
   <meta name="description" content="Klayton Dias – Software Developer · Desenvolvedor Software. Node.js, TypeScript, Clean Architecture, RESTful APIs. Production projects." />
   <meta name="keywords" content="Klayton Dias, desenvolvedor Software, Software developer, Node.js, TypeScript, API REST, Clean Architecture, portfólio desenvolvedor, developer portfolio" />
   <meta name="author" content="Klayton Dias" />
-  <link rel="canonical" href="https://ton-chyod-s.me/#/" />
+  <link rel="canonical" href="https://ton-chyod-s.me/" />
   <link rel="llms.txt" href="https://ton-chyod-s.me/llms.txt" />
   <link rel="alternate" type="application/json" href="https://ton-chyod-s.me/portfolio.json" />
   <link rel="alternate" hreflang="pt-BR" href="https://ton-chyod-s.me/" />
-  <link rel="alternate" hreflang="en" href="https://ton-chyod-s.me/" />
+  <link rel="alternate" hreflang="en" href="https://ton-chyod-s.me/en/" />
   <link rel="alternate" hreflang="x-default" href="https://ton-chyod-s.me/" />
 
   <!-- Open Graph / Social -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Klayton Dias | Software Developer · Desenvolvedor Software" />
   <meta property="og:description" content="Node.js · TypeScript · Clean Architecture · RESTful APIs. Production projects / Projetos em produção." />
-  <meta property="og:image" content="/assets/img/ton_chyods-04.jpg" />
+  <meta property="og:image" content="https://ton-chyod-s.me/assets/img/ton_chyods-04.jpg" />
   <meta property="og:url" content="https://ton-chyod-s.me/" />
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:locale:alternate" content="en_US" />
@@ -26,7 +26,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Klayton Dias | Software Developer · Desenvolvedor Software" />
   <meta name="twitter:description" content="Node.js · TypeScript · Clean Architecture · RESTful APIs." />
-  <meta name="twitter:image" content="/assets/img/ton_chyods-04.jpg" />
+  <meta name="twitter:image" content="https://ton-chyod-s.me/assets/img/ton_chyods-04.jpg" />
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -69,6 +69,7 @@
   </script>
 
   <title>Klayton Dias (ton-chyod-s) · Software Developer Node.js</title>
+  <script src="/assets/js/seo.js"></script>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
   <link rel="icon" type="image/x-icon" href="/assets/ico/favicon.ico" />
   <link href="/assets/css/style.css?v=20260828-home" rel="stylesheet" />
@@ -144,6 +145,36 @@
       'en/contact': 'docs/en/contact'
     };
 
+    var portfolioPrettyPaths = {
+      '': '/',
+      'docs/sobre': '/sobre/',
+      'docs/experiencias': '/experiencias/',
+      'docs/tecnologias': '/tecnologias/',
+      'docs/projetos': '/projetos/',
+      'docs/contato': '/contato/',
+      'docs/en/home': '/en/',
+      'docs/en/about': '/en/about/',
+      'docs/en/experiences': '/en/experiences/',
+      'docs/en/technologies': '/en/technologies/',
+      'docs/en/projects': '/en/projects/',
+      'docs/en/contact': '/en/contact/'
+    };
+
+    var portfolioPageFiles = {
+      '': 'README.md',
+      'docs/sobre': 'docs/sobre.md',
+      'docs/experiencias': 'docs/experiencias.md',
+      'docs/tecnologias': 'docs/tecnologias.md',
+      'docs/projetos': 'docs/projetos.md',
+      'docs/contato': 'docs/contato.md',
+      'docs/en/home': 'docs/en/home.md',
+      'docs/en/about': 'docs/en/about.md',
+      'docs/en/experiences': 'docs/en/experiences.md',
+      'docs/en/technologies': 'docs/en/technologies.md',
+      'docs/en/projects': 'docs/en/projects.md',
+      'docs/en/contact': 'docs/en/contact.md'
+    };
+
     function getPortfolioRoute() {
       var hash = (window.location.hash || '')
         .replace(/^#\/?/, '')
@@ -157,20 +188,9 @@
     }
 
     var portfolioRoute = getPortfolioRoute();
-    if (!window.location.hash && portfolioRoute) {
-      window.history.replaceState(null, '', window.location.pathname + window.location.search + '#/' + portfolioRoute);
-    }
 
     var portfolioLang = (function () {
-      if (portfolioRoute) {
-        var lang = portfolioRoute.indexOf('docs/en/') === 0 ? 'en' : 'pt';
-        localStorage.setItem('portfolioLang', lang);
-        return lang;
-      }
-      var saved = localStorage.getItem('portfolioLang');
-      if (saved) return saved;
-      var browser = (navigator.language || navigator.userLanguage || 'pt').toLowerCase();
-      var lang = browser.startsWith('pt') ? 'pt' : 'en';
+      var lang = portfolioRoute.indexOf('docs/en/') === 0 ? 'en' : 'pt';
       localStorage.setItem('portfolioLang', lang);
       return lang;
     }());
@@ -204,9 +224,17 @@
       repo: 'https://github.com/Ton-Chyod-s/portfolio-tech',
       basePath: '/',
       loadSidebar: portfolioLang === 'en' ? '_sidebar_en.md' : '_sidebar.md',
-      homepage: portfolioLang === 'en' ? 'docs/en/home.md' : 'README.md',
+      homepage: portfolioPageFiles[portfolioRoute] || 'README.md',
       subMaxLevel: 2,
       themeColor: '#42b983',
+      plugins: [
+        function (hook) {
+          hook.doneEach(function () {
+            if (window.applyPortfolioSeo) window.applyPortfolioSeo();
+            if (window.rewritePortfolioLinks) window.rewritePortfolioLinks();
+          });
+        }
+      ],
       alias: {
         '/docs/.*/_sidebar.md': '/_sidebar.md',
         '/docs/_sidebar.md': '/_sidebar.md',
@@ -368,8 +396,13 @@
           var map = newLang === 'en' ? pageMapToEn : pageMapToPt;
           var targetPage = (hash in map) ? map[hash] : (newLang === 'en' ? 'docs/en/about' : 'docs/sobre');
 
-          window.location.hash = '/' + targetPage;
-          window.location.reload();
+          var isLocal = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+          if (isLocal) {
+            window.location.hash = '/' + targetPage;
+            window.location.reload();
+          } else {
+            window.location.href = portfolioPrettyPaths[targetPage] || '/';
+          }
         });
       });
     })();

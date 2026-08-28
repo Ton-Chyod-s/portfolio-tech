@@ -25,6 +25,20 @@ const ROUTES = [
   { hash: 'docs/en/contact', out: 'en/contact' },
 ];
 
+const PRETTY_ROUTES = {
+  'docs/sobre': '/sobre/',
+  'docs/experiencias': '/experiencias/',
+  'docs/tecnologias': '/tecnologias/',
+  'docs/projetos': '/projetos/',
+  'docs/contato': '/contato/',
+  'docs/en/home': '/en/',
+  'docs/en/about': '/en/about/',
+  'docs/en/experiences': '/en/experiences/',
+  'docs/en/technologies': '/en/technologies/',
+  'docs/en/projects': '/en/projects/',
+  'docs/en/contact': '/en/contact/',
+};
+
 const SKIP = new Set(['node_modules', '.git', 'dist', 'scripts', '.github', '.claude']);
 
 function copyRecursive(src, dest) {
@@ -97,6 +111,23 @@ async function renderRoute(browser, route) {
   } catch (e) {
     console.warn(`Aviso: conteúdo não confirmado pra rota "${route.hash}" (seguindo mesmo assim)`);
   }
+
+  // Deixa os links do HTML estático rastreáveis sem quebrar as âncoras do Docsify.
+  await page.evaluate((prettyRoutes) => {
+    document.querySelectorAll('a[href^="#/"]').forEach((link) => {
+      const href = link.getAttribute('href');
+      const target = href.slice(2);
+      const routeName = target.split('?')[0].replace(/\.md$/, '');
+      const prettyPath = prettyRoutes[routeName];
+      if (!prettyPath) return;
+
+      const queryIndex = target.indexOf('?');
+      link.setAttribute(
+        'href',
+        queryIndex === -1 ? prettyPath : `${prettyPath}#/${target}`
+      );
+    });
+  }, PRETTY_ROUTES);
 
   const html = await page.content();
   await page.close();
