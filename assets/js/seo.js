@@ -239,13 +239,18 @@
   window.applyPortfolioSeo();
   window.addEventListener('hashchange', window.applyPortfolioSeo);
 
-  // No servidor local, mantém a navegação SPA mesmo sem as pastas pré-renderizadas.
   document.addEventListener('click', function (event) {
     var link = event.target.closest && event.target.closest('a[data-docsify-route]');
     var isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
     if (!link || !isLocal) return;
 
     event.preventDefault();
-    window.location.hash = '/' + link.getAttribute('data-docsify-route');
+    var targetRoute = link.getAttribute('data-docsify-route');
+    if (!targetRoute) {
+      window.location.href = window.location.origin + '/' + window.location.search;
+      return;
+    }
+
+    window.location.hash = '/' + targetRoute;
   });
 }());
