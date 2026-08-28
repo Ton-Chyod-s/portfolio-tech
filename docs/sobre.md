@@ -59,7 +59,7 @@
 ## Formação Acadêmica
 
 - **Superior em Tecnologia da Informação** – UFMS (Jan/2025 – em andamento)
-- **Inglês Básico Nível II** – IFMS, Formação Inicial e Continuada (Mar/2026 – em andamento)
+- **Inglês Intermediário B1** – IFMS, Formação Inicial e Continuada (Mar/2026 – em andamento)
 - **Desenvolvimento de Aplicações .NET** – Educaminas EAD (Jan/2025 – Nov/2025)
 - **Pós-Graduação em Arquitetura de Software** – Educaminas EAD (Jan/2025 – Jul/2025)
 - **Bacharelado em Arquitetura e Urbanismo** – Uniderp (Jun/2013 – Jun/2018)
