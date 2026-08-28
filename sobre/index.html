@@ -183,7 +183,7 @@
 
     var portfolioRoute = getPortfolioRoute();
     if (!window.location.hash && portfolioRoute) {
-      window.history.replaceState(null, '', window.location.pathname + window.location.search + '#/' + portfolioRoute);
+      window.history.replaceState(null, '', '/' + window.location.search + '#/' + portfolioRoute);
     }
 
     var portfolioLang = (function () {
