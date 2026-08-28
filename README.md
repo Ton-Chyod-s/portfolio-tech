@@ -3,7 +3,7 @@
     <div class="home-hero-copy">
       <span class="home-eyebrow">Disponível para novas oportunidades</span>
       <h1 class="home-title">Klayton Dias</h1>
-      <p class="home-role">Desenvolvedor Full Stack especializado em APIs, integrações e automação.</p>
+      <p class="home-role">Desenvolvedor de Software Pleno especializado em APIs, integrações e automação.</p>
       <p class="home-lead">Transformo processos complexos em sistemas confiáveis, com arquitetura sustentável, segurança e foco no resultado de quem usa o produto.</p>
       <div class="home-actions">
         <a class="home-btn home-btn-primary" href="#/docs/projetos">Ver projetos selecionados</a>

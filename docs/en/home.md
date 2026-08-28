@@ -3,7 +3,7 @@
     <div class="home-hero-copy">
       <span class="home-eyebrow">Open to new opportunities</span>
       <h1 class="home-title">Klayton Dias</h1>
-      <p class="home-role">Full-stack developer specialized in APIs, integrations, and automation.</p>
+      <p class="home-role">Mid-Level Software Developer specialized in APIs, integrations, and automation.</p>
       <p class="home-lead">I turn complex processes into reliable systems with sustainable architecture, security, and a clear focus on user outcomes.</p>
       <div class="home-actions">
         <a class="home-btn home-btn-primary" href="#/docs/en/projects">View selected projects</a>
