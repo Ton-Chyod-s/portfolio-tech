@@ -71,7 +71,7 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="icon" type="image/x-icon" href="/assets/ico/favicon.ico">
-  <link href="/assets/css/style.css?v=20260828-top-controls" rel="stylesheet">
+  <link href="/assets/css/style.css?v=20260828-back-to-top" rel="stylesheet">
   <script>
     (function () {
       if (localStorage.getItem('portfolioDarkMode') === 'true') {
@@ -207,6 +207,11 @@ npx docsify-cli serve .
       <span class="theme-toggle-text" id="themeToggleText">Tema</span>
     </button>
   </div>
+
+  <!-- Voltar ao topo -->
+  <button class="back-to-top-btn" id="backToTopBtn" title="Voltar ao topo" aria-label="Voltar ao topo" aria-hidden="true">
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
+  </button>
 
   <!-- Contador de visitas -->
   <div class="visit-counter" id="visitCounter" role="status" aria-label="Contador de visitas">
@@ -491,6 +496,39 @@ npx docsify-cli serve .
 
           window.location.hash = '/' + targetPage;
           window.location.reload();
+        });
+      });
+    })();
+  </script>
+
+  <script>
+    (function () {
+      var btn = document.getElementById('backToTopBtn');
+      var ticking = false;
+
+      function updateBackToTop() {
+        var visible = window.scrollY > 480;
+        btn.classList.toggle('is-visible', visible);
+        btn.setAttribute('aria-hidden', visible ? 'false' : 'true');
+        ticking = false;
+      }
+
+      function handleScroll() {
+        if (ticking) return;
+        ticking = true;
+        window.requestAnimationFrame(updateBackToTop);
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        var label = portfolioLang === 'en' ? 'Back to top' : 'Voltar ao topo';
+        btn.title = label;
+        btn.setAttribute('aria-label', label);
+        updateBackToTop();
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        btn.addEventListener('click', function () {
+          var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          window.scrollTo({ top: 0, behavior: reducedMotion ? 'auto' : 'smooth' });
         });
       });
     })();
