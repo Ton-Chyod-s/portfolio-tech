@@ -26,11 +26,10 @@ Full Software Developer specialized in RESTful APIs, process automation, and Cle
 
 | Project | Description |
 |---|---|
-| [**api-scraper-mailer**](https://github.com/Ton-Chyod-s/api-scraper-mailer) | Scraping of static and dynamic pages with automated email report delivery. **In production with active users.** |
-| [**nexo-task-api**](https://github.com/Ton-Chyod-s/nexo-task-api) | Full-stack task management system — JWT authentication, email delivery, CI/CD via GitHub Actions, and containerized deployment. [View site →](https://nexo-task-api.vercel.app/) |
-| [**node-api-starter-typescript**](https://github.com/Ton-Chyod-s/node-api-starter-typescript) | Production boilerplate for Node.js APIs with Clean Architecture, JWT + CSRF, rate limiting, Helmet, OpenAPI, and Jest test coverage. |
+| **api-scraper-mailer** | Scraping of static and dynamic pages with automated email report delivery. **In production with active users. Private repository.** |
+| [**nexo-task-api**](https://github.com/Chyod-s/nexo-task-api) | Full-stack task management system — JWT authentication, email delivery, CI/CD via GitHub Actions, and containerized deployment. [View site →](https://nexo-task-api.vercel.app/) |
 | [**api-precatory-creditor**](https://github.com/Chyod-s/api-precatory-creditor) | API + integrated frontend for precatory and creditor management, with JWT, Alembic migrations, and production deployment. [View system →](https://api-precatory-creditor.vercel.app/) |
-| [**syt-playlist-downloader**](https://github.com/Ton-Chyod-s/syt-playlist-downloader) | Cross-platform desktop app (Tauri + Rust + React) for downloading YouTube and Spotify playlists as MP4/MP3, with 4K support. |
+| [**syt-playlist-downloader**](https://github.com/Chyod-s/syt-playlist-downloader) | Cross-platform desktop app (Tauri + Rust + React) for downloading YouTube and Spotify playlists as MP4/MP3, with 4K support. |
 | [**public-records-api**](https://github.com/Ton-Chyod-s/public-records-api) | RESTful API in C# (.NET 9) for querying public records and official gazettes, with authentication and serverless database. |
 | [**portfolio-counter-api**](https://github.com/Ton-Chyod-s/portfolio-counter-api) | Serverless visit counter API with atomic IP-based rate limiting via Redis and restricted CORS. Deployed on Vercel. [Docs →](https://api.ton-chyod-s.me) |
 | [**portfolio-tech**](https://github.com/Ton-Chyod-s/portfolio-tech) | This portfolio — static site with Docsify, dark mode, PT/EN toggle, and print-ready résumé. [View site →](https://ton-chyod-s.me) |

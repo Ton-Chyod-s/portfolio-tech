@@ -95,50 +95,6 @@ Serverless API for portfolio visit counting, deployed on Vercel with Upstash Red
 
 ---
 
-## Full Page Capture – Chrome Extension with Heatmap and Session Recording
-*Apr 2026*
-
-Chrome extension that tracks and records complete browsing sessions, capturing screenshots per URL, click and mouse movement heatmaps, and session video recording. Data is persisted in Neon (serverless PostgreSQL) and visualized via an external dashboard.
-
-**Main features:**
-- Click and mouse movement heatmap per URL (40ms throttle, 12,000 point limit)
-- Session video recording (base64, stored in Neon)
-- Full-page capture per URL visited during the session
-- SPA tracking via `pushState`, `replaceState` and `popstate` interception
-- Persistence in Neon with tables: `sessions`, `captures`, `heatmap_data`, `videos`
-- Popup interface for session control and capture visualization
-
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
-![Chrome](https://img.shields.io/badge/Chrome_Extension-4285F4?logo=googlechrome&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/Neon-00E5CC?logo=postgresql&logoColor=white)
-
----
-
-## Heatmap Dashboard – Browsing Session Viewer (Full Stack)
-*Apr 2026*
-
-Full stack application for visualizing sessions collected by the Full Page Capture extension. The backend exposes a REST API querying Neon via Prisma, and the React frontend renders the capture history, heatmaps, and videos for each session.
-
-**Main features:**
-- Session listing with capture, heatmap, and video counts
-- Detailed session view: ordered screenshots, per-URL heatmap, and video replay
-- Safe `BigInt` serialization to JSON
-- Backend with Express, Helmet, CORS, and Prisma over Neon (serverless PostgreSQL)
-- Frontend in React 18 with React Router, Tailwind CSS, and Vite
-
-![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
-![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/Neon-00E5CC?logo=postgresql&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
-
-**Site:** [heatmap-dashboard-front.vercel.app](https://heatmap-dashboard-front.vercel.app/)
-
----
-
 ## SYT Playlist Downloader – Desktop App for Playlist Download
 *May 2025 - Apr 2026*
 
@@ -154,31 +110,8 @@ Cross-platform desktop app for downloading YouTube and Spotify playlists, built 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 ![Rust](https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white)
 
-**Repository:** [github.com/Ton-Chyod-s/syt-playlist-downloader](https://github.com/Ton-Chyod-s/syt-playlist-downloader)
-**Download:** [Latest release](https://github.com/Ton-Chyod-s/syt-playlist-downloader/releases/latest)
-
----
-
-## node-api-starter-typescript – Professional Boilerplate for Node.js APIs
-*Dec 2025*
-
-Base codebase for new Web and Mobile/CLI projects, with all infrastructure ready: authentication, security, documentation, and quality pipeline.
-
-**Main features:**
-- JWT authentication with cookie + CSRF (Web) and Bearer token (Mobile/CLI) support
-- Security middlewares: CORS, rate limiting, Helmet
-- Clean Architecture (domain, usecases, interfaces, infrastructure, main)
-- Documentation with Docsify and OpenAPI validation
-- Quality pipeline: ESLint, Prettier, Jest
-
-![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
-
-**Repository:** [github.com/Ton-Chyod-s/node-api-starter-typescript](https://github.com/Ton-Chyod-s/node-api-starter-typescript)
+**Repository:** [github.com/Chyod-s/syt-playlist-downloader](https://github.com/Chyod-s/syt-playlist-downloader)
+**Download:** [Latest release](https://github.com/Chyod-s/syt-playlist-downloader/releases/latest)
 
 ---
 
@@ -236,7 +169,7 @@ Complete task management application, with backend in Node.js (TypeScript, Prism
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 
-**Repository:** [github.com/Ton-Chyod-s/nexo-task-api](https://github.com/Ton-Chyod-s/nexo-task-api)
+**Repository:** [github.com/Chyod-s/nexo-task-api](https://github.com/Chyod-s/nexo-task-api)
 **Site:** [nexo-task-api.vercel.app](https://nexo-task-api.vercel.app/)
 ---
 
@@ -294,7 +227,7 @@ Web scraping API using Axios and Cheerio to capture reviews from the Elo7 websit
 ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
-**Site:** [ton-chyod-s.github.io/av-card](https://ton-chyod-s.github.io/av-card/)
+**Status:** Demo not published.
 
 ---
 
@@ -312,7 +245,7 @@ Node.js web scraping application with axios, cheerio, puppeteer, and nodemailer 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
 ![Puppeteer](https://img.shields.io/badge/Puppeteer-40B5A4?logo=puppeteer&logoColor=white)
 
-**Repository:** [github.com/Ton-Chyod-s/api-scraper-mailer](https://github.com/Ton-Chyod-s/api-scraper-mailer)
+**Code:** Private repository.
 **Status:** In production with 5 users
 
 ---
@@ -325,5 +258,5 @@ Tool for monitoring GitHub followers and maintaining a reciprocal follower netwo
 ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
-**Repository:** [github.com/Ton-Chyod-s/git-hub-follower-manager](https://github.com/Ton-Chyod-s/git-hub-follower-manager)
+**Repository:** [github.com/Chyod-s/git-hub-follower-manager](https://github.com/Chyod-s/git-hub-follower-manager)
 **Site:** [git-hub-follower-manager-front.vercel.app/](https://git-hub-follower-manager-front.vercel.app/)

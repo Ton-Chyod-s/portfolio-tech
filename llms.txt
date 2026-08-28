@@ -35,8 +35,8 @@ Detalhes completos: https://ton-chyod-s.me/#/docs/experiencias
 - **portfolio-tech** — Este portfólio, Docsify + GitHub Pages, PT/EN, modo escuro. Repo: https://github.com/Ton-Chyod-s/portfolio-tech
 - **portfolio-counter-api** — API serverless de contagem de visitas, Redis (Upstash), rate limiting atômico. Repo: https://github.com/Ton-Chyod-s/portfolio-counter-api
 - **Full Page Capture + Heatmap Dashboard** — Extensão Chrome de heatmap/gravação de sessão + dashboard full stack de visualização (React + Prisma + Neon).
-- **SYT Playlist Downloader** — App desktop (Tauri + React + Rust) pra baixar playlists do YouTube/Spotify. Repo: https://github.com/Ton-Chyod-s/syt-playlist-downloader
-- **api-scraper-mailer** — Scraper Node.js (axios, cheerio, puppeteer) com envio automatizado por e-mail. Em produção com usuários ativos. Repo: https://github.com/Ton-Chyod-s/api-scraper-mailer
+- **SYT Playlist Downloader** — App desktop (Tauri + React + Rust) pra baixar playlists do YouTube/Spotify. Repo: https://github.com/Chyod-s/syt-playlist-downloader
+- **api-scraper-mailer** — Scraper Node.js (axios, cheerio, puppeteer) com envio automatizado por e-mail. Em produção com usuários ativos; código privado.
 - **api-precatory-creditor** — Sistema de gestão de precatórios em Python/Flask + Clean Architecture. Site: https://api-precatory-creditor.vercel.app/home
 - **NexoTask** — Gerenciador de tarefas full stack (Node/TypeScript + React). Site: https://nexo-task-api.vercel.app/
 - **Public Records API** — API RESTful em C#/.NET para consulta de registros públicos. Repo: https://github.com/Ton-Chyod-s/public-records-api
