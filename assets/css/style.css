@@ -635,6 +635,79 @@ body.dark-mode .contact-links a {
   color: #cdd6f4 !important;
 }
 
+/* ===== Voltar ao topo ===== */
+.back-to-top-btn {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 9999;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: 1px solid #b9d8ca;
+  border-radius: 50%;
+  background: #fff;
+  color: #19875d;
+  font-size: 22px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(10px);
+  box-shadow: 0 6px 20px rgba(23, 53, 42, 0.16);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+}
+
+.back-to-top-btn.is-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.back-to-top-btn:hover {
+  border-color: #19875d;
+  background: #19875d;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.back-to-top-btn .bi {
+  line-height: 1;
+}
+
+body.dark-mode .back-to-top-btn {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: #313244;
+  color: #78ddb0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .back-to-top-btn:hover {
+  border-color: #78ddb0;
+  background: #78ddb0;
+  color: #17352a;
+}
+
+@media (max-width: 768px) {
+  .back-to-top-btn {
+    right: 16px;
+    bottom: 16px;
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .back-to-top-btn {
+    transition: none;
+  }
+}
+
 /* ===== Contador de Visitas (GoatCounter) ===== */
 .visit-counter {
   position: fixed;
