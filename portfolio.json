@@ -89,17 +89,12 @@
       "name": "SYT Playlist Downloader",
       "description": "App desktop pra baixar playlists do YouTube/Spotify.",
       "stack": ["Tauri", "React", "Rust"],
-      "repo": "https://github.com/Ton-Chyod-s/syt-playlist-downloader"
-    },
-    {
-      "name": "node-api-starter-typescript",
-      "description": "Boilerplate de API Node.js com Clean Architecture, JWT+CSRF, rate limit, Helmet, OpenAPI.",
-      "repo": "https://github.com/Ton-Chyod-s/node-api-starter-typescript"
+      "repo": "https://github.com/Chyod-s/syt-playlist-downloader"
     },
     {
       "name": "api-scraper-mailer",
       "description": "Scraper Node.js (axios, cheerio, puppeteer) com envio automatizado por e-mail. Em produção com usuários ativos.",
-      "repo": "https://github.com/Ton-Chyod-s/api-scraper-mailer"
+      "visibility": "private"
     },
     {
       "name": "api-precatory-creditor",
