@@ -160,21 +160,6 @@
       'docs/en/contact': '/en/contact/'
     };
 
-    var portfolioPageFiles = {
-      '': 'README.md',
-      'docs/sobre': 'docs/sobre.md',
-      'docs/experiencias': 'docs/experiencias.md',
-      'docs/tecnologias': 'docs/tecnologias.md',
-      'docs/projetos': 'docs/projetos.md',
-      'docs/contato': 'docs/contato.md',
-      'docs/en/home': 'docs/en/home.md',
-      'docs/en/about': 'docs/en/about.md',
-      'docs/en/experiences': 'docs/en/experiences.md',
-      'docs/en/technologies': 'docs/en/technologies.md',
-      'docs/en/projects': 'docs/en/projects.md',
-      'docs/en/contact': 'docs/en/contact.md'
-    };
-
     function getPortfolioRoute() {
       var hash = (window.location.hash || '')
         .replace(/^#\/?/, '')
@@ -188,6 +173,7 @@
     }
 
     var portfolioRoute = getPortfolioRoute();
+    var portfolioIsLocal = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
 
     var portfolioLang = (function () {
       var lang = portfolioRoute.indexOf('docs/en/') === 0 ? 'en' : 'pt';
@@ -221,10 +207,12 @@
 
     window.$docsify = {
       name: portfolioLang === 'en' ? 'Portfolio' : 'Portfólio',
+      nameLink: '/',
       repo: 'https://github.com/Ton-Chyod-s/portfolio-tech',
       basePath: '/',
-      loadSidebar: portfolioLang === 'en' ? '_sidebar_en.md' : '_sidebar.md',
-      homepage: portfolioPageFiles[portfolioRoute] || 'README.md',
+      routerMode: portfolioIsLocal ? 'hash' : 'history',
+      loadSidebar: portfolioLang === 'en' ? '/_sidebar_en.md' : '/_sidebar.md',
+      homepage: 'README.md',
       subMaxLevel: 2,
       themeColor: '#42b983',
       plugins: [
@@ -236,6 +224,17 @@
         }
       ],
       alias: {
+        '/sobre/?': '/docs/sobre.md',
+        '/experiencias/?': '/docs/experiencias.md',
+        '/tecnologias/?': '/docs/tecnologias.md',
+        '/projetos/?': '/docs/projetos.md',
+        '/contato/?': '/docs/contato.md',
+        '/en/?': '/docs/en/home.md',
+        '/en/about/?': '/docs/en/about.md',
+        '/en/experiences/?': '/docs/en/experiences.md',
+        '/en/technologies/?': '/docs/en/technologies.md',
+        '/en/projects/?': '/docs/en/projects.md',
+        '/en/contact/?': '/docs/en/contact.md',
         '/docs/.*/_sidebar.md': '/_sidebar.md',
         '/docs/_sidebar.md': '/_sidebar.md',
         '/docs/en/.*/_sidebar.md': '/_sidebar_en.md',

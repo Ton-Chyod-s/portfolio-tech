@@ -124,7 +124,7 @@ async function renderRoute(browser, route) {
       const queryIndex = target.indexOf('?');
       link.setAttribute(
         'href',
-        queryIndex === -1 ? prettyPath : `${prettyPath}#/${target}`
+        queryIndex === -1 ? prettyPath : `${prettyPath}${target.slice(queryIndex)}`
       );
     });
   }, PRETTY_ROUTES);
