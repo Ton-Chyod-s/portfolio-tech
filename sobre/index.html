@@ -69,8 +69,9 @@
   <title>Sobre Klayton Dias | Desenvolvedor Full Stack</title>
   <script src="/assets/js/seo.js"></script><script id="page-structured-data" type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","name":"Sobre Klayton Dias | Desenvolvedor Full Stack","description":"Conheça a trajetória, formação e perfil profissional de Klayton Dias, desenvolvedor Full Stack especializado em soluções de software.","url":"https://ton-chyod-s.me/sobre/","inLanguage":"pt-BR","mainEntity":{"@type":"Person","name":"Klayton Dias","url":"https://ton-chyod-s.me/"}}</script>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="icon" type="image/x-icon" href="/assets/ico/favicon.ico">
-  <link href="/assets/css/style.css?v=20260828-home" rel="stylesheet">
+  <link href="/assets/css/style.css?v=20260828-top-controls" rel="stylesheet">
   <script>
     (function () {
       if (localStorage.getItem('portfolioDarkMode') === 'true') {
@@ -111,11 +112,17 @@
 
 <h2 id="minha-jornada"><a href="/sobre/?id=minha-jornada" data-id="minha-jornada" class="anchor"><span>Minha Jornada</span></a></h2><ul><li><p><strong>Início aos 13 anos:</strong> Primeiro contato com programação ao configurar servidores de jogos online, aprendendo na prática Java e administração de sistemas, onde tudo começou com curiosidade e vontade de entender como as coisas funcionam.</p></li><li><p><strong>Estudos contínuos e projetos pessoais:</strong> Nunca parei de estudar programação. Ao longo dos anos fui construindo projetos, explorando linguagens e acumulando fundamentos técnicos em paralelo com outras atividades.</p></li><li><p><strong>Telemont (2021–2023):</strong> Contratado pelo currículo técnico que já carregava. Lá desenvolvi um programa completo com Python utilizado por diversas pessoas do setor.</p></li><li><p><strong>Perin Assessoria Contábil (2023–2024):</strong> Primeiro contato com o mundo de dados e automação de processos em ambiente corporativo, onde vi de perto o impacto real que código bem feito tem no dia a dia de uma empresa.</p></li><li><p><strong>NextMed Tecnologia (2024):</strong> Mergulhei no ecossistema .NET e C#, expandindo o repertório técnico além do que já dominava.</p></li><li><p><strong>Pós-Graduação em Arquitetura de Software (Jan/2025 – Jul/2025):</strong> Aprofundei minha compreensão em design de sistemas, Clean Architecture e padrões que tornam o código sustentável e fácil de manter.</p></li><li><p><strong>Mega Júnior (UFMS) - Jun/2025 a Jan/2026:</strong> Atuei como Tech Lead e desenvolvedor de software na refatoração completa da API do projeto Dipemax, aplicando Clean Architecture, Node.js, TypeScript, JWT e Swagger.</p></li><li><p><strong>Corelab - Set/2025 a Ago/2026:</strong> Atuei como Desenvolvedor Full Stack Pleno em 5 produtos simultâneos, com responsabilidade sobre APIs, integrações mobile, segurança e qualidade de entrega em ambiente de startup.</p></li></ul><p><strong>Atualmente:</strong> Evoluindo em Rust/Tauri para desenvolvimento desktop, aprofundo práticas de segurança em APIs (RBAC, CSRF, rate limit) e continuo construindo ferramentas próprias que resolvem problemas reais do dia a dia.</p><h2 id="formação-acadêmica"><a href="/sobre/?id=forma%c3%a7%c3%a3o-acad%c3%aamica" data-id="formação-acadêmica" class="anchor"><span>Formação Acadêmica</span></a></h2><ul><li><strong>Superior em Tecnologia da Informação</strong> – UFMS (Jan/2025 – em andamento)</li><li><strong>Inglês Intermediário B1</strong> – IFMS, Formação Inicial e Continuada (Mar/2026 – em andamento)</li><li><strong>Desenvolvimento de Aplicações .NET</strong> – Educaminas EAD (Jan/2025 – Nov/2025)</li><li><strong>Pós-Graduação em Arquitetura de Software</strong> – Educaminas EAD (Jan/2025 – Jul/2025)</li><li><strong>Bacharelado em Arquitetura e Urbanismo</strong> – Uniderp (Jun/2013 – Jun/2018)</li><li><strong>Pós-Graduação em Gerenciamento, Implantação e Desenvolvimento de Projetos em BIM</strong> – FacuMinas (Concluído, 2024)</li></ul><h2 id="cursos-livres"><a href="/sobre/?id=cursos-livres" data-id="cursos-livres" class="anchor"><span>Cursos Livres</span></a></h2><ul><li>Relational Database – freeCodeCamp (Out/2025)</li><li>Scientific Computing with Python – freeCodeCamp (Mar/2024)</li><li>Legacy JavaScript Algorithms and Data Structures – freeCodeCamp (Fev/2024)</li><li>Microsoft Power BI para Business Intelligence e Data Science – Data Science Academy (Jan/2024)</li><li>Git e GitHub – Curso em Vídeo (Dez/2023)</li><li>Python 3 – Mundo 3 – Curso em Vídeo (Nov/2023)</li><li>Eletrônica Analógica e Eletrônica de Potência – Nubbi (Set/2020)</li><li>Curso Técnico de Informática – Prime Cursos do Brasil (Set/2017)</li><li>Operador de Micro e Computação Gráfica – Mega Center Consultoria (Jan/2011)</li><li>Programa Nacional de Informática – Gledições Promoções e Assessoria (Set/2005)</li></ul></article></section></main>
 
-  <!-- Botão de alternar modo escuro/claro -->
-  <button class="dark-toggle-btn" id="darkToggleBtn" title="Mudar para modo escuro" aria-label="Mudar para modo escuro" aria-pressed="false">🌙</button>
-
-  <!-- Botão de alternar idioma -->
-  <button class="lang-toggle-btn" id="langToggleBtn" title="Switch to English" aria-label="Switch to English">EN</button>
+  <!-- Preferências de idioma e aparência -->
+  <div class="portfolio-controls">
+    <button class="lang-toggle-btn" id="langToggleBtn" title="Switch to English" aria-label="Switch to English">
+      <i class="bi bi-translate" aria-hidden="true"></i>
+      <span class="control-code">EN</span>
+    </button>
+    <button class="dark-toggle-btn" id="darkToggleBtn" title="Mudar para modo escuro" aria-label="Mudar para modo escuro" aria-pressed="false">
+      <i class="bi bi-moon-stars theme-toggle-icon" id="themeToggleIcon" aria-hidden="true"></i>
+      <span class="theme-toggle-text" id="themeToggleText">Tema</span>
+    </button>
+  </div>
 
   <!-- Contador de visitas -->
   <div class="visit-counter" id="visitCounter" role="status" aria-label="Contador de visitas">
@@ -331,16 +338,22 @@
     // Dark mode
     (function () {
       var btn = document.getElementById('darkToggleBtn');
+      var icon = document.getElementById('themeToggleIcon');
+      var label = document.getElementById('themeToggleText');
       var isDark = localStorage.getItem('portfolioDarkMode') === 'true';
 
       function applyDarkMode(dark) {
+        var isEnglish = portfolioLang === 'en';
         isDark = dark;
         document.body.classList.toggle('dark-mode', dark);
         document.documentElement.setAttribute('data-dark', dark ? 'true' : 'false');
-        btn.textContent = dark ? '☀️' : '🌙';
-        btn.title = dark ? 'Mudar para modo claro' : 'Mudar para modo escuro';
+        icon.className = dark ? 'bi bi-sun theme-toggle-icon' : 'bi bi-moon-stars theme-toggle-icon';
+        label.textContent = isEnglish ? 'Theme' : 'Tema';
+        btn.title = dark
+          ? (isEnglish ? 'Switch to light mode' : 'Mudar para modo claro')
+          : (isEnglish ? 'Switch to dark mode' : 'Mudar para modo escuro');
         btn.setAttribute('aria-pressed', dark ? 'true' : 'false');
-        btn.setAttribute('aria-label', dark ? 'Mudar para modo claro' : 'Mudar para modo escuro');
+        btn.setAttribute('aria-label', btn.title);
         localStorage.setItem('portfolioDarkMode', dark);
       }
 
@@ -377,7 +390,7 @@
       };
 
       function updateLangBtn() {
-        langBtn.textContent = portfolioLang === 'pt' ? 'EN' : 'PT';
+        langBtn.querySelector('.control-code').textContent = portfolioLang === 'pt' ? 'EN' : 'PT';
         langBtn.title = portfolioLang === 'pt' ? 'Switch to English' : 'Mudar para Português';
         langBtn.setAttribute('aria-label', portfolioLang === 'pt' ? 'Switch to English' : 'Mudar para Português');
       }

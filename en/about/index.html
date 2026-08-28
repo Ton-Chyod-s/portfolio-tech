@@ -69,8 +69,9 @@
   <title>About Klayton Dias | Full-Stack Developer</title>
   <script src="/assets/js/seo.js"></script><script id="page-structured-data" type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","name":"About Klayton Dias | Full-Stack Developer","description":"Learn about the professional background, education, and profile of Klayton Dias, a full-stack developer focused on software solutions.","url":"https://ton-chyod-s.me/en/about/","inLanguage":"en","mainEntity":{"@type":"Person","name":"Klayton Dias","url":"https://ton-chyod-s.me/"}}</script>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="icon" type="image/x-icon" href="/assets/ico/favicon.ico">
-  <link href="/assets/css/style.css?v=20260828-home" rel="stylesheet">
+  <link href="/assets/css/style.css?v=20260828-top-controls" rel="stylesheet">
   <script>
     (function () {
       if (localStorage.getItem('portfolioDarkMode') === 'true') {
@@ -111,11 +112,17 @@
 
 <h2 id="my-journey"><a href="/en/about/?id=my-journey" data-id="my-journey" class="anchor"><span>My Journey</span></a></h2><ul><li><p><strong>Started at age 13:</strong> First contact with programming by configuring online game servers, learning Java and system administration in practice — where everything started with curiosity and a desire to understand how things work.</p></li><li><p><strong>Information Technology Degree:</strong> Deepening knowledge in programming, architecture, and agile methodologies, building technical foundations and a systemic view.</p></li><li><p><strong>Mega Júnior (UFMS) — Jun/2025 to Jan/2026:</strong> Served as Tech Lead and software developer in the complete refactoring of the Dipemax project API, applying Clean Architecture, Node.js, TypeScript, JWT, and Swagger.</p></li><li><p><strong>Post-Graduation in Software Architecture:</strong> Deepened understanding of system design, Clean Architecture, and patterns that make code sustainable and maintainable.</p></li><li><p><strong>Corelab — Sep/2025 to Aug/2026:</strong> Worked as a Mid-Level Software Developer across 5 simultaneous products, with responsibility for APIs, mobile integrations, security, and delivery quality in a startup environment.</p></li></ul><p><strong>Currently:</strong> Evolving in Rust/Tauri for desktop development, deepening API security practices (RBAC, CSRF, rate limiting), and continuing to build personal tools that solve real day-to-day problems.</p><h2 id="academic-background"><a href="/en/about/?id=academic-background" data-id="academic-background" class="anchor"><span>Academic Background</span></a></h2><ul><li><strong>B.S. in Information Technology</strong> – UFMS (Jan/2025 – present)</li><li><strong>Basic English Level II</strong> – IFMS, Initial and Continuing Education (Mar/2026 – present)</li><li><strong>.NET Application Development</strong> – Educaminas EAD (Jan/2025 – Nov/2025)</li><li><strong>Post-Graduation in Software Architecture</strong> – Educaminas EAD (Jan/2025 – Jul/2025)</li><li><strong>Post-Graduation in BIM Project Management and Development</strong> – Faculdade de Minas (Sep/2023 – Jul/2024)</li><li><strong>Bachelor's in Architecture and Urbanism</strong> – Uniderp (Jun/2013 – Jun/2018)</li></ul><h2 id="free-courses"><a href="/en/about/?id=free-courses" data-id="free-courses" class="anchor"><span>Free Courses</span></a></h2><ul><li>Relational Database – freeCodeCamp (Oct/2025)</li><li>Scientific Computing with Python – freeCodeCamp (Mar/2024)</li><li>Legacy JavaScript Algorithms and Data Structures – freeCodeCamp (Feb/2024)</li><li>Microsoft Power BI for Business Intelligence and Data Science – Data Science Academy (Jan/2024)</li><li>Git and GitHub – Curso em Vídeo (Dec/2023)</li><li>Python 3 – World 3 – Curso em Vídeo (Nov/2023)</li><li>Analog Electronics and Power Electronics – Nubbi (Sep/2020)</li><li>Computer Technician Course – Prime Cursos do Brasil (Sep/2017)</li><li>PC Operator and Computer Graphics – Mega Center Consultoria (Jan/2011)</li><li>National Computer Program – Gledições Promoções e Assessoria (Sep/2005)</li></ul></article></section></main>
 
-  <!-- Botão de alternar modo escuro/claro -->
-  <button class="dark-toggle-btn" id="darkToggleBtn" title="Mudar para modo escuro" aria-label="Mudar para modo escuro" aria-pressed="false">🌙</button>
-
-  <!-- Botão de alternar idioma -->
-  <button class="lang-toggle-btn" id="langToggleBtn" title="Mudar para Português" aria-label="Mudar para Português">PT</button>
+  <!-- Preferências de idioma e aparência -->
+  <div class="portfolio-controls">
+    <button class="lang-toggle-btn" id="langToggleBtn" title="Mudar para Português" aria-label="Mudar para Português">
+      <i class="bi bi-translate" aria-hidden="true"></i>
+      <span class="control-code">PT</span>
+    </button>
+    <button class="dark-toggle-btn" id="darkToggleBtn" title="Switch to dark mode" aria-label="Switch to dark mode" aria-pressed="false">
+      <i class="bi bi-moon-stars theme-toggle-icon" id="themeToggleIcon" aria-hidden="true"></i>
+      <span class="theme-toggle-text" id="themeToggleText">Theme</span>
+    </button>
+  </div>
 
   <!-- Contador de visitas -->
   <div class="visit-counter" id="visitCounter" role="status" aria-label="Contador de visitas">
@@ -331,16 +338,22 @@
     // Dark mode
     (function () {
       var btn = document.getElementById('darkToggleBtn');
+      var icon = document.getElementById('themeToggleIcon');
+      var label = document.getElementById('themeToggleText');
       var isDark = localStorage.getItem('portfolioDarkMode') === 'true';
 
       function applyDarkMode(dark) {
+        var isEnglish = portfolioLang === 'en';
         isDark = dark;
         document.body.classList.toggle('dark-mode', dark);
         document.documentElement.setAttribute('data-dark', dark ? 'true' : 'false');
-        btn.textContent = dark ? '☀️' : '🌙';
-        btn.title = dark ? 'Mudar para modo claro' : 'Mudar para modo escuro';
+        icon.className = dark ? 'bi bi-sun theme-toggle-icon' : 'bi bi-moon-stars theme-toggle-icon';
+        label.textContent = isEnglish ? 'Theme' : 'Tema';
+        btn.title = dark
+          ? (isEnglish ? 'Switch to light mode' : 'Mudar para modo claro')
+          : (isEnglish ? 'Switch to dark mode' : 'Mudar para modo escuro');
         btn.setAttribute('aria-pressed', dark ? 'true' : 'false');
-        btn.setAttribute('aria-label', dark ? 'Mudar para modo claro' : 'Mudar para modo escuro');
+        btn.setAttribute('aria-label', btn.title);
         localStorage.setItem('portfolioDarkMode', dark);
       }
 
@@ -377,7 +390,7 @@
       };
 
       function updateLangBtn() {
-        langBtn.textContent = portfolioLang === 'pt' ? 'EN' : 'PT';
+        langBtn.querySelector('.control-code').textContent = portfolioLang === 'pt' ? 'EN' : 'PT';
         langBtn.title = portfolioLang === 'pt' ? 'Switch to English' : 'Mudar para Português';
         langBtn.setAttribute('aria-label', portfolioLang === 'pt' ? 'Switch to English' : 'Mudar para Português');
       }

@@ -69,8 +69,9 @@
   <title>Technologies and Skills | Klayton Dias</title>
   <script src="/assets/js/seo.js"></script><script id="page-structured-data" type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","name":"Technologies and Skills | Klayton Dias","description":"Technologies used by Klayton Dias: Node.js, TypeScript, Python, PostgreSQL, Docker, REST APIs, testing, security, and CI/CD.","url":"https://ton-chyod-s.me/en/technologies/","inLanguage":"en","mainEntity":{"@type":"Person","name":"Klayton Dias","url":"https://ton-chyod-s.me/"}}</script>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="icon" type="image/x-icon" href="/assets/ico/favicon.ico">
-  <link href="/assets/css/style.css?v=20260828-home" rel="stylesheet">
+  <link href="/assets/css/style.css?v=20260828-top-controls" rel="stylesheet">
   <script>
     (function () {
       if (localStorage.getItem('portfolioDarkMode') === 'true') {
@@ -86,11 +87,17 @@
 </div></aside><section class="content"><article class="markdown-section" id="main"><h1 id="technologies"><a href="/en/technologies/?id=technologies" data-id="technologies" class="anchor"><span>Technologies</span></a></h1><h2 id="programming-languages"><a href="/en/technologies/?id=programming-languages" data-id="programming-languages" class="anchor"><span>Programming Languages</span></a></h2><ul><li><strong>JavaScript / Node.js</strong>: RESTful APIs, backend, async manipulation, crawlers, and automations.</li><li><strong>TypeScript</strong>: Backend development with static typing for greater safety and maintainability.</li><li><strong>Python</strong>: Automation, ETL, scripts with Selenium and pandas, web scraping, and Flask backends.</li><li><strong>C# (.NET Core)</strong>: APIs, Entity Framework for ORM, and efficient database access.</li><li><strong>SQL</strong>: Complex queries, relational modeling, triggers, seeds, and performance optimization.</li><li><strong>HTML / CSS</strong>: Interfaces and layouts for web projects and documentation.</li></ul><h2 id="frameworks-and-libraries"><a href="/en/technologies/?id=frameworks-and-libraries" data-id="frameworks-and-libraries" class="anchor"><span>Frameworks and Libraries</span></a></h2><ul><li><strong>AdonisJS</strong>: Full-stack MVC framework for Node.js, with native ORM, authentication, and layered structure support.</li><li><strong>Express.js</strong>: Minimalist framework for RESTful APIs in Node.js.</li><li><strong>React / Vite / Tailwind CSS</strong>: SPA frontend with optimized build and utility-first styling.</li><li><strong>React Native</strong>: Cross-platform mobile development with multi-tenant flow support.</li><li><strong>Expo / EAS Build</strong>: React Native app build and distribution for Android and iOS with development, preview, and production profiles.</li><li><strong>Flask</strong>: Lightweight Python backend for APIs and analytical dashboards.</li><li><strong>Entity Framework Core</strong>: ORM for .NET Core with object-relational mapping.</li><li><strong>Prisma ORM</strong>: Modern typed ORM for Node.js/TypeScript, with migrations and query builder.</li><li><strong>Sequelize</strong>: ORM for Node.js with connection pooling, timeouts, and multiple relational databases support.</li><li><strong>Selenium / Puppeteer</strong>: Web navigation automation for scraping and testing on static and dynamic pages.</li><li><strong>Cheerio</strong>: Fast HTML parser for data extraction in Node.js.</li><li><strong>Nodemailer</strong>: Automated email sending in Node.js applications.</li><li><strong>pandas</strong>: Tabular data manipulation and analysis in Python.</li></ul><h2 id="databases"><a href="/en/technologies/?id=databases" data-id="databases" class="anchor"><span>Databases</span></a></h2><ul><li><strong>PostgreSQL</strong>: Advanced relational database with triggers, indexes, and complex feature support.</li><li><strong>MySQL</strong>: Traditional relational database, query optimization and indexes.</li><li><strong>SQLite</strong>: Lightweight database for local storage in smaller projects or testing.</li><li><strong>NEON</strong>: Serverless PostgreSQL for scalable backends without infrastructure management.</li></ul><h2 id="infrastructure-and-tools"><a href="/en/technologies/?id=infrastructure-and-tools" data-id="infrastructure-and-tools" class="anchor"><span>Infrastructure and Tools</span></a></h2><ul><li><strong>Docker</strong>: Containerization for isolated environments and consistent deployments.</li><li><strong>GitHub Actions / CI/CD</strong>: Automated integration and continuous delivery pipelines.</li><li><strong>Azure DevOps</strong>: Agile planning with boards, pipelines, and sprint control.</li><li><strong>Jira</strong>: Agile task and sprint management with GitHub integration via GitHub for Jira (commit ↔ issue traceability).</li><li><strong>Sentry</strong>: Error monitoring and performance tracking in React Native/Expo apps with EAS Build integration.</li><li><strong>Git / Gitflow</strong>: Version control with strategic branching for team organization and collaboration.</li><li><strong>Swagger / OpenAPI</strong>: Automatic and interactive documentation for RESTful APIs.</li><li><strong>JWT / Cookie</strong>: Token-based authentication and authorization for REST APIs.</li><li><strong>RBAC</strong>: Role-based access control in multi-user systems.</li><li><strong>Power BI (DAX, M)</strong>: Analytical dashboard creation, ETL, and data visualization.</li></ul><h2 id="practices-and-methodologies"><a href="/en/technologies/?id=practices-and-methodologies" data-id="practices-and-methodologies" class="anchor"><span>Practices and Methodologies</span></a></h2><ul><li><strong>Clean Architecture</strong>: Layer separation (Controller → Usecase → Repository) for modular, testable, and scalable code.</li><li><strong>SOLID</strong>: Object-oriented design principles applied in API and system development.</li><li><strong>MVC</strong>: Architectural pattern applied in projects with AdonisJS and similar frameworks.</li><li><strong>Code Review</strong>: Collaborative code review via PRs for quality assurance and best practices.</li><li><strong>Seeds and Migrations</strong>: Automation of initial database population and schema versioning.</li><li><strong>ETL Automation</strong>: Data pipelines for efficient collection, transformation, and loading.</li></ul><hr>
 </article></section></main>
 
-  <!-- Botão de alternar modo escuro/claro -->
-  <button class="dark-toggle-btn" id="darkToggleBtn" title="Mudar para modo escuro" aria-label="Mudar para modo escuro" aria-pressed="false">🌙</button>
-
-  <!-- Botão de alternar idioma -->
-  <button class="lang-toggle-btn" id="langToggleBtn" title="Mudar para Português" aria-label="Mudar para Português">PT</button>
+  <!-- Preferências de idioma e aparência -->
+  <div class="portfolio-controls">
+    <button class="lang-toggle-btn" id="langToggleBtn" title="Mudar para Português" aria-label="Mudar para Português">
+      <i class="bi bi-translate" aria-hidden="true"></i>
+      <span class="control-code">PT</span>
+    </button>
+    <button class="dark-toggle-btn" id="darkToggleBtn" title="Switch to dark mode" aria-label="Switch to dark mode" aria-pressed="false">
+      <i class="bi bi-moon-stars theme-toggle-icon" id="themeToggleIcon" aria-hidden="true"></i>
+      <span class="theme-toggle-text" id="themeToggleText">Theme</span>
+    </button>
+  </div>
 
   <!-- Contador de visitas -->
   <div class="visit-counter" id="visitCounter" role="status" aria-label="Contador de visitas">
@@ -306,16 +313,22 @@
     // Dark mode
     (function () {
       var btn = document.getElementById('darkToggleBtn');
+      var icon = document.getElementById('themeToggleIcon');
+      var label = document.getElementById('themeToggleText');
       var isDark = localStorage.getItem('portfolioDarkMode') === 'true';
 
       function applyDarkMode(dark) {
+        var isEnglish = portfolioLang === 'en';
         isDark = dark;
         document.body.classList.toggle('dark-mode', dark);
         document.documentElement.setAttribute('data-dark', dark ? 'true' : 'false');
-        btn.textContent = dark ? '☀️' : '🌙';
-        btn.title = dark ? 'Mudar para modo claro' : 'Mudar para modo escuro';
+        icon.className = dark ? 'bi bi-sun theme-toggle-icon' : 'bi bi-moon-stars theme-toggle-icon';
+        label.textContent = isEnglish ? 'Theme' : 'Tema';
+        btn.title = dark
+          ? (isEnglish ? 'Switch to light mode' : 'Mudar para modo claro')
+          : (isEnglish ? 'Switch to dark mode' : 'Mudar para modo escuro');
         btn.setAttribute('aria-pressed', dark ? 'true' : 'false');
-        btn.setAttribute('aria-label', dark ? 'Mudar para modo claro' : 'Mudar para modo escuro');
+        btn.setAttribute('aria-label', btn.title);
         localStorage.setItem('portfolioDarkMode', dark);
       }
 
@@ -352,7 +365,7 @@
       };
 
       function updateLangBtn() {
-        langBtn.textContent = portfolioLang === 'pt' ? 'EN' : 'PT';
+        langBtn.querySelector('.control-code').textContent = portfolioLang === 'pt' ? 'EN' : 'PT';
         langBtn.title = portfolioLang === 'pt' ? 'Switch to English' : 'Mudar para Português';
         langBtn.setAttribute('aria-label', portfolioLang === 'pt' ? 'Switch to English' : 'Mudar para Português');
       }
