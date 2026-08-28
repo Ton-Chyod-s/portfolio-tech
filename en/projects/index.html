@@ -82,7 +82,8 @@
   <script src="/assets/js/config.js"></script>
 <style>:root{--theme-color: #42b983;}</style></head>
 <body data-page="docs/en/projects.md" class="ready sticky">
-  <a href="https://github.com/Ton-Chyod-s/portfolio-tech" target="_blank" class="github-corner" aria-label="View source on Github"><svg viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><main><button class="sidebar-toggle" aria-label="Menu"><div class="sidebar-toggle-button"><span></span><span></span><span></span></div></button><aside class="sidebar"><h1 class="app-name"><a class="app-name-link" data-nosearch="" href="/">Portfolio</a></h1><div class="sidebar-nav"><!--sidebar--></div></aside><section class="content"><article class="markdown-section" id="main"><h1 id="projects"><a href="/en/projects/?id=projects" data-id="projects" class="anchor"><span>Projects</span></a></h1><h2 id="synclar-shared-expense-splitting-full-stack"><a href="/en/projects/?id=synclar-shared-expense-splitting-full-stack" data-id="synclar-shared-expense-splitting-full-stack" class="anchor"><span>SyncLar – Shared Expense Splitting (Full Stack)</span></a></h2><p><em>Feb 2026 – Jul 2026</em></p><p>Full-stack product for splitting expenses among people who share the same home (shared houses, couples, and apartments), composed of a REST API (Node/TypeScript) and a mobile app (React Native + Expo). It lets users create "houses", invite members, register bills with flexible splitting, scan NFC-e receipts with the camera, track payments, and view a financial dashboard. API deployed on Digital Ocean (Vercel fallback), database on Neon (PostgreSQL), and Cloudinary for photos and receipts; app distributed via Expo (preview and production) and published on the Play Store.</p><p><strong>Main features:</strong></p><ul><li>Authentication with JWT + refresh token and Google OAuth login (passwords with Argon2)</li><li>House and member management with roles (admin/member) and invite by code</li><li>Bill splitting in three modes: equal, percentage, and custom</li><li>NFC-e receipt scanning and parsing via camera to extract items and avoid duplicates</li><li>Financial dashboard with per-member balances and settlement calculation (who owes whom)</li><li>Receipt uploads, push notifications, and premium subscription (monthly/annual) via PIX</li><li>Security with Helmet, CORS, rate limit, and CSRF; validation with Zod and monitoring via Sentry</li></ul><p><img src="https://img.shields.io/badge/Node.js-339933?logo=node.js&amp;logoColor=white" data-origin="https://img.shields.io/badge/Node.js-339933?logo=node.js&amp;logoColor=white" alt="Node.js">
+  <a href="https://github.com/Ton-Chyod-s/portfolio-tech" target="_blank" class="github-corner" aria-label="View source on Github"><svg viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><main><button class="sidebar-toggle" aria-label="Menu"><div class="sidebar-toggle-button"><span></span><span></span><span></span></div></button><aside class="sidebar"><h1 class="app-name"><a class="app-name-link" data-nosearch="" href="/">Portfolio</a></h1><div class="sidebar-nav"><ul><li><p><a href="/en/about/" title="About"><strong>About</strong></a></p></li><li><p><a href="/en/experiences/" title="Experience"><strong>Experience</strong></a></p></li><li><p><a href="/en/technologies/" title="Technologies"><strong>Technologies</strong></a></p></li><li><p class="active"><a href="/en/projects/" title="Projects"><strong>Projects</strong></a><ul class="app-sub-sidebar"><li><a class="section-link" href="/en/projects/?id=synclar-shared-expense-splitting-full-stack" title="SyncLar – Shared Expense Splitting (Full Stack)">SyncLar – Shared Expense Splitting (Full Stack)</a></li><li><a class="section-link" href="/en/projects/?id=myframe-cg-custom-framing-e-commerce-full-stack" title="MyFrame CG – Custom Framing E-commerce (Full Stack)">MyFrame CG – Custom Framing E-commerce (Full Stack)</a></li><li><a class="section-link" href="/en/projects/?id=portfolio-tech-personal-portfolio" title="portfolio-tech – Personal Portfolio">portfolio-tech – Personal Portfolio</a></li><li><a class="section-link" href="/en/projects/?id=portfolio-counter-api-serverless-visit-counter-api" title="portfolio-counter-api – Serverless Visit Counter API">portfolio-counter-api – Serverless Visit Counter API</a></li><li><a class="section-link" href="/en/projects/?id=syt-playlist-downloader-desktop-app-for-playlist-download" title="SYT Playlist Downloader – Desktop App for Playlist Download">SYT Playlist Downloader – Desktop App for Playlist Download</a></li><li><a class="section-link" href="/en/projects/?id=api-precatory-creditor-precatory-management-system" title="api-precatory-creditor – Precatory Management System">api-precatory-creditor – Precatory Management System</a></li><li><a class="section-link" href="/en/projects/?id=flask-anac-dashboard-aviation-data-analysis" title="Flask ANAC Dashboard – Aviation Data Analysis">Flask ANAC Dashboard – Aviation Data Analysis</a></li><li><a class="section-link" href="/en/projects/?id=nexotask-task-management-system-full-stack" title="NexoTask – Task Management System (Full Stack)">NexoTask – Task Management System (Full Stack)</a></li><li><a class="section-link" href="/en/projects/?id=public-records-api-restful-api-for-public-records-query" title="Public Records API – RESTful API for Public Records Query">Public Records API – RESTful API for Public Records Query</a></li><li><a class="section-link" href="/en/projects/?id=python-application-stract" title="Python Application Stract">Python Application Stract</a></li><li><a class="section-link" href="/en/projects/?id=data-analysis-processing-automation-for-dashboards" title="Data Analysis – Processing Automation for Dashboards">Data Analysis – Processing Automation for Dashboards</a></li><li><a class="section-link" href="/en/projects/?id=elo7-review-scraper-api" title="Elo7 Review Scraper API">Elo7 Review Scraper API</a></li><li><a class="section-link" href="/en/projects/?id=api-scraper-mailer" title="api-scraper-mailer">api-scraper-mailer</a></li><li><a class="section-link" href="/en/projects/?id=git-hub-follower-manager" title="git-hub-follower-manager">git-hub-follower-manager</a></li></ul></p></li><li><p><a href="/en/contact/" title="Contact"><strong>Contact</strong></a></p></li></ul><!-- - [**Help**](docs/en/help.md) -->
+</div></aside><section class="content"><article class="markdown-section" id="main"><h1 id="projects"><a href="/en/projects/?id=projects" data-id="projects" class="anchor"><span>Projects</span></a></h1><h2 id="synclar-shared-expense-splitting-full-stack"><a href="/en/projects/?id=synclar-shared-expense-splitting-full-stack" data-id="synclar-shared-expense-splitting-full-stack" class="anchor"><span>SyncLar – Shared Expense Splitting (Full Stack)</span></a></h2><p><em>Feb 2026 – Jul 2026</em></p><p>Full-stack product for splitting expenses among people who share the same home (shared houses, couples, and apartments), composed of a REST API (Node/TypeScript) and a mobile app (React Native + Expo). It lets users create "houses", invite members, register bills with flexible splitting, scan NFC-e receipts with the camera, track payments, and view a financial dashboard. API deployed on Digital Ocean (Vercel fallback), database on Neon (PostgreSQL), and Cloudinary for photos and receipts; app distributed via Expo (preview and production) and published on the Play Store.</p><p><strong>Main features:</strong></p><ul><li>Authentication with JWT + refresh token and Google OAuth login (passwords with Argon2)</li><li>House and member management with roles (admin/member) and invite by code</li><li>Bill splitting in three modes: equal, percentage, and custom</li><li>NFC-e receipt scanning and parsing via camera to extract items and avoid duplicates</li><li>Financial dashboard with per-member balances and settlement calculation (who owes whom)</li><li>Receipt uploads, push notifications, and premium subscription (monthly/annual) via PIX</li><li>Security with Helmet, CORS, rate limit, and CSRF; validation with Zod and monitoring via Sentry</li></ul><p><img src="https://img.shields.io/badge/Node.js-339933?logo=node.js&amp;logoColor=white" data-origin="https://img.shields.io/badge/Node.js-339933?logo=node.js&amp;logoColor=white" alt="Node.js">
 <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&amp;logoColor=white" data-origin="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&amp;logoColor=white" alt="TypeScript">
 <img src="https://img.shields.io/badge/Express-000000?logo=express&amp;logoColor=white" data-origin="https://img.shields.io/badge/Express-000000?logo=express&amp;logoColor=white" alt="Express">
 <img src="https://img.shields.io/badge/Prisma-2D3748?logo=prisma&amp;logoColor=white" data-origin="https://img.shields.io/badge/Prisma-2D3748?logo=prisma&amp;logoColor=white" alt="Prisma">
@@ -202,21 +203,6 @@
       'en/contact': 'docs/en/contact'
     };
 
-    var portfolioPrettyPaths = {
-      '': '/',
-      'docs/sobre': '/sobre/',
-      'docs/experiencias': '/experiencias/',
-      'docs/tecnologias': '/tecnologias/',
-      'docs/projetos': '/projetos/',
-      'docs/contato': '/contato/',
-      'docs/en/home': '/en/',
-      'docs/en/about': '/en/about/',
-      'docs/en/experiences': '/en/experiences/',
-      'docs/en/technologies': '/en/technologies/',
-      'docs/en/projects': '/en/projects/',
-      'docs/en/contact': '/en/contact/'
-    };
-
     function getPortfolioRoute() {
       var hash = (window.location.hash || '')
         .replace(/^#\/?/, '')
@@ -230,7 +216,9 @@
     }
 
     var portfolioRoute = getPortfolioRoute();
-    var portfolioIsLocal = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+    if (!window.location.hash && portfolioRoute) {
+      window.history.replaceState(null, '', window.location.pathname + window.location.search + '#/' + portfolioRoute);
+    }
 
     var portfolioLang = (function () {
       var lang = portfolioRoute.indexOf('docs/en/') === 0 ? 'en' : 'pt';
@@ -264,34 +252,20 @@
 
     window.$docsify = {
       name: portfolioLang === 'en' ? 'Portfolio' : 'Portfólio',
-      nameLink: '/',
       repo: 'https://github.com/Ton-Chyod-s/portfolio-tech',
       basePath: '/',
-      routerMode: portfolioIsLocal ? 'hash' : 'history',
-      loadSidebar: portfolioLang === 'en' ? '/_sidebar_en.md' : '/_sidebar.md',
-      homepage: 'README.md',
+      loadSidebar: portfolioLang === 'en' ? '_sidebar_en.md' : '_sidebar.md',
+      homepage: portfolioLang === 'en' ? 'docs/en/home.md' : 'README.md',
       subMaxLevel: 2,
       themeColor: '#42b983',
       plugins: [
         function (hook) {
           hook.doneEach(function () {
             if (window.applyPortfolioSeo) window.applyPortfolioSeo();
-            if (window.rewritePortfolioLinks) window.rewritePortfolioLinks();
           });
         }
       ],
       alias: {
-        '/sobre/?': '/docs/sobre.md',
-        '/experiencias/?': '/docs/experiencias.md',
-        '/tecnologias/?': '/docs/tecnologias.md',
-        '/projetos/?': '/docs/projetos.md',
-        '/contato/?': '/docs/contato.md',
-        '/en/?': '/docs/en/home.md',
-        '/en/about/?': '/docs/en/about.md',
-        '/en/experiences/?': '/docs/en/experiences.md',
-        '/en/technologies/?': '/docs/en/technologies.md',
-        '/en/projects/?': '/docs/en/projects.md',
-        '/en/contact/?': '/docs/en/contact.md',
         '/docs/.*/_sidebar.md': '/_sidebar.md',
         '/docs/_sidebar.md': '/_sidebar.md',
         '/docs/en/.*/_sidebar.md': '/_sidebar_en.md',
@@ -449,13 +423,8 @@
           var map = newLang === 'en' ? pageMapToEn : pageMapToPt;
           var targetPage = (hash in map) ? map[hash] : (newLang === 'en' ? 'docs/en/about' : 'docs/sobre');
 
-          var isLocal = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
-          if (isLocal) {
-            window.location.hash = '/' + targetPage;
-            window.location.reload();
-          } else {
-            window.location.href = portfolioPrettyPaths[targetPage] || '/';
-          }
+          window.location.hash = '/' + targetPage;
+          window.location.reload();
         });
       });
     })();
