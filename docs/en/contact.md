@@ -42,15 +42,15 @@ Fill out the form below or reach out directly through the available channels.
     </p>
     <p>
       <strong>LinkedIn:</strong><br/>
-      <a href="https://linkedin.com/in/ton-chyod-s" target="_blank">linkedin.com/in/ton-chyod-s</a>
+      <a href="https://linkedin.com/in/ton-chyod-s" target="_blank" rel="noopener noreferrer">linkedin.com/in/ton-chyod-s</a>
     </p>
     <p>
       <strong>GitHub:</strong><br/>
-      <a href="https://github.com/ton-chyod-s" target="_blank">github.com/ton-chyod-s</a>
+      <a href="https://github.com/ton-chyod-s" target="_blank" rel="noopener noreferrer">github.com/ton-chyod-s</a>
     </p>
     <p>
       <strong>Resume:</strong><br/>
-      <a href="/cv-en.html?print=1" target="_blank" class="btn-cv-download" onclick="if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:'cv-en-download',title:'English CV Download',event:true})">↓ Generate updated PDF</a>
+      <a href="/cv-en.html?print=1" target="_blank" rel="noopener noreferrer" class="btn-cv-download" onclick="if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:'cv-en-download',title:'English CV Download',event:true})">↓ Generate updated PDF</a>
     </p>
   </div>
 

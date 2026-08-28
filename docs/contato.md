@@ -42,15 +42,15 @@ Preencha o formulário abaixo ou entre em contato diretamente pelos canais dispo
     </p>
     <p>
       <strong>LinkedIn:</strong><br/>
-      <a href="https://linkedin.com/in/ton-chyod-s" target="_blank">linkedin.com/in/ton-chyod-s</a>
+      <a href="https://linkedin.com/in/ton-chyod-s" target="_blank" rel="noopener noreferrer">linkedin.com/in/ton-chyod-s</a>
     </p>
     <p>
       <strong>GitHub:</strong><br/>
-      <a href="https://github.com/ton-chyod-s" target="_blank">github.com/ton-chyod-s</a>
+      <a href="https://github.com/ton-chyod-s" target="_blank" rel="noopener noreferrer">github.com/ton-chyod-s</a>
     </p>
     <p>
       <strong>Currículo:</strong><br/>
-      <a href="cv.html?print=1" target="_blank" class="btn-cv-download" onclick="if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:'cv-download',title:'CV Download',event:true})">↓ Gerar PDF atualizado</a>
+      <a href="cv.html?print=1" target="_blank" rel="noopener noreferrer" class="btn-cv-download" onclick="if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:'cv-download',title:'CV Download',event:true})">↓ Gerar PDF atualizado</a>
     </p>
   </div>
 

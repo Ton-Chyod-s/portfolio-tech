@@ -8,6 +8,11 @@ body {
   line-height: 1.45;
 }
 
+a:focus-visible {
+  outline: 3px solid #0b63ce;
+  outline-offset: 3px;
+}
+
 /* ── Page ── */
 .page {
   width: 210mm;
