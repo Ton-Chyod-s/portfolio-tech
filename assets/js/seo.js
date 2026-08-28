@@ -218,58 +218,6 @@
     applySeo(currentRoute());
   };
 
-  window.rewritePortfolioLinks = function () {
-    document.querySelectorAll('a[href]').forEach(function (link) {
-      var href = link.getAttribute('href');
-      var originalTarget;
-      var routeName;
-      var query = '';
-
-      if (href.indexOf('#/') === 0) {
-        originalTarget = href.slice(2);
-        var queryIndex = originalTarget.indexOf('?');
-        routeName = (queryIndex === -1 ? originalTarget : originalTarget.slice(0, queryIndex))
-          .replace(/\.md$/, '');
-        query = queryIndex === -1 ? '' : originalTarget.slice(queryIndex);
-      } else {
-        var url;
-        try {
-          url = new URL(href, window.location.origin);
-        } catch (error) {
-          return;
-        }
-        if (url.origin !== window.location.origin) return;
-
-        var path = url.pathname.replace(/^\/+|\/+$/g, '').replace(/\.md$/, '');
-        routeName = prettyRoutes[path] || (pages[path] ? path : path === '' ? '' : null);
-        if (routeName === null) return;
-        query = url.search;
-      }
-
-      var page = pages[routeName];
-      if (!page) return;
-
-      var docsifyTarget = routeName + query;
-      link.setAttribute('data-docsify-route', docsifyTarget);
-      link.setAttribute('href', page.path + query);
-    });
-  };
-
   window.applyPortfolioSeo();
   window.addEventListener('hashchange', window.applyPortfolioSeo);
-
-  document.addEventListener('click', function (event) {
-    var link = event.target.closest && event.target.closest('a[data-docsify-route]');
-    var isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-    if (!link || !isLocal) return;
-
-    event.preventDefault();
-    var targetRoute = link.getAttribute('data-docsify-route');
-    if (!targetRoute) {
-      window.location.href = window.location.origin + '/' + window.location.search;
-      return;
-    }
-
-    window.location.hash = '/' + targetRoute;
-  });
 }());

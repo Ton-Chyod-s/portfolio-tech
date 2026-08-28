@@ -145,21 +145,6 @@
       'en/contact': 'docs/en/contact'
     };
 
-    var portfolioPrettyPaths = {
-      '': '/',
-      'docs/sobre': '/sobre/',
-      'docs/experiencias': '/experiencias/',
-      'docs/tecnologias': '/tecnologias/',
-      'docs/projetos': '/projetos/',
-      'docs/contato': '/contato/',
-      'docs/en/home': '/en/',
-      'docs/en/about': '/en/about/',
-      'docs/en/experiences': '/en/experiences/',
-      'docs/en/technologies': '/en/technologies/',
-      'docs/en/projects': '/en/projects/',
-      'docs/en/contact': '/en/contact/'
-    };
-
     function getPortfolioRoute() {
       var hash = (window.location.hash || '')
         .replace(/^#\/?/, '')
@@ -173,7 +158,9 @@
     }
 
     var portfolioRoute = getPortfolioRoute();
-    var portfolioIsLocal = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+    if (!window.location.hash && portfolioRoute) {
+      window.history.replaceState(null, '', window.location.pathname + window.location.search + '#/' + portfolioRoute);
+    }
 
     var portfolioLang = (function () {
       var lang = portfolioRoute.indexOf('docs/en/') === 0 ? 'en' : 'pt';
@@ -207,34 +194,20 @@
 
     window.$docsify = {
       name: portfolioLang === 'en' ? 'Portfolio' : 'Portfólio',
-      nameLink: '/',
       repo: 'https://github.com/Ton-Chyod-s/portfolio-tech',
       basePath: '/',
-      routerMode: portfolioIsLocal ? 'hash' : 'history',
-      loadSidebar: portfolioLang === 'en' ? '/_sidebar_en.md' : '/_sidebar.md',
-      homepage: 'README.md',
+      loadSidebar: portfolioLang === 'en' ? '_sidebar_en.md' : '_sidebar.md',
+      homepage: portfolioLang === 'en' ? 'docs/en/home.md' : 'README.md',
       subMaxLevel: 2,
       themeColor: '#42b983',
       plugins: [
         function (hook) {
           hook.doneEach(function () {
             if (window.applyPortfolioSeo) window.applyPortfolioSeo();
-            if (window.rewritePortfolioLinks) window.rewritePortfolioLinks();
           });
         }
       ],
       alias: {
-        '/sobre/?': '/docs/sobre.md',
-        '/experiencias/?': '/docs/experiencias.md',
-        '/tecnologias/?': '/docs/tecnologias.md',
-        '/projetos/?': '/docs/projetos.md',
-        '/contato/?': '/docs/contato.md',
-        '/en/?': '/docs/en/home.md',
-        '/en/about/?': '/docs/en/about.md',
-        '/en/experiences/?': '/docs/en/experiences.md',
-        '/en/technologies/?': '/docs/en/technologies.md',
-        '/en/projects/?': '/docs/en/projects.md',
-        '/en/contact/?': '/docs/en/contact.md',
         '/docs/.*/_sidebar.md': '/_sidebar.md',
         '/docs/_sidebar.md': '/_sidebar.md',
         '/docs/en/.*/_sidebar.md': '/_sidebar_en.md',
@@ -395,13 +368,8 @@
           var map = newLang === 'en' ? pageMapToEn : pageMapToPt;
           var targetPage = (hash in map) ? map[hash] : (newLang === 'en' ? 'docs/en/about' : 'docs/sobre');
 
-          var isLocal = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
-          if (isLocal) {
-            window.location.hash = '/' + targetPage;
-            window.location.reload();
-          } else {
-            window.location.href = portfolioPrettyPaths[targetPage] || '/';
-          }
+          window.location.hash = '/' + targetPage;
+          window.location.reload();
         });
       });
     })();
