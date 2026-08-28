@@ -17,7 +17,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Klayton Dias | Software Developer · Desenvolvedor Software" />
   <meta property="og:description" content="Node.js · TypeScript · Clean Architecture · RESTful APIs. Production projects / Projetos em produção." />
-  <meta property="og:image" content="assets/img/ton_chyods-04.jpg" />
+  <meta property="og:image" content="/assets/img/ton_chyods-04.jpg" />
   <meta property="og:url" content="https://ton-chyod-s.me/" />
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:locale:alternate" content="en_US" />
@@ -26,7 +26,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Klayton Dias | Software Developer · Desenvolvedor Software" />
   <meta name="twitter:description" content="Node.js · TypeScript · Clean Architecture · RESTful APIs." />
-  <meta name="twitter:image" content="assets/img/ton_chyods-04.jpg" />
+  <meta name="twitter:image" content="/assets/img/ton_chyods-04.jpg" />
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -70,8 +70,8 @@
 
   <title>Klayton Dias (ton-chyod-s) · Software Developer Node.js</title>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
-  <link rel="icon" type="image/x-icon" href="assets/ico/favicon.ico" />
-  <link href="assets/css/style.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="/assets/ico/favicon.ico" />
+  <link href="/assets/css/style.css" rel="stylesheet" />
   <script>
     (function () {
       if (localStorage.getItem('portfolioDarkMode') === 'true') {
@@ -79,8 +79,8 @@
       }
     })();
   </script>
-  <script src="assets/js/clarity.js"></script>
-  <script src="assets/js/config.js"></script>
+  <script src="/assets/js/clarity.js"></script>
+  <script src="/assets/js/config.js"></script>
 </head>
 <body>
   <div id="app"></div>
@@ -130,10 +130,40 @@
   </script>
 
   <script>
+    var portfolioPrettyRoutes = {
+      'sobre': 'docs/sobre',
+      'experiencias': 'docs/experiencias',
+      'tecnologias': 'docs/tecnologias',
+      'projetos': 'docs/projetos',
+      'contato': 'docs/contato',
+      'en': 'docs/en/home',
+      'en/about': 'docs/en/about',
+      'en/experiences': 'docs/en/experiences',
+      'en/technologies': 'docs/en/technologies',
+      'en/projects': 'docs/en/projects',
+      'en/contact': 'docs/en/contact'
+    };
+
+    function getPortfolioRoute() {
+      var hash = (window.location.hash || '')
+        .replace(/^#\/?/, '')
+        .split('?')[0]
+        .replace(/\/$/, '')
+        .replace(/\.md$/, '');
+      if (hash) return hash;
+
+      var pathname = window.location.pathname.replace(/^\/+|\/+$/g, '');
+      return portfolioPrettyRoutes[pathname] || '';
+    }
+
+    var portfolioRoute = getPortfolioRoute();
+    if (!window.location.hash && portfolioRoute) {
+      window.history.replaceState(null, '', window.location.pathname + window.location.search + '#/' + portfolioRoute);
+    }
+
     var portfolioLang = (function () {
-      var hash = (window.location.hash || '').replace(/^#\/?/, '');
-      if (hash) {
-        var lang = hash.indexOf('docs/en/') === 0 ? 'en' : 'pt';
+      if (portfolioRoute) {
+        var lang = portfolioRoute.indexOf('docs/en/') === 0 ? 'en' : 'pt';
         localStorage.setItem('portfolioLang', lang);
         return lang;
       }
@@ -146,12 +176,33 @@
     }());
 
     var appEl = document.getElementById('app');
-    if (appEl) appEl.innerHTML = '';
-    document.body.classList.remove('ready', 'sticky');
+    if (!appEl) {
+      appEl = document.createElement('div');
+      appEl.id = 'app';
+
+      var renderedMain = document.querySelector('body > main');
+      if (renderedMain) {
+        renderedMain.parentNode.replaceChild(appEl, renderedMain);
+      } else {
+        document.body.insertBefore(appEl, document.body.firstChild);
+      }
+
+      var renderedCorner = document.querySelector('body > .github-corner');
+      if (renderedCorner) renderedCorner.remove();
+
+      var renderedProgress = document.querySelector('body > .progress');
+      if (renderedProgress) renderedProgress.remove();
+    } else {
+      appEl.innerHTML = '';
+    }
+
+    document.body.classList.remove('ready', 'sticky', 'close');
+    document.body.removeAttribute('data-page');
 
     window.$docsify = {
       name: portfolioLang === 'en' ? 'Portfolio' : 'Portfólio',
       repo: 'https://github.com/Ton-Chyod-s/portfolio-tech',
+      basePath: '/',
       loadSidebar: portfolioLang === 'en' ? '_sidebar_en.md' : '_sidebar.md',
       homepage: portfolioLang === 'en' ? 'docs/en/home.md' : 'README.md',
       subMaxLevel: 2,
@@ -313,12 +364,11 @@
           var newLang = portfolioLang === 'pt' ? 'en' : 'pt';
           localStorage.setItem('portfolioLang', newLang);
 
-          var hash = window.location.hash.replace(/^#\//, '').replace(/\/$/, '').replace(/\.md$/, '');
+          var hash = getPortfolioRoute();
           var map = newLang === 'en' ? pageMapToEn : pageMapToPt;
           var targetPage = (hash in map) ? map[hash] : (newLang === 'en' ? 'docs/en/about' : 'docs/sobre');
 
-          window.location.hash = '/' + targetPage;
-          window.location.reload();
+          window.location.assign('/#/' + targetPage);
         });
       });
     })();
