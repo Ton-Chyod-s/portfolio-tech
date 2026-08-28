@@ -11,8 +11,8 @@
       lang: 'pt-BR',
       locale: 'pt_BR',
       alternateLocale: 'en_US',
-      title: 'Klayton Dias | Desenvolvedor Full Stack',
-      description: 'Portfólio de Klayton Dias, desenvolvedor Full Stack especializado em APIs, integrações, automação, Node.js, TypeScript, PostgreSQL e Python.'
+      title: 'Klayton Dias | Desenvolvedor de Software Pleno',
+      description: 'Portfólio de Klayton Dias, desenvolvedor de software pleno especializado em APIs, integrações, automação, Node.js, TypeScript, PostgreSQL e Python.'
     },
     'docs/sobre': {
       path: '/sobre/',
@@ -20,8 +20,8 @@
       lang: 'pt-BR',
       locale: 'pt_BR',
       alternateLocale: 'en_US',
-      title: 'Sobre Klayton Dias | Desenvolvedor Full Stack',
-      description: 'Conheça a trajetória, formação e perfil profissional de Klayton Dias, desenvolvedor Full Stack especializado em soluções de software.'
+      title: 'Sobre Klayton Dias | Desenvolvedor de Software Pleno',
+      description: 'Conheça a trajetória, formação e perfil profissional de Klayton Dias, desenvolvedor de software pleno especializado em soluções de software.'
     },
     'docs/experiencias': {
       path: '/experiencias/',
@@ -65,8 +65,8 @@
       lang: 'en',
       locale: 'en_US',
       alternateLocale: 'pt_BR',
-      title: 'Klayton Dias | Full-Stack Developer',
-      description: 'Portfolio of Klayton Dias, a full-stack developer specializing in APIs, integrations, automation, Node.js, TypeScript, PostgreSQL, and Python.'
+      title: 'Klayton Dias | Mid-Level Software Developer',
+      description: 'Portfolio of Klayton Dias, a mid-level software developer specializing in APIs, integrations, automation, Node.js, TypeScript, PostgreSQL, and Python.'
     },
     'docs/en/about': {
       path: '/en/about/',
@@ -74,8 +74,8 @@
       lang: 'en',
       locale: 'en_US',
       alternateLocale: 'pt_BR',
-      title: 'About Klayton Dias | Full-Stack Developer',
-      description: 'Learn about the professional background, education, and profile of Klayton Dias, a full-stack developer focused on software solutions.'
+      title: 'About Klayton Dias | Mid-Level Software Developer',
+      description: 'Learn about the professional background, education, and profile of Klayton Dias, a mid-level software developer focused on software solutions.'
     },
     'docs/en/experiences': {
       path: '/en/experiences/',
