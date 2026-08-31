@@ -90,7 +90,7 @@
     <h2>Precisa transformar uma operação complexa em um produto confiável?</h2>
     <p>Estou disponível para oportunidades de trabalho, projetos freelance e colaborações.</p>
     <div class="home-actions home-actions-centered">
-      <a class="home-btn home-btn-primary" href="#/docs/contato">Vamos conversar</a>
+      <a class="home-btn home-btn-primary" href="https://wa.me/5567991799956" target="_blank" rel="noopener">Vamos conversar</a>
       <a class="home-btn home-btn-secondary" href="mailto:klayton.dias@gmail.com">Enviar e-mail</a>
     </div>
   </section>
